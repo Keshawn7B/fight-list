@@ -3,6 +3,8 @@
 A free, open-source combat sports tracker for upcoming MMA, boxing, Muay Thai,
 and bare-knuckle events.
 
+[Open the public Fight List app](https://keshawn7b.github.io/fight-list/)
+
 Fight List puts three things in one clean schedule:
 
 - the local start time
