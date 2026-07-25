@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import {
   fightEvents,
@@ -25,44 +26,6 @@ const statusFor = (event: FightEvent, now: number) => {
   if (now < start && start - now < 24 * 60 * 60 * 1000) return "NEXT 24H";
   return null;
 };
-
-const calendarTimestamp = (iso: string) =>
-  new Date(iso).toISOString().replace(/[-:]/g, "").replace(".000", "");
-
-const escapeCalendar = (value: string) =>
-  value.replaceAll("\\", "\\\\").replaceAll(",", "\\,").replaceAll("\n", "\\n");
-
-function downloadCalendar(event: FightEvent) {
-  const start = new Date(event.startsAt);
-  const end = new Date(start.getTime() + 5 * 60 * 60 * 1000);
-  const description = `${event.promotion} — ${event.stakes}. Watch on ${event.watch.provider}. ${event.detailsUrl}`;
-  const ics = [
-    "BEGIN:VCALENDAR",
-    "VERSION:2.0",
-    "PRODID:-//Fight List//Fight Tracker//EN",
-    "BEGIN:VEVENT",
-    `UID:${event.id}@fightlist`,
-    `DTSTAMP:${calendarTimestamp(new Date().toISOString())}`,
-    `DTSTART:${calendarTimestamp(start.toISOString())}`,
-    `DTEND:${calendarTimestamp(end.toISOString())}`,
-    `SUMMARY:${escapeCalendar(`${event.eventName}: ${event.fighters.join(" vs ")}`)}`,
-    `DESCRIPTION:${escapeCalendar(description)}`,
-    `LOCATION:${escapeCalendar(`${event.venue}, ${event.location}`)}`,
-    `URL:${event.detailsUrl}`,
-    "END:VEVENT",
-    "END:VCALENDAR",
-  ].join("\r\n");
-
-  const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
-  const href = URL.createObjectURL(blob);
-  const anchor = document.createElement("a");
-  anchor.href = href;
-  anchor.download = `${event.id}.ics`;
-  document.body.appendChild(anchor);
-  anchor.click();
-  anchor.remove();
-  URL.revokeObjectURL(href);
-}
 
 function EventTime({
   iso,
@@ -173,20 +136,21 @@ function EventCard({
   event,
   mounted,
   now,
-  saved,
-  onToggleSaved,
 }: {
   event: FightEvent;
   mounted: boolean;
   now: number;
-  saved: boolean;
-  onToggleSaved: (id: string) => void;
 }) {
   const status = statusFor(event, now);
 
   return (
-    <details className="event-card" id={event.id}>
-      <summary className="event-summary">
+    <Link
+      className="event-card event-card-link"
+      href={`/events/${event.id}/`}
+      id={event.id}
+      aria-label={`Open ${event.eventName}: ${event.fighters.join(" versus ")}`}
+    >
+      <span className="event-summary">
         <EventTimeBlock iso={event.startsAt} mounted={mounted} />
         <span className="event-summary-copy">
           <span className="summary-labels">
@@ -200,95 +164,11 @@ function EventCard({
           <strong className="event-title">{event.eventName}</strong>
         </span>
         <span className="event-toggle">
-          <span className="show-copy">View details</span>
-          <span className="hide-copy">Close details</span>
-          <i aria-hidden="true">+</i>
+          <span>Open event</span>
+          <i aria-hidden="true">→</i>
         </span>
-      </summary>
-
-      <div className="event-body" id={`${event.id}-details`}>
-        <div className="event-meta">
-          <div>
-            <span className={`promotion promotion-${event.promotion.toLowerCase()}`}>
-              {event.promotion}
-            </span>
-            <span className="event-name">{event.eventName}</span>
-          </div>
-          <button
-            className={`save-button ${saved ? "is-saved" : ""}`}
-            type="button"
-            onClick={() => onToggleSaved(event.id)}
-            aria-pressed={saved}
-            aria-label={`${saved ? "Remove" : "Add"} ${event.eventName} ${saved ? "from" : "to"} saved fights`}
-          >
-            <span aria-hidden="true">{saved ? "★" : "☆"}</span>
-            {saved ? "Saved" : "Save"}
-          </button>
-        </div>
-
-        <h3 className="matchup">
-          <span>{event.fighters[0]}</span>
-          <em>vs</em>
-          <span>{event.fighters[1]}</span>
-        </h3>
-        <p className="stakes">{event.stakes}</p>
-
-        <div className="event-grid">
-          <div className="time-stack">
-            <EventTime
-              iso={event.startsAt}
-              mounted={mounted}
-              label={event.mainCardAt ? "Prelims / opening bell" : "Event starts"}
-            />
-            {event.mainCardAt && (
-              <EventTime
-                iso={event.mainCardAt}
-                mounted={mounted}
-                label="Main card"
-              />
-            )}
-          </div>
-
-          <div className="location-block">
-            <span>Where</span>
-            <strong>{event.venue}</strong>
-            <small>{event.location}</small>
-          </div>
-
-          <div className="watch-block">
-            <span>Watch on</span>
-            <a href={event.watch.href} target="_blank" rel="noreferrer">
-              {event.watch.provider}
-              <span aria-hidden="true"> ↗</span>
-            </a>
-            <small>{event.watch.note}</small>
-          </div>
-        </div>
-
-        <div className="event-actions">
-          <span className={`access-badge access-${event.watch.access.toLowerCase()}`}>
-            {event.watch.access}
-          </span>
-          <button type="button" onClick={() => downloadCalendar(event)}>
-            <span aria-hidden="true">＋</span> Add to calendar
-          </button>
-          <details>
-            <summary>Card details</summary>
-            <div className="bout-list">
-              <p>Also on the card</p>
-              <ul>
-                {event.bouts.map((bout) => (
-                  <li key={bout}>{bout}</li>
-                ))}
-              </ul>
-              <a href={event.detailsUrl} target="_blank" rel="noreferrer">
-                Verify on official event page <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </details>
-        </div>
-      </div>
-    </details>
+      </span>
+    </Link>
   );
 }
 
@@ -363,16 +243,6 @@ export function FightTracker() {
       return matchesSport && matchesFree && matchesSaved && matchesQuery;
     });
   }, [freeOnly, query, savedIds, savedOnly, sport, upcoming]);
-
-  const toggleSaved = (id: string) => {
-    setSavedIds((current) => {
-      const next = current.includes(id)
-        ? current.filter((savedId) => savedId !== id)
-        : [...current, id];
-      window.localStorage.setItem("fight-list-saved", JSON.stringify(next));
-      return next;
-    });
-  };
 
   return (
     <>
@@ -461,7 +331,7 @@ export function FightTracker() {
                 mounted={mounted}
                 label="Opening bell"
               />
-              <a href={`#${nextEvent.id}`}>Jump to card →</a>
+              <Link href={`/events/${nextEvent.id}/`}>Open event →</Link>
             </div>
           </aside>
 
@@ -557,8 +427,6 @@ export function FightTracker() {
                 event={event}
                 mounted={mounted}
                 now={now ?? 0}
-                saved={savedIds.includes(event.id)}
-                onToggleSaved={toggleSaved}
               />
             ))}
           </div>
