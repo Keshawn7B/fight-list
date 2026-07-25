@@ -329,7 +329,7 @@ export function FightTracker() {
           <span className="brand-mark" aria-hidden="true">FL</span>
           <span>
             <strong>Fight List</strong>
-            <small>Combat schedule</small>
+            <small>Your fight-night guide</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -360,24 +360,25 @@ export function FightTracker() {
           <div className="hero-copy">
             <p className="eyebrow">
               <span aria-hidden="true" />
-              Combat sports, one clean list
+              Make a little room for fight night
             </p>
             <h1>
-              Never miss
+              Settle in.
               <br />
-              <em>the bell.</em>
+              <em>The fights are on.</em>
             </h1>
             <p className="hero-description">
-              Upcoming MMA, boxing, Muay Thai, and bare-knuckle cards—with local
-              start times and the official place to watch.
+              A calm, tidy home for upcoming MMA, boxing, Muay Thai, and
+              bare-knuckle cards—with local times and the official place to
+              watch.
             </p>
             <div className="hero-actions">
               <a className="primary-action" href="#schedule">
-                See the fight list <span aria-hidden="true">↓</span>
+                Browse the cards <span aria-hidden="true">↓</span>
               </a>
               <p>
-                <strong>$0 app.</strong>
-                <span>Some broadcasts cost extra.</span>
+                <strong>Free, always.</strong>
+                <span>Some broadcasts may cost extra.</span>
               </p>
             </div>
           </div>
@@ -385,7 +386,7 @@ export function FightTracker() {
           <aside className="next-card" aria-label="Next upcoming event">
             <div className="next-card-top">
               <span className="pulse-dot" aria-hidden="true" />
-              Next on the clock
+              Coming up next
               <span className={`access-badge access-${nextEvent.watch.access.toLowerCase()}`}>
                 {nextEvent.watch.access}
               </span>
@@ -428,8 +429,8 @@ export function FightTracker() {
         <section className="schedule-section" id="schedule">
           <div className="schedule-heading">
             <div>
-              <p className="section-kicker">Upcoming schedule</p>
-              <h2>Find your next fight night.</h2>
+              <p className="section-kicker">The weekend watchlist</p>
+              <h2>Pick a card, get comfortable.</h2>
             </div>
             <p>
               Times shown in <strong>{timezone.replaceAll("_", " ")}</strong>.
@@ -529,13 +530,13 @@ export function FightTracker() {
 
         <section className="free-section" id="about">
           <div>
-            <p className="section-kicker">Built to stay free</p>
-            <h2>No paid API. No account. No clutter.</h2>
+            <p className="section-kicker">Made for easy weekends</p>
+            <h2>No account. No tracking. Just the cards.</h2>
           </div>
           <div className="free-points">
             <article>
               <span>01</span>
-              <h3>Open schedule</h3>
+              <h3>Easy to update</h3>
               <p>
                 The event list is a plain code file, so anyone can correct or
                 add a card through GitHub.
@@ -543,7 +544,7 @@ export function FightTracker() {
             </article>
             <article>
               <span>02</span>
-              <h3>Your time zone</h3>
+              <h3>Already in your time</h3>
               <p>
                 Every start time converts in your browser. No profile or
                 location tracking required.
@@ -551,7 +552,7 @@ export function FightTracker() {
             </article>
             <article>
               <span>03</span>
-              <h3>Legal links only</h3>
+              <h3>A trusted way in</h3>
               <p>
                 Watch buttons go to the promotion or licensed broadcaster—never
                 sketchy stream mirrors.
@@ -566,7 +567,7 @@ export function FightTracker() {
           <span className="brand-mark" aria-hidden="true">FL</span>
           <span>
             <strong>Fight List</strong>
-            <small>Built for fight fans</small>
+            <small>Stay awhile</small>
           </span>
         </div>
         <p>
