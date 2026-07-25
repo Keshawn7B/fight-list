@@ -334,7 +334,7 @@ export function FightTracker() {
           <span className="brand-mark" aria-hidden="true">FL</span>
           <span>
             <strong>Fight List</strong>
-            <small>Combat sports index</small>
+            <small>After-hours archive</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -365,24 +365,25 @@ export function FightTracker() {
           <div className="hero-copy">
             <p className="eyebrow">
               <span aria-hidden="true" />
-              Broadcast log / combat sports
+              Signal room / live index
             </p>
             <h1>
-              Fight night.
+              Tonight,
               <br />
-              <em>Logged.</em>
+              <em>on record.</em>
             </h1>
             <p className="hero-description">
-              Upcoming MMA, boxing, Muay Thai, and bare-knuckle cards. Local
-              times. Official watch links. Nothing extra.
+              A quiet after-hours archive for MMA, boxing, Muay Thai, and
+              bare-knuckle. Local bell times and official signals, all within
+              reach.
             </p>
             <div className="hero-actions">
               <a className="primary-action" href="#schedule">
-                View schedule <span aria-hidden="true">↓</span>
+                Tune into the cards <span aria-hidden="true">↓</span>
               </a>
               <p>
-                <strong>No account. No fee.</strong>
-                <span>Broadcast charges may apply.</span>
+                <strong>The archive is free.</strong>
+                <span>Some broadcasts may cost extra.</span>
               </p>
             </div>
           </div>
@@ -390,7 +391,7 @@ export function FightTracker() {
           <aside className="next-card" aria-label="Next upcoming event">
             <div className="next-card-top">
               <span className="pulse-dot" aria-hidden="true" />
-              Next transmission
+              Now tuning
               <span className={`access-badge access-${nextEvent.watch.access.toLowerCase()}`}>
                 {nextEvent.watch.access}
               </span>
@@ -433,8 +434,8 @@ export function FightTracker() {
         <section className="schedule-section" id="schedule">
           <div className="schedule-heading">
             <div>
-              <p className="section-kicker">Fight ledger / upcoming</p>
-              <h2>Upcoming cards.</h2>
+              <p className="section-kicker">The signal shelf</p>
+              <h2>Every card, within reach.</h2>
             </div>
             <p>
               Times shown in <strong>{timezone.replaceAll("_", " ")}</strong>.
@@ -534,13 +535,13 @@ export function FightTracker() {
 
         <section className="free-section" id="about">
           <div>
-            <p className="section-kicker">Open by design</p>
-            <h2>No account. No noise. Just the card.</h2>
+            <p className="section-kicker">The quiet system</p>
+            <h2>Built to disappear until the bell rings.</h2>
           </div>
           <div className="free-points">
             <article>
               <span>01</span>
-              <h3>Open ledger</h3>
+              <h3>Open archive</h3>
               <p>
                 The event list is a plain code file, so anyone can correct or
                 add a card through GitHub.
@@ -556,7 +557,7 @@ export function FightTracker() {
             </article>
             <article>
               <span>03</span>
-              <h3>Official signals</h3>
+              <h3>True frequency</h3>
               <p>
                 Watch buttons go to the promotion or licensed broadcaster—never
                 sketchy stream mirrors.
@@ -571,7 +572,7 @@ export function FightTracker() {
           <span className="brand-mark" aria-hidden="true">FL</span>
           <span>
             <strong>Fight List</strong>
-            <small>On the record</small>
+            <small>Signal stays open</small>
           </span>
         </div>
         <p>
