@@ -28,9 +28,9 @@ test("server-renders the Fight List product shell", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Fight List — The After-Hours Fight Archive<\/title>/i);
-  assert.match(html, /Tonight/);
-  assert.match(html, /signal shelf/i);
+  assert.match(html, /<title>Fight List — Upcoming Combat Sports<\/title>/i);
+  assert.match(html, /Fight night/);
+  assert.match(html, /Upcoming events/i);
   assert.match(html, /Where to watch|Watch on/);
   assert.match(html, /Fight List/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
