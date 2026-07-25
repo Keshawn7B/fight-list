@@ -8,11 +8,11 @@ const siteUrl = (
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl}/`),
-  title: "Fight List — Your Cozy Fight-Night Guide",
+  title: "Fight List — Combat Sports Schedule",
   description:
     "Upcoming MMA, boxing, Muay Thai, and bare-knuckle events with local start times and official watch links.",
   openGraph: {
-    title: "Fight List — Settle in. The fights are on.",
+    title: "Fight List — Every card. On the record.",
     description:
       "Upcoming combat sports, local start times, and the official place to watch.",
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fight List — Settle in. The fights are on.",
+    title: "Fight List — Every card. On the record.",
     description:
       "Upcoming combat sports, local start times, and the official place to watch.",
     images: [`${siteUrl}/og.png`],
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f4eee4",
-  colorScheme: "light",
+  themeColor: "#090a09",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({

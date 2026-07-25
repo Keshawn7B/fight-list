@@ -258,21 +258,26 @@ export function FightTracker() {
   const [timezone, setTimezone] = useState("your local time");
 
   useEffect(() => {
-    setMounted(true);
-    setNow(Date.now());
-    setTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+    const initialize = window.setTimeout(() => {
+      setMounted(true);
+      setNow(Date.now());
+      setTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
 
-    const stored = window.localStorage.getItem("fight-list-saved");
-    if (stored) {
-      try {
-        setSavedIds(JSON.parse(stored) as string[]);
-      } catch {
-        window.localStorage.removeItem("fight-list-saved");
+      const stored = window.localStorage.getItem("fight-list-saved");
+      if (stored) {
+        try {
+          setSavedIds(JSON.parse(stored) as string[]);
+        } catch {
+          window.localStorage.removeItem("fight-list-saved");
+        }
       }
-    }
+    }, 0);
 
     const timer = window.setInterval(() => setNow(Date.now()), 60_000);
-    return () => window.clearInterval(timer);
+    return () => {
+      window.clearTimeout(initialize);
+      window.clearInterval(timer);
+    };
   }, []);
 
   const upcoming = useMemo(() => {
@@ -329,7 +334,7 @@ export function FightTracker() {
           <span className="brand-mark" aria-hidden="true">FL</span>
           <span>
             <strong>Fight List</strong>
-            <small>Your fight-night guide</small>
+            <small>Combat sports index</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -360,25 +365,24 @@ export function FightTracker() {
           <div className="hero-copy">
             <p className="eyebrow">
               <span aria-hidden="true" />
-              Make a little room for fight night
+              Broadcast log / combat sports
             </p>
             <h1>
-              Settle in.
+              Fight night.
               <br />
-              <em>The fights are on.</em>
+              <em>Logged.</em>
             </h1>
             <p className="hero-description">
-              A calm, tidy home for upcoming MMA, boxing, Muay Thai, and
-              bare-knuckle cards—with local times and the official place to
-              watch.
+              Upcoming MMA, boxing, Muay Thai, and bare-knuckle cards. Local
+              times. Official watch links. Nothing extra.
             </p>
             <div className="hero-actions">
               <a className="primary-action" href="#schedule">
-                Browse the cards <span aria-hidden="true">↓</span>
+                View schedule <span aria-hidden="true">↓</span>
               </a>
               <p>
-                <strong>Free, always.</strong>
-                <span>Some broadcasts may cost extra.</span>
+                <strong>No account. No fee.</strong>
+                <span>Broadcast charges may apply.</span>
               </p>
             </div>
           </div>
@@ -386,7 +390,7 @@ export function FightTracker() {
           <aside className="next-card" aria-label="Next upcoming event">
             <div className="next-card-top">
               <span className="pulse-dot" aria-hidden="true" />
-              Coming up next
+              Next transmission
               <span className={`access-badge access-${nextEvent.watch.access.toLowerCase()}`}>
                 {nextEvent.watch.access}
               </span>
@@ -429,8 +433,8 @@ export function FightTracker() {
         <section className="schedule-section" id="schedule">
           <div className="schedule-heading">
             <div>
-              <p className="section-kicker">The weekend watchlist</p>
-              <h2>Pick a card, get comfortable.</h2>
+              <p className="section-kicker">Fight ledger / upcoming</p>
+              <h2>Upcoming cards.</h2>
             </div>
             <p>
               Times shown in <strong>{timezone.replaceAll("_", " ")}</strong>.
@@ -530,13 +534,13 @@ export function FightTracker() {
 
         <section className="free-section" id="about">
           <div>
-            <p className="section-kicker">Made for easy weekends</p>
-            <h2>No account. No tracking. Just the cards.</h2>
+            <p className="section-kicker">Open by design</p>
+            <h2>No account. No noise. Just the card.</h2>
           </div>
           <div className="free-points">
             <article>
               <span>01</span>
-              <h3>Easy to update</h3>
+              <h3>Open ledger</h3>
               <p>
                 The event list is a plain code file, so anyone can correct or
                 add a card through GitHub.
@@ -544,7 +548,7 @@ export function FightTracker() {
             </article>
             <article>
               <span>02</span>
-              <h3>Already in your time</h3>
+              <h3>Local clock</h3>
               <p>
                 Every start time converts in your browser. No profile or
                 location tracking required.
@@ -552,7 +556,7 @@ export function FightTracker() {
             </article>
             <article>
               <span>03</span>
-              <h3>A trusted way in</h3>
+              <h3>Official signals</h3>
               <p>
                 Watch buttons go to the promotion or licensed broadcaster—never
                 sketchy stream mirrors.
@@ -567,7 +571,7 @@ export function FightTracker() {
           <span className="brand-mark" aria-hidden="true">FL</span>
           <span>
             <strong>Fight List</strong>
-            <small>Stay awhile</small>
+            <small>On the record</small>
           </span>
         </div>
         <p>
