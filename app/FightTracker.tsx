@@ -104,6 +104,48 @@ function EventTime({
   );
 }
 
+function EventTimeBlock({
+  iso,
+  mounted,
+}: {
+  iso: string;
+  mounted: boolean;
+}) {
+  if (!mounted) {
+    return (
+      <span className="time-block" aria-label="Local start time loading">
+        <span>Local start</span>
+        <strong>--:--</strong>
+        <small>Loading</small>
+      </span>
+    );
+  }
+
+  const date = new Date(iso);
+  const dateText = new Intl.DateTimeFormat(undefined, {
+    month: "short",
+    day: "numeric",
+  }).format(date);
+  const timeText = new Intl.DateTimeFormat(undefined, {
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(date);
+  const weekdayText = new Intl.DateTimeFormat(undefined, {
+    weekday: "short",
+  }).format(date);
+
+  return (
+    <span
+      className="time-block"
+      aria-label={`${weekdayText}, ${dateText} at ${timeText}`}
+    >
+      <span>{dateText}</span>
+      <strong>{timeText}</strong>
+      <small>{weekdayText}</small>
+    </span>
+  );
+}
+
 function Countdown({
   startsAt,
   now,
@@ -140,33 +182,37 @@ function EventCard({
   saved: boolean;
   onToggleSaved: (id: string) => void;
 }) {
-  const date = new Date(event.startsAt);
   const status = statusFor(event, now);
 
   return (
-    <article className="event-card" id={event.id}>
-      <div className="date-block" aria-label={date.toISOString()}>
-        <span>
-          {new Intl.DateTimeFormat("en-US", { month: "short" })
-            .format(date)
-            .toUpperCase()}
+    <details className="event-card" id={event.id}>
+      <summary className="event-summary">
+        <EventTimeBlock iso={event.startsAt} mounted={mounted} />
+        <span className="event-summary-copy">
+          <span className="summary-labels">
+            <span className="sport-label">{event.sport}</span>
+            {status && (
+              <span className={`status status-${status.toLowerCase().replaceAll(" ", "-")}`}>
+                {status}
+              </span>
+            )}
+          </span>
+          <strong className="event-title">{event.eventName}</strong>
         </span>
-        <strong>{date.getUTCDate().toString().padStart(2, "0")}</strong>
-        <small>
-          {new Intl.DateTimeFormat("en-US", { weekday: "short" })
-            .format(date)
-            .toUpperCase()}
-        </small>
-      </div>
+        <span className="event-toggle">
+          <span className="show-copy">View details</span>
+          <span className="hide-copy">Close details</span>
+          <i aria-hidden="true">+</i>
+        </span>
+      </summary>
 
-      <div className="event-body">
+      <div className="event-body" id={`${event.id}-details`}>
         <div className="event-meta">
           <div>
             <span className={`promotion promotion-${event.promotion.toLowerCase()}`}>
               {event.promotion}
             </span>
-            <span className="sport-label">{event.sport}</span>
-            {status && <span className={`status status-${status.toLowerCase().replaceAll(" ", "-")}`}>{status}</span>}
+            <span className="event-name">{event.eventName}</span>
           </div>
           <button
             className={`save-button ${saved ? "is-saved" : ""}`}
@@ -180,7 +226,6 @@ function EventCard({
           </button>
         </div>
 
-        <p className="event-name">{event.eventName}</p>
         <h3 className="matchup">
           <span>{event.fighters[0]}</span>
           <em>vs</em>
@@ -243,7 +288,7 @@ function EventCard({
           </details>
         </div>
       </div>
-    </article>
+    </details>
   );
 }
 
@@ -282,10 +327,16 @@ export function FightTracker() {
 
   const upcoming = useMemo(() => {
     const current = now ?? new Date("2026-07-24T12:00:00.000Z").getTime();
-    return fightEvents.filter(
-      (event) =>
-        new Date(event.startsAt).getTime() + 5 * 60 * 60 * 1000 > current,
-    );
+    return fightEvents
+      .filter(
+        (event) =>
+          new Date(event.startsAt).getTime() + 5 * 60 * 60 * 1000 > current,
+      )
+      .sort(
+        (first, second) =>
+          new Date(first.startsAt).getTime() -
+          new Date(second.startsAt).getTime(),
+      );
   }, [now]);
 
   const nextEvent = upcoming[0] ?? fightEvents[0];
