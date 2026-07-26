@@ -4,6 +4,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { BrandMark } from "../../BrandMark";
 import type { FightEvent } from "../../events";
 import { getEventVisual } from "../../eventVisuals";
 
@@ -139,7 +140,7 @@ export function EventDetail({
     <div className="detail-page">
       <header className="detail-header">
         <Link className="brand" href="/" aria-label="Fight List home">
-          <span className="brand-mark" aria-hidden="true">FL</span>
+          <BrandMark />
           <strong>Fight List</strong>
         </Link>
         <Link className="detail-back" href="/#schedule">

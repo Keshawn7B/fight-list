@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { BrandMark } from "./BrandMark";
 import {
   fightEvents,
   type FightEvent,
@@ -184,7 +185,7 @@ export function FightTracker() {
 
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Fight List home">
-          <span className="brand-mark" aria-hidden="true">FL</span>
+          <BrandMark />
           <strong>Fight List</strong>
         </Link>
         <nav aria-label="Primary navigation">
