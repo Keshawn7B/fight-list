@@ -180,7 +180,6 @@ export function EventDetail({
 
         <section className="detail-facts" aria-label="Event details">
           <article>
-            <span className="fact-number">01</span>
             <div>
               <small>{event.mainCardAt ? "Opening bell" : "Event starts"}</small>
               <strong><LocalTime iso={event.startsAt} /></strong>
@@ -190,7 +189,6 @@ export function EventDetail({
             </div>
           </article>
           <article>
-            <span className="fact-number">02</span>
             <div>
               <small>Venue</small>
               <strong>{event.venue}</strong>
@@ -198,7 +196,6 @@ export function EventDetail({
             </div>
           </article>
           <article>
-            <span className="fact-number">03</span>
             <div>
               <small>Watch on</small>
               <strong>{event.watch.provider}</strong>
@@ -231,8 +228,8 @@ export function EventDetail({
               <h2>The card.</h2>
             </div>
             <p>
-              {fullCard.length.toString().padStart(2, "0")} listed bouts
-              <span>Card order can change</span>
+              Here&apos;s what has been announced.
+              <span>Card order can change before fight night.</span>
             </p>
           </div>
 

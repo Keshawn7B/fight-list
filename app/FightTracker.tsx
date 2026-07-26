@@ -286,24 +286,25 @@ export function FightTracker() {
           <div className="hero-copy">
             <p className="eyebrow">
               <span aria-hidden="true" />
-              All fights / one list
+              A simple fight-night guide
             </p>
             <h1>
-              Fight night.
+              Find the fight.
               <br />
-              <em>No excuses.</em>
+              <em>Know where to watch.</em>
             </h1>
             <p className="hero-description">
-              Upcoming MMA, boxing, Muay Thai, and bare-knuckle cards with
-              local start times and the official place to watch.
+              We keep upcoming MMA, boxing, Muay Thai, and bare-knuckle cards
+              in one place, show them in your time zone, and point you to the
+              official broadcast.
             </p>
             <div className="hero-actions">
               <a className="primary-action" href="#schedule">
-                View fight cards <span aria-hidden="true">↓</span>
+                See what&apos;s coming <span aria-hidden="true">↓</span>
               </a>
               <p>
-                <strong>Free tracker. No account.</strong>
-                <span>Some broadcasts may cost extra.</span>
+                <strong>No sign-up. Free to use.</strong>
+                <span>Broadcasters still set their own prices.</span>
               </p>
             </div>
           </div>
@@ -335,27 +336,13 @@ export function FightTracker() {
             </div>
           </aside>
 
-          <div className="hero-stats" aria-label="Tracker summary">
-            <div>
-              <strong>{upcoming.length.toString().padStart(2, "0")}</strong>
-              <span>Upcoming cards</span>
-            </div>
-            <div>
-              <strong>04</strong>
-              <span>Combat sports</span>
-            </div>
-            <div>
-              <strong>100%</strong>
-              <span>Official watch links</span>
-            </div>
-          </div>
         </section>
 
         <section className="schedule-section" id="schedule">
           <div className="schedule-heading">
             <div>
               <p className="section-kicker">Upcoming events</p>
-              <h2>Choose your fight night.</h2>
+              <h2>What&apos;s on next.</h2>
             </div>
             <p>
               Times shown in <strong>{timezone.replaceAll("_", " ")}</strong>.
@@ -451,36 +438,27 @@ export function FightTracker() {
           )}
         </section>
 
-        <section className="free-section" id="about">
+        <section className="human-note" id="about">
           <div>
-            <p className="section-kicker">Built for fight fans</p>
-            <h2>Every card. Every time. One place.</h2>
+            <p className="section-kicker">Why Fight List exists</p>
+            <h2>Fight night shouldn&apos;t take six tabs to figure out.</h2>
           </div>
-          <div className="free-points">
-            <article>
-              <span>01</span>
-              <h3>Open schedule</h3>
-              <p>
-                The event list is a plain code file, so anyone can correct or
-                add a card through GitHub.
-              </p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Your time zone</h3>
-              <p>
-                Every start time converts in your browser. No profile or
-                location tracking required.
-              </p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Official links</h3>
-              <p>
-                Watch buttons go to the promotion or licensed broadcaster—never
-                sketchy stream mirrors.
-              </p>
-            </article>
+          <div className="human-note-copy">
+            <p>
+              Start times convert on your device, watch buttons go to official
+              broadcasters, and nobody asks you to make an account. That&apos;s it.
+            </p>
+            <p>
+              Cards change. If something looks wrong, the schedule is open on
+              GitHub and you can help make it better.
+            </p>
+            <a
+              href="https://github.com/Keshawn7B/fight-list"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Help improve the schedule <span aria-hidden="true">→</span>
+            </a>
           </div>
         </section>
       </main>

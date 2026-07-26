@@ -40,10 +40,10 @@ test("server-renders the Fight List product shell", async () => {
   assert.match(html, /Upcoming events/i);
   assert.match(html, /Open event/i);
   assert.match(html, /Local start/i);
-  assert.match(html, /official watch links/i);
+  assert.match(html, /official broadcast/i);
   assert.match(html, /href="\/events\/ufc-ankalaev-guskov\/?"/i);
   assert.match(html, /Fight List/);
-  assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
+  assert.doesNotMatch(html, /hero-stats|Upcoming cards|100%|codex-preview|react-loading-skeleton/i);
 });
 
 test("server-renders a dedicated event screen and visual fight card", async () => {
@@ -60,4 +60,5 @@ test("server-renders a dedicated event screen and visual fight card", async () =
   assert.match(html, /Paramount\+/i);
   assert.match(html, /Add to calendar/i);
   assert.match(html, /Verify full card on the official page/i);
+  assert.doesNotMatch(html, /fact-number|listed bouts/i);
 });
