@@ -14,6 +14,7 @@ const sportFilters: Array<typeof ALL_SPORTS | FightSport> = [
   ALL_SPORTS,
   "MMA",
   "Boxing",
+  "Kickboxing",
   "Muay Thai",
   "Bare Knuckle",
 ];
@@ -294,7 +295,7 @@ export function FightTracker() {
               <em>Know where to watch.</em>
             </h1>
             <p className="hero-description">
-              We keep upcoming MMA, boxing, Muay Thai, and bare-knuckle cards
+              We keep upcoming MMA, boxing, kickboxing, Muay Thai, and bare-knuckle cards
               in one place, show them in your time zone, and point you to the
               official broadcast.
             </p>

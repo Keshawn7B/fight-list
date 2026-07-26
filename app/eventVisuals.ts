@@ -20,6 +20,12 @@ const visuals: Record<FightSport, EventVisual> = {
     credit: "Dan Burton",
     source: "https://unsplash.com/s/photos/boxing-match",
   },
+  Kickboxing: {
+    src: "https://images.unsplash.com/photo-1525680996651-0222228be6f0?auto=format&fit=crop&q=88&w=1800",
+    alt: "Kickboxers competing in a ring",
+    credit: "Pablo Rebolledo",
+    source: "https://unsplash.com/s/photos/kickboxing",
+  },
   "Muay Thai": {
     src: "https://images.unsplash.com/photo-1525680996651-0222228be6f0?auto=format&fit=crop&q=88&w=1800",
     alt: "Muay Thai athletes competing in a ring",

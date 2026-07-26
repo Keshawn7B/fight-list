@@ -6,6 +6,11 @@ import { getEventVisual } from "../../eventVisuals";
 
 export const dynamicParams = false;
 
+const chronologicalEvents = [...fightEvents].sort(
+  (first, second) =>
+    new Date(first.startsAt).getTime() - new Date(second.startsAt).getTime(),
+);
+
 export function generateStaticParams() {
   return fightEvents.map((event) => ({ id: event.id }));
 }
@@ -37,14 +42,14 @@ export default async function EventPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const eventIndex = fightEvents.findIndex((event) => event.id === id);
+  const eventIndex = chronologicalEvents.findIndex((event) => event.id === id);
   if (eventIndex === -1) notFound();
 
   return (
     <EventDetail
-      event={fightEvents[eventIndex]}
-      previousEvent={fightEvents[eventIndex - 1] ?? null}
-      nextEvent={fightEvents[eventIndex + 1] ?? null}
+      event={chronologicalEvents[eventIndex]}
+      previousEvent={chronologicalEvents[eventIndex - 1] ?? null}
+      nextEvent={chronologicalEvents[eventIndex + 1] ?? null}
     />
   );
 }

@@ -247,7 +247,7 @@ export function EventDetail({
                     <span>{index === 0 ? "MAIN" : String(index + 1).padStart(2, "0")}</span>
                   </div>
                   <div className="bout-copy">
-                    <small>{index === 0 ? event.stakes : `${event.sport} bout`}</small>
+                    <small>{index === 0 ? event.stakes : "Announced bout"}</small>
                     {blueCorner ? (
                       <div className="bout-names">
                         <strong><i>{initials(redCorner)}</i>{redCorner}</strong>
