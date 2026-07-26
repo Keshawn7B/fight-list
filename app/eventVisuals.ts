@@ -38,6 +38,18 @@ const visuals: Record<FightSport, EventVisual> = {
     credit: "Solal Ohayon",
     source: "https://unsplash.com/s/photos/boxing-match",
   },
+  "Jiu-Jitsu": {
+    src: "https://images.unsplash.com/photo-1542937306-0a804f0ad7b7?auto=format&fit=crop&q=88&w=1800",
+    alt: "Two Brazilian jiu-jitsu athletes grappling on a mat",
+    credit: "Samuel Castro",
+    source: "https://unsplash.com/photos/two-men-perform-brazilian-jiu-jitsu-AxEagdApVXc",
+  },
+  Wrestling: {
+    src: "https://images.unsplash.com/photo-1770772670002-0f4247fd3000?auto=format&fit=crop&q=88&w=1800",
+    alt: "Wrestlers competing on a mat",
+    credit: "Oboakpeyrenyehavwo",
+    source: "https://unsplash.com/photos/wrestlers-competing-on-a-mat-during-a-match-iRgD_oHskBs",
+  },
 };
 
 export function getEventVisual(event: FightEvent) {

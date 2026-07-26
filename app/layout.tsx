@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl}/`),
   title: "Fight List — Upcoming fights",
   description:
-    "Upcoming MMA, boxing, kickboxing, Muay Thai, and bare-knuckle events with local start times and official watch links.",
+    "Upcoming MMA, boxing, kickboxing, Muay Thai, bare-knuckle, jiu-jitsu, and wrestling events with local start times and official watch links.",
   openGraph: {
     title: "Fight List — Upcoming fights",
     description:

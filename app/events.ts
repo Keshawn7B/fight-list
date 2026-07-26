@@ -3,7 +3,9 @@ export type FightSport =
   | "Boxing"
   | "Kickboxing"
   | "Muay Thai"
-  | "Bare Knuckle";
+  | "Bare Knuckle"
+  | "Jiu-Jitsu"
+  | "Wrestling";
 
 export type WatchAccess = "Free" | "Included" | "Subscription" | "PPV";
 
@@ -148,6 +150,30 @@ export const fightEvents: FightEvent[] = [
     bouts: ["Gaston “Tonga” Reyno vs Josh Krejci"],
   },
   {
+    id: "u17-wrestling-worlds-2026",
+    sport: "Wrestling",
+    promotion: "UWW",
+    eventName: "U17 World Championships",
+    fighters: ["U.S. U17 team", "International field"],
+    stakes: "Greco-Roman, women's freestyle, and men's freestyle world titles",
+    startsAt: "2026-07-27T06:30:00.000Z",
+    venue: "Baku Sports Palace",
+    location: "Baku, Azerbaijan",
+    watch: {
+      provider: "FloWrestling",
+      access: "Subscription",
+      href: "https://www.flowrestling.org/events/15687394-2026-u17-world-championships",
+      note: "Live coverage and replays; regional availability may vary",
+    },
+    detailsUrl:
+      "https://www.flowrestling.org/articles/16081156-2026-u17-us-world-championships-rosters-schedule",
+    bouts: [
+      "Greco-Roman: July 27-29",
+      "Women's freestyle divisions",
+      "Men's freestyle divisions",
+    ],
+  },
+  {
     id: "one-friday-fights-164",
     sport: "Muay Thai",
     promotion: "ONE",
@@ -187,6 +213,29 @@ export const fightEvents: FightEvent[] = [
     bouts: [
       "Dakota Ditcheva vs Denise Kielholtz",
       "More bouts on the official PFL card",
+    ],
+  },
+  {
+    id: "bjj-stars-19",
+    sport: "Jiu-Jitsu",
+    promotion: "BJJ Stars",
+    eventName: "BJJ Stars 19: World Cup",
+    fighters: ["Patricky Pitbull", "Renato Moicano"],
+    stakes: "Masters Grand Prix and professional superfights",
+    startsAt: "2026-07-31T23:40:00.000Z",
+    venue: "Vibra S\u00e3o Paulo",
+    location: "S\u00e3o Paulo, Brazil",
+    watch: {
+      provider: "FloGrappling",
+      access: "Subscription",
+      href: "https://www.flograppling.com/events/15906495-2026-bjj-stars-19",
+      note: "Live stream and replay with a FloGrappling subscription",
+    },
+    detailsUrl: "https://bjjstars.tv/",
+    bouts: [
+      "Patricky Pitbull vs Renato Moicano",
+      "James Ortiz vs Nicholas Vieira",
+      "Masters Grand Prix bracket",
     ],
   },
   {

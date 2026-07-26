@@ -41,6 +41,10 @@ test("server-renders the Fight List product shell", async () => {
   assert.match(html, /Details/i);
   assert.match(html, /Local start/i);
   assert.match(html, /official watch links/i);
+  assert.match(html, /Jiu-Jitsu/i);
+  assert.match(html, /Wrestling/i);
+  assert.match(html, /BJJ Stars 19/i);
+  assert.match(html, /U17 World Championships/i);
   assert.match(html, /href="\/events\/ufc-ankalaev-guskov\/?"/i);
   assert.match(html, /Fight List/);
   assert.doesNotMatch(html, /hero-actions|next-card|human-note|hero-stats|Upcoming cards|100%|codex-preview|react-loading-skeleton/i);

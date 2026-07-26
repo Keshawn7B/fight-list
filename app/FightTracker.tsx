@@ -18,6 +18,8 @@ const sportFilters: Array<typeof ALL_SPORTS | FightSport> = [
   "Kickboxing",
   "Muay Thai",
   "Bare Knuckle",
+  "Jiu-Jitsu",
+  "Wrestling",
 ];
 
 const statusFor = (event: FightEvent, now: number) => {
@@ -155,6 +157,8 @@ export function FightTracker() {
       const matchesFree = !freeOnly || event.watch.access === "Free";
       const matchesSaved = !savedOnly || savedIds.includes(event.id);
       const haystack = [
+        event.sport,
+        event.sport === "Jiu-Jitsu" ? "jiujitsu jujitsu bjj grappling" : "",
         event.promotion,
         event.eventName,
         ...event.fighters,
