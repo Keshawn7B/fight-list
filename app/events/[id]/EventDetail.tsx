@@ -140,13 +140,10 @@ export function EventDetail({
       <header className="detail-header">
         <Link className="brand" href="/" aria-label="Fight List home">
           <span className="brand-mark" aria-hidden="true">FL</span>
-          <span>
-            <strong>Fight List</strong>
-            <small>Combat sports schedule</small>
-          </span>
+          <strong>Fight List</strong>
         </Link>
         <Link className="detail-back" href="/#schedule">
-          <span aria-hidden="true">←</span> All events
+          &larr; All events
         </Link>
       </header>
 
@@ -154,20 +151,19 @@ export function EventDetail({
         <section className="detail-hero">
           <div className="detail-hero-photo">
             <img src={visual.src} alt={visual.alt} />
-            <span className="photo-wash" aria-hidden="true" />
             <a href={visual.source} target="_blank" rel="noreferrer">
-              Sport photography: {visual.credit} / Unsplash ↗
+              Sport photography: {visual.credit} / Unsplash
             </a>
           </div>
 
           <div className="detail-hero-copy">
             <div className="detail-labels">
               <span className="sport-label">{event.sport}</span>
+              <span className="promotion-label">{event.promotion}</span>
               <span className={`access-badge access-${event.watch.access.toLowerCase()}`}>
                 {event.watch.access}
               </span>
             </div>
-            <p>{event.promotion} presents</p>
             <h1>{event.eventName}</h1>
             <div className="detail-matchup">
               <strong>{event.fighters[0]}</strong>
@@ -180,36 +176,28 @@ export function EventDetail({
 
         <section className="detail-facts" aria-label="Event details">
           <article>
-            <div>
-              <small>{event.mainCardAt ? "Opening bell" : "Event starts"}</small>
-              <strong><LocalTime iso={event.startsAt} /></strong>
-              {event.mainCardAt && (
-                <p>Main card: <LocalTime iso={event.mainCardAt} /></p>
-              )}
-            </div>
+            <small>{event.mainCardAt ? "Opening bell" : "Event starts"}</small>
+            <strong><LocalTime iso={event.startsAt} /></strong>
+            {event.mainCardAt && <p>Main card: <LocalTime iso={event.mainCardAt} /></p>}
           </article>
           <article>
-            <div>
-              <small>Venue</small>
-              <strong>{event.venue}</strong>
-              <p>{event.location}</p>
-            </div>
+            <small>Venue</small>
+            <strong>{event.venue}</strong>
+            <p>{event.location}</p>
           </article>
           <article>
-            <div>
-              <small>Watch on</small>
-              <strong>{event.watch.provider}</strong>
-              <p>{event.watch.note}</p>
-            </div>
+            <small>Watch</small>
+            <strong>{event.watch.provider}</strong>
+            <p>{event.watch.note}</p>
           </article>
         </section>
 
         <section className="detail-actions" aria-label="Event actions">
           <a className="watch-action" href={event.watch.href} target="_blank" rel="noreferrer">
-            Watch on {event.watch.provider} <span aria-hidden="true">↗</span>
+            Watch on {event.watch.provider}
           </a>
           <button type="button" onClick={() => downloadCalendar(event)}>
-            <span aria-hidden="true">＋</span> Add to calendar
+            Add to calendar
           </button>
           <button
             className={saved ? "is-saved" : ""}
@@ -217,35 +205,27 @@ export function EventDetail({
             onClick={toggleSaved}
             aria-pressed={saved}
           >
-            <span aria-hidden="true">{saved ? "★" : "☆"}</span> {saved ? "Saved" : "Save event"}
+            {saved ? "Saved" : "Save event"}
           </button>
         </section>
 
         <section className="fight-card-section">
           <div className="fight-card-heading">
             <div>
-              <p className="section-kicker">Announced fight list</p>
-              <h2>The card.</h2>
+              <p className="eyebrow">Announced fight list</p>
+              <h2>Fight card</h2>
             </div>
-            <p>
-              Here&apos;s what has been announced.
-              <span>Card order can change before fight night.</span>
-            </p>
+            <p>Card order can change before fight night.</p>
           </div>
 
-          <div className="visual-fight-list">
+          <ol className="fight-list">
             {fullCard.map((bout, index) => {
               const [redCorner, blueCorner] = splitBout(bout);
               return (
-                <article className={index === 0 ? "main-bout" : ""} key={`${bout}-${index}`}>
-                  <div className="bout-photo">
-                    <img
-                      src={`${visual.src}&h=420`}
-                      alt=""
-                      style={{ objectPosition: `${30 + (index % 3) * 20}% center` }}
-                    />
-                    <span>{index === 0 ? "MAIN" : String(index + 1).padStart(2, "0")}</span>
-                  </div>
+                <li className={index === 0 ? "main-bout" : ""} key={`${bout}-${index}`}>
+                  <span className="bout-order">
+                    {index === 0 ? "Main" : String(index + 1).padStart(2, "0")}
+                  </span>
                   <div className="bout-copy">
                     <small>{index === 0 ? event.stakes : "Announced bout"}</small>
                     {blueCorner ? (
@@ -256,20 +236,19 @@ export function EventDetail({
                       </div>
                     ) : (
                       <div className="bout-update">
-                        <i aria-hidden="true">!</i>
                         <strong>{redCorner}</strong>
                       </div>
                     )}
                   </div>
-                </article>
+                </li>
               );
             })}
-          </div>
+          </ol>
 
           <div className="card-source">
-            <p>Fight card details are taken from the official event listing.</p>
+            <p>Fight card details come from the official event listing.</p>
             <a href={event.detailsUrl} target="_blank" rel="noreferrer">
-              Verify full card on the official page ↗
+              Verify full card on the official page
             </a>
           </div>
         </section>
@@ -277,13 +256,13 @@ export function EventDetail({
         <nav className="event-pagination" aria-label="Browse events">
           {previousEvent ? (
             <Link href={`/events/${previousEvent.id}/`}>
-              <span>← Previous event</span>
+              <span>&larr; Previous</span>
               <strong>{previousEvent.eventName}</strong>
             </Link>
           ) : <span />}
           {nextEvent ? (
             <Link href={`/events/${nextEvent.id}/`}>
-              <span>Next event →</span>
+              <span>Next &rarr;</span>
               <strong>{nextEvent.eventName}</strong>
             </Link>
           ) : <span />}
@@ -291,8 +270,8 @@ export function EventDetail({
       </main>
 
       <footer className="detail-footer">
-        <p>Illustrative sport photography is not presented as imagery of the named fighters.</p>
-        <Link href="/#schedule">Return to the full schedule →</Link>
+        <p>The header uses illustrative sport photography, not photos of the named fighters.</p>
+        <Link href="/#schedule">All events</Link>
       </footer>
     </div>
   );
