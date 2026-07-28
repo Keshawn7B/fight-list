@@ -30,28 +30,58 @@ async function render(pathname = "/") {
   return response;
 }
 
-test("server-renders the Fight List product shell", async () => {
+test("server-renders the multi-page Fight List home", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
   assert.match(html, /<title>Fight List — Upcoming fights<\/title>/i);
-  assert.match(html, /Upcoming fights/i);
-  assert.match(html, /Combat sports schedule/i);
-  assert.match(html, /Details/i);
-  assert.match(html, /Local start/i);
-  assert.match(html, /official watch links/i);
-  assert.match(html, /Jiu-Jitsu/i);
-  assert.match(html, /Wrestling/i);
-  assert.match(html, /BJJ Stars 19/i);
-  assert.match(html, /U17 World Championships/i);
+  assert.match(html, /Know what.+fighting next/i);
+  assert.match(html, /Next up/i);
+  assert.match(html, /Coming soon/i);
+  assert.match(html, /Browse schedule/i);
+  assert.match(html, /href="\/schedule\/?"/i);
+  assert.match(html, /href="\/saved\/?"/i);
+  assert.match(html, /href="\/settings\/?"/i);
   assert.match(html, /href="\/events\/ufc-ankalaev-guskov\/?"/i);
   assert.match(html, /Fight List/);
   assert.match(html, /rel="manifest"/i);
   assert.match(html, /manifest\.webmanifest/i);
   assert.match(html, /mobile-web-app-capable/i);
-  assert.doesNotMatch(html, /hero-actions|next-card|human-note|hero-stats|Upcoming cards|100%|codex-preview|react-loading-skeleton/i);
+  assert.doesNotMatch(html, /filter-panel|hero-stats|100%|codex-preview|react-loading-skeleton/i);
+});
+
+test("server-renders the full searchable schedule on its own page", async () => {
+  const response = await render("/schedule/");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Full event calendar/i);
+  assert.match(html, /Fighter, event, city, or promotion/i);
+  assert.match(html, /Free to watch/i);
+  assert.match(html, /Jiu-Jitsu/i);
+  assert.match(html, /Wrestling/i);
+  assert.match(html, /BJJ Stars 19/i);
+  assert.match(html, /U17 World Championships/i);
+  assert.match(html, /aria-label="Save /i);
+});
+
+test("server-renders dedicated saved and settings pages", async () => {
+  const savedResponse = await render("/saved/");
+  assert.equal(savedResponse.status, 200);
+  const savedHtml = await savedResponse.text();
+  assert.match(savedHtml, /Saved fights/i);
+  assert.match(savedHtml, /No saved fights yet/i);
+
+  const settingsResponse = await render("/settings/");
+  assert.equal(settingsResponse.status, 200);
+  const settingsHtml = await settingsResponse.text();
+  assert.match(settingsHtml, /Time display/i);
+  assert.match(settingsHtml, /Schedule defaults/i);
+  assert.match(settingsHtml, /Android app/i);
+  assert.match(settingsHtml, /12-hour/i);
+  assert.match(settingsHtml, /24-hour/i);
 });
 
 test("server-renders a dedicated event screen and straightforward fight card", async () => {
@@ -67,6 +97,8 @@ test("server-renders a dedicated event screen and straightforward fight card", a
   assert.match(html, /Watch on/i);
   assert.match(html, /Paramount\+/i);
   assert.match(html, /Add to calendar/i);
+  assert.match(html, /Share event/i);
+  assert.match(html, /Back to schedule/i);
   assert.match(html, /Verify full card on the official page/i);
   assert.doesNotMatch(html, /bout-photo|visual-fight-list|fact-number|listed bouts/i);
 });
@@ -83,5 +115,9 @@ test("ships an installable Android web app manifest", async () => {
   assert.deepEqual(
     manifest.icons.map(({ sizes }) => sizes),
     ["192x192", "512x512"],
+  );
+  assert.deepEqual(
+    manifest.shortcuts.map(({ short_name }) => short_name),
+    ["Schedule", "Saved"],
   );
 });

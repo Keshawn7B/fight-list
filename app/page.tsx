@@ -1,5 +1,5 @@
-import { FightTracker } from "./FightTracker";
+import { HomeScreen } from "./HomeScreen";
 
 export default function Home() {
-  return <FightTracker />;
+  return <HomeScreen />;
 }

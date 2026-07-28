@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { AppFooter, AppHeader, BottomNavigation } from "./AppChrome";
 import { PwaRegister } from "./PwaRegister";
 import "./globals.css";
 
@@ -59,7 +60,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <a className="skip-link" href="#main-content">Skip to main content</a>
+        <AppHeader />
         {children}
+        <AppFooter />
+        <BottomNavigation />
         <PwaRegister />
       </body>
     </html>

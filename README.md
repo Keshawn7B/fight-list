@@ -16,9 +16,12 @@ clearly labeled as free, included, subscription, or pay-per-view.
 
 ## Features
 
+- Separate Home, Schedule, Saved, and Settings screens
 - Automatic browser-local time conversion
-- Sport, search, saved-card, and free-to-watch filters
+- Sport, search, and free-to-watch schedule filters
 - Device-local saved events
+- Persistent time-format, favorite-sport, and free-event preferences
+- Quick-save controls, day grouping, and event sharing
 - Downloadable `.ics` calendar events
 - Responsive, keyboard-friendly interface
 - Installable Android app with offline access to previously opened pages

@@ -10,6 +10,18 @@
   "theme_color": "#0a0a0a",
   "orientation": "any",
   "categories": ["sports", "entertainment"],
+  "shortcuts": [
+    {
+      "name": "Full schedule",
+      "short_name": "Schedule",
+      "url": "./schedule/"
+    },
+    {
+      "name": "Saved fights",
+      "short_name": "Saved",
+      "url": "./saved/"
+    }
+  ],
   "icons": [
     {
       "src": "./icons/fight-list-192.png",

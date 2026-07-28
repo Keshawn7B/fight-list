@@ -4,7 +4,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { BrandMark } from "../../BrandMark";
+import { hour12For, usePreferences, useSavedEvents } from "../../appState";
 import type { FightEvent } from "../../events";
 import { getEventVisual } from "../../eventVisuals";
 
@@ -46,7 +46,7 @@ function downloadCalendar(event: FightEvent) {
   URL.revokeObjectURL(href);
 }
 
-function LocalTime({ iso }: { iso: string }) {
+function LocalTime({ iso, timeFormat }: { iso: string; timeFormat: "auto" | "12" | "24" }) {
   const [label, setLabel] = useState("Converting to your time…");
 
   useEffect(() => {
@@ -58,12 +58,13 @@ function LocalTime({ iso }: { iso: string }) {
           day: "numeric",
           hour: "numeric",
           minute: "2-digit",
+          hour12: hour12For(timeFormat),
           timeZoneName: "short",
         }).format(new Date(iso)),
       );
     }, 0);
     return () => window.clearTimeout(timer);
-  }, [iso]);
+  }, [iso, timeFormat]);
 
   return <>{label}</>;
 }
@@ -94,21 +95,10 @@ export function EventDetail({
   nextEvent: FightEvent | null;
 }) {
   const visual = getEventVisual(event);
-  const [saved, setSaved] = useState(false);
-
-  useEffect(() => {
-    const timer = window.setTimeout(() => {
-      try {
-        const ids = JSON.parse(
-          window.localStorage.getItem("fight-list-saved") ?? "[]",
-        ) as string[];
-        setSaved(ids.includes(event.id));
-      } catch {
-        window.localStorage.removeItem("fight-list-saved");
-      }
-    }, 0);
-    return () => window.clearTimeout(timer);
-  }, [event.id]);
+  const { savedIds, toggleSaved } = useSavedEvents();
+  const { preferences } = usePreferences();
+  const [shareLabel, setShareLabel] = useState("Share event");
+  const saved = savedIds.includes(event.id);
 
   const fullCard = useMemo(() => {
     const mainEvent = `${event.fighters[0]} vs ${event.fighters[1]}`;
@@ -120,35 +110,30 @@ export function EventDetail({
     ];
   }, [event]);
 
-  const toggleSaved = () => {
-    let ids: string[] = [];
+  const shareEvent = async () => {
+    const shareData = {
+      title: event.eventName,
+      text: `${event.fighters.join(" vs ")} — ${event.eventName}`,
+      url: window.location.href,
+    };
     try {
-      ids = JSON.parse(
-        window.localStorage.getItem("fight-list-saved") ?? "[]",
-      ) as string[];
+      if (navigator.share) {
+        await navigator.share(shareData);
+        return;
+      }
+      await navigator.clipboard.writeText(shareData.url);
+      setShareLabel("Link copied");
     } catch {
-      ids = [];
+      setShareLabel("Share event");
     }
-    const next = ids.includes(event.id)
-      ? ids.filter((id) => id !== event.id)
-      : [...ids, event.id];
-    window.localStorage.setItem("fight-list-saved", JSON.stringify(next));
-    setSaved(next.includes(event.id));
   };
 
   return (
     <div className="detail-page">
-      <header className="detail-header">
-        <Link className="brand" href="/" aria-label="Fight List home">
-          <BrandMark />
-          <strong>Fight List</strong>
+      <main className="detail-main" id="main-content">
+        <Link className="detail-back-link" href="/schedule/">
+          &larr; Back to schedule
         </Link>
-        <Link className="detail-back" href="/#schedule">
-          &larr; All events
-        </Link>
-      </header>
-
-      <main className="detail-main">
         <section className="detail-hero">
           <div className="detail-hero-photo">
             <img src={visual.src} alt={visual.alt} />
@@ -178,8 +163,8 @@ export function EventDetail({
         <section className="detail-facts" aria-label="Event details">
           <article>
             <small>{event.mainCardAt ? "Opening bell" : "Event starts"}</small>
-            <strong><LocalTime iso={event.startsAt} /></strong>
-            {event.mainCardAt && <p>Main card: <LocalTime iso={event.mainCardAt} /></p>}
+            <strong><LocalTime iso={event.startsAt} timeFormat={preferences.timeFormat} /></strong>
+            {event.mainCardAt && <p>Main card: <LocalTime iso={event.mainCardAt} timeFormat={preferences.timeFormat} /></p>}
           </article>
           <article>
             <small>Venue</small>
@@ -200,10 +185,13 @@ export function EventDetail({
           <button type="button" onClick={() => downloadCalendar(event)}>
             Add to calendar
           </button>
+          <button type="button" onClick={shareEvent}>
+            {shareLabel}
+          </button>
           <button
             className={saved ? "is-saved" : ""}
             type="button"
-            onClick={toggleSaved}
+            onClick={() => toggleSaved(event.id)}
             aria-pressed={saved}
           >
             {saved ? "Saved" : "Save event"}
@@ -269,11 +257,6 @@ export function EventDetail({
           ) : <span />}
         </nav>
       </main>
-
-      <footer className="detail-footer">
-        <p>The header uses illustrative sport photography, not photos of the named fighters.</p>
-        <Link href="/#schedule">All events</Link>
-      </footer>
     </div>
   );
 }
