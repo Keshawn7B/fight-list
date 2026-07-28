@@ -38,8 +38,8 @@ test("server-renders the multi-page Fight List home", async () => {
   const html = await response.text();
   assert.match(html, /<title>Fight List — Upcoming fights<\/title>/i);
   assert.match(html, /Know what.+fighting next/i);
-  assert.match(html, /Next up/i);
-  assert.match(html, /Coming soon/i);
+  assert.match(html, /Next 5 fights/i);
+  assert.equal((html.match(/class="event-card"/g) ?? []).length, 5);
   assert.match(html, /Browse schedule/i);
   assert.match(html, /href="\/schedule\/?"/i);
   assert.match(html, /href="\/saved\/?"/i);
@@ -49,7 +49,7 @@ test("server-renders the multi-page Fight List home", async () => {
   assert.match(html, /rel="manifest"/i);
   assert.match(html, /manifest\.webmanifest/i);
   assert.match(html, /mobile-web-app-capable/i);
-  assert.doesNotMatch(html, /filter-panel|hero-stats|100%|codex-preview|react-loading-skeleton/i);
+  assert.doesNotMatch(html, /After that|Coming soon|filter-panel|hero-stats|100%|codex-preview|react-loading-skeleton/i);
 });
 
 test("server-renders the full searchable schedule on its own page", async () => {

@@ -598,6 +598,20 @@ select:focus-visible {
   font-size: 13px;
 }
 
+.section-heading-links {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.section-heading-links a {
+  color: var(--red-dark);
+  font-weight: 700;
+}
+
 .section-heading-row > a {
   min-height: 44px;
   display: inline-flex;
@@ -1411,6 +1425,10 @@ select:focus-visible {
     min-height: 0;
     flex-direction: column;
     gap: 6px;
+  }
+
+  .section-heading-links {
+    align-items: flex-start;
   }
 
   .section-heading-row h2,

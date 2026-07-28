@@ -10,8 +10,7 @@ export function HomeScreen() {
   const { savedIds, toggleSaved } = useSavedEvents();
   const { preferences } = usePreferences();
   const upcoming = upcomingEvents(fightEvents, now);
-  const nextEvent = upcoming.slice(0, 1);
-  const afterNext = upcoming.slice(1, 4);
+  const nextFive = upcoming.slice(0, 5);
 
   return (
     <main className="page-shell app-main home-page" id="main-content">
@@ -33,34 +32,19 @@ export function HomeScreen() {
         </div>
       </section>
 
-      <section className="home-section" aria-labelledby="next-up-heading">
+      <section className="home-section" aria-labelledby="next-five-heading">
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">Your time zone</p>
-            <h2 id="next-up-heading">Next up</h2>
+            <h2 id="next-five-heading">Next 5 fights</h2>
           </div>
-          <span>{timezone.replaceAll("_", " ")}</span>
+          <div className="section-heading-links">
+            <span>{timezone.replaceAll("_", " ")}</span>
+            <Link href="/schedule/">Full schedule &rarr;</Link>
+          </div>
         </div>
         <EventList
-          events={nextEvent}
-          mounted={mounted}
-          now={now}
-          timeFormat={preferences.timeFormat}
-          savedIds={savedIds}
-          onToggleSaved={toggleSaved}
-        />
-      </section>
-
-      <section className="home-section" aria-labelledby="coming-soon-heading">
-        <div className="section-heading-row">
-          <div>
-            <p className="eyebrow">After that</p>
-            <h2 id="coming-soon-heading">Coming soon</h2>
-          </div>
-          <Link href="/schedule/">See full schedule &rarr;</Link>
-        </div>
-        <EventList
-          events={afterNext}
+          events={nextFive}
           mounted={mounted}
           now={now}
           timeFormat={preferences.timeFormat}
