@@ -1,3 +1,5 @@
+import automaticEventData from "./generated-events.json" with { type: "json" };
+
 export type FightSport =
   | "MMA"
   | "Boxing"
@@ -11,6 +13,7 @@ export type WatchAccess = "Free" | "Included" | "Subscription" | "PPV";
 
 export type FightEvent = {
   id: string;
+  source?: string;
   sport: FightSport;
   promotion: string;
   eventName: string;
@@ -30,9 +33,9 @@ export type FightEvent = {
   bouts: string[];
 };
 
-export const verifiedDate = "July 28, 2026";
+export const verifiedDate = automaticEventData.verifiedDate || "July 28, 2026";
 
-export const fightEvents: FightEvent[] = [
+const curatedFightEvents: FightEvent[] = [
   {
     id: "one-friday-fights-163",
     sport: "Muay Thai",
@@ -1007,4 +1010,75 @@ export const fightEvents: FightEvent[] = [
     detailsUrl: "https://www.bkfc.com/events",
     bouts: ["Fights to be announced by BKFC"],
   },
+];
+
+const automaticFightEvents = automaticEventData.events as FightEvent[];
+
+const normalizedWords = (value: string) => value
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, " ")
+  .trim()
+  .split(" ")
+  .filter((word) => word.length > 2 && ![
+    "the", "fight", "night", "card", "versus", "ufc", "bjj", "dwcs", "one", "pfl", "bkfc", "raf", "mma",
+  ].includes(word));
+
+const sharesIdentity = (curated: FightEvent, automatic: FightEvent) => {
+  if (curated.id === automatic.id) return true;
+  if (curated.promotion.toLowerCase() !== automatic.promotion.toLowerCase()) return false;
+
+  const timeDifference = Math.abs(Date.parse(curated.startsAt) - Date.parse(automatic.startsAt));
+  if (timeDifference > 36 * 60 * 60 * 1000) return false;
+  if (curated.detailsUrl === automatic.detailsUrl) return true;
+
+  const curatedWords = new Set(normalizedWords(`${curated.eventName} ${curated.fighters.join(" ")}`));
+  const automaticWords = normalizedWords(`${automatic.eventName} ${automatic.fighters.join(" ")}`);
+  return automaticWords.some((word) => curatedWords.has(word));
+};
+
+const hasPlaceholderBouts = (event: FightEvent) => (
+  /pending|announced|official|matchups on|to be announced/i.test(event.bouts[0] ?? "")
+);
+
+const mergedCuratedEvents = curatedFightEvents.map((curated) => {
+  const automatic = automaticFightEvents.find((candidate) => sharesIdentity(curated, candidate));
+  if (!automatic) return curated;
+
+  const isGenericVenue = /^(venue|location) tba$/i.test(automatic.venue);
+  const isGenericLocation = /^(venue|location) tba$/i.test(automatic.location);
+  const automaticHasBetterCard = (
+    !hasPlaceholderBouts(automatic)
+    && (hasPlaceholderBouts(curated) || automatic.bouts.length > curated.bouts.length)
+  );
+  const automaticHasBetterFighters = (
+    automatic.fighters[0] !== "Card"
+    && (
+      curated.fighters[0] === "Card"
+      || automatic.fighters.join(" ").length > curated.fighters.join(" ").length
+    )
+  );
+  return {
+    ...curated,
+    ...automatic,
+    id: curated.id,
+    sport: curated.sport,
+    stakes: /^Official /i.test(automatic.stakes) ? curated.stakes : automatic.stakes,
+    startsAt: automatic.source === "UFC" && curated.mainCardAt ? curated.startsAt : automatic.startsAt,
+    mainCardAt: automatic.source === "UFC" && curated.mainCardAt ? automatic.startsAt : automatic.mainCardAt ?? curated.mainCardAt,
+    venue: isGenericVenue ? curated.venue : automatic.venue,
+    location: isGenericLocation ? curated.location : automatic.location,
+    fighters: automaticHasBetterFighters ? automatic.fighters : curated.fighters,
+    bouts: automaticHasBetterCard ? automatic.bouts : curated.bouts,
+  };
+});
+
+const claimedAutomaticIds = new Set(
+  automaticFightEvents
+    .filter((automatic) => curatedFightEvents.some((curated) => sharesIdentity(curated, automatic)))
+    .map((event) => event.id),
+);
+
+export const fightEvents: FightEvent[] = [
+  ...mergedCuratedEvents,
+  ...automaticFightEvents.filter((event) => !claimedAutomaticIds.has(event.id)),
 ];

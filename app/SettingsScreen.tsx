@@ -109,6 +109,19 @@ export function SettingsScreen() {
         </div>
       </section>
 
+      <section className="settings-group" aria-labelledby="update-setting">
+        <div className="settings-copy">
+          <h2 id="update-setting">Schedule updates</h2>
+          <p>
+            Automatic. Fight List checks official promotion schedules every six hours
+            and publishes only validated changes.
+          </p>
+        </div>
+        <div className="settings-actions">
+          <p>If a source is temporarily unavailable, the last working schedule stays in place.</p>
+        </div>
+      </section>
+
       <section className="settings-group" aria-labelledby="data-setting">
         <div className="settings-copy">
           <h2 id="data-setting">Saved data</h2>

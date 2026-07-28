@@ -68,8 +68,13 @@ test("server-renders the full searchable schedule on its own page", async () => 
   assert.match(html, /BJJ Stars 19/i);
   assert.match(html, /U17 World Championships/i);
   assert.match(html, /Dana White.+Contender Series/i);
+  assert.match(html, /Season 10, Week 10/i);
   assert.match(html, /UFC BJJ 10/i);
   assert.match(html, /RAF12.+Dvalishvili vs Cejudo 2/i);
+  assert.match(html, /ONE Friday Fights 165/i);
+  assert.match(html, /ONE SAMURAI 2/i);
+  assert.match(html, /BKFC Belgrade/i);
+  assert.match(html, /BKFC 95 Newark/i);
   assert.match(html, /aria-label="Save /i);
 });
 
@@ -81,6 +86,10 @@ test("tracks DWCS and UFC BJJ with official event details", async () => {
   assert.match(dwcsHtml, /Season 10/i);
   assert.match(dwcsHtml, /Five bouts scheduled/i);
   assert.match(dwcsHtml, /Paramount\+/i);
+
+  const weekTwoResponse = await render("/events/auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-19/");
+  assert.equal(weekTwoResponse.status, 200);
+  assert.match(await weekTwoResponse.text(), /Season 10, Week 2/i);
 
   const bjjResponse = await render("/events/ufc-bjj-10/");
   assert.equal(bjjResponse.status, 200);
@@ -120,6 +129,8 @@ test("server-renders dedicated saved and settings pages", async () => {
   assert.match(settingsHtml, /Time display/i);
   assert.match(settingsHtml, /Schedule defaults/i);
   assert.match(settingsHtml, /Android app/i);
+  assert.match(settingsHtml, /Schedule updates/i);
+  assert.match(settingsHtml, /every six hours/i);
   assert.match(settingsHtml, /12-hour/i);
   assert.match(settingsHtml, /24-hour/i);
 });

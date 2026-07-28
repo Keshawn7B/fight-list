@@ -1,0 +1,883 @@
+{
+  "verifiedDate": "July 28, 2026",
+  "events": [
+    {
+      "id": "auto-one-one-friday-fights-164-2026-07-31",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 164 & The Inner Circle 24",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-07-31T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-164/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-pfl-pfl-ny-2026-2026-07-31",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL New York",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-07-31T20:00:00.000Z",
+      "mainCardAt": "2026-07-31T23:00:00.000Z",
+      "venue": "UBS Arena",
+      "location": "Belmont Park, New York",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pfl-ny-2026",
+      "bouts": [
+        "Full matchups on the official PFL card"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-august-01-2026-2026-08-01",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Medic vs Rodriguez",
+      "fighters": [
+        "Medic",
+        "Rodriguez"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-08-01T17:00:00.000Z",
+      "venue": "Belgrade Arena",
+      "location": "BG, Serbia",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-01-2026",
+      "bouts": [
+        "Medic vs Rodriguez"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-fight-night-newcastle-garside-vs-taylor-2026-08-01",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Fight Night Newcastle Garside Vs Taylor",
+      "fighters": [
+        "Garside",
+        "Taylor"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-08-01T18:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-newcastle-garside-vs-taylor",
+      "bouts": [
+        "Garside vs Taylor"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-165-2026-08-07",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 165 & The Inner Circle 25",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-08-07T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-165/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-pfl-pfl-charlotte-2026-08-07",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL Charlotte",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-08-07T23:00:00.000Z",
+      "mainCardAt": "2026-08-08T02:00:00.000Z",
+      "venue": "Bojangles Coliseum",
+      "location": "Charlotte, North Carolina",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pfl-charlotte",
+      "bouts": [
+        "Full matchups on the official PFL card"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-august-08-2026-2026-08-09",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Gamrot vs Salkilld",
+      "fighters": [
+        "Gamrot",
+        "Salkilld"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-08-09T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, NV, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-08-2026",
+      "bouts": [
+        "Gamrot vs Salkilld"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-fight-night-sturgis-2026-08-09",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Fight Night Sturgis Acheson Vs Jones",
+      "fighters": [
+        "Acheson",
+        "Jones"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-08-09T01:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-sturgis",
+      "bouts": [
+        "Acheson vs Jones"
+      ]
+    },
+    {
+      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-12",
+      "source": "DWCS",
+      "sport": "MMA",
+      "promotion": "DWCS",
+      "eventName": "Dana White's Contender Series: Season 10, Week 1",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Five UFC contract fights",
+      "startsAt": "2026-08-12T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.paramountplus.com/",
+        "note": "Season 10 streams exclusively on Paramount+"
+      },
+      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "bouts": [
+        "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-330-2026-08-16",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC 330: Makhachev vs Machado Garry",
+      "fighters": [
+        "Makhachev",
+        "Machado Garry"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-08-16T01:00:00.000Z",
+      "venue": "Xfinity Mobile Arena",
+      "location": "Philadelphia, PA, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-330",
+      "bouts": [
+        "Makhachev vs Machado Garry"
+      ]
+    },
+    {
+      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-19",
+      "source": "DWCS",
+      "sport": "MMA",
+      "promotion": "DWCS",
+      "eventName": "Dana White's Contender Series: Season 10, Week 2",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Five UFC contract fights",
+      "startsAt": "2026-08-19T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.paramountplus.com/",
+        "note": "Season 10 streams exclusively on Paramount+"
+      },
+      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "bouts": [
+        "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-ufc-bjj-ufc-bjj-10-tackett-vs-gracie-fight-card-2026-08-21",
+      "source": "UFC BJJ",
+      "sport": "Jiu-Jitsu",
+      "promotion": "UFC BJJ",
+      "eventName": "UFC BJJ 10: Tackett vs Gracie",
+      "fighters": [
+        "Tackett",
+        "Gracie"
+      ],
+      "stakes": "Official UFC BJJ card",
+      "startsAt": "2026-08-21T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "UFC BJJ YouTube",
+        "access": "Free",
+        "href": "https://www.youtube.com/@ufcbjj",
+        "note": "Live and free on the official UFC BJJ YouTube channel"
+      },
+      "detailsUrl": "https://www.ufc.com/news/ufc-bjj-10-tackett-vs-gracie-fight-card",
+      "bouts": [
+        "Tackett vs Gracie"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-fight-night-mohegan-sun-2-2026-08-21",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Fight Night Mohegan Sun Henry Vs Trinidad",
+      "fighters": [
+        "Henry",
+        "Trinidad"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-08-21T22:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-mohegan-sun-2",
+      "bouts": [
+        "Henry vs Trinidad"
+      ]
+    },
+    {
+      "id": "auto-pfl-pfl-tampa-2026-08-22",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL Tampa",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-08-22T23:00:00.000Z",
+      "mainCardAt": "2026-08-23T02:00:00.000Z",
+      "venue": "Benchmark International Arena",
+      "location": "Tampa, FL",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pfl-tampa",
+      "bouts": [
+        "Full matchups on the official PFL card"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-august-22-2026-2026-08-23",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Hernandez vs Rodrigues",
+      "fighters": [
+        "Hernandez",
+        "Rodrigues"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-08-23T00:00:00.000Z",
+      "venue": "Golden 1 Center",
+      "location": "Sacramento, CA, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-22-2026",
+      "bouts": [
+        "Hernandez vs Rodrigues"
+      ]
+    },
+    {
+      "id": "auto-raf-raf12-2026-08-23",
+      "source": "RAF",
+      "sport": "Wrestling",
+      "promotion": "RAF",
+      "eventName": "RAF12: Dvalishvili vs Cejudo 2",
+      "fighters": [
+        "Dvalishvili",
+        "Cejudo"
+      ],
+      "stakes": "Official Real American Freestyle card",
+      "startsAt": "2026-08-23T00:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Cleveland, OH",
+      "watch": {
+        "provider": "FOX Nation",
+        "access": "Subscription",
+        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
+        "note": "Streams live exclusively on FOX Nation"
+      },
+      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf12",
+      "bouts": [
+        "Dvalishvili vs Cejudo"
+      ]
+    },
+    {
+      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-26",
+      "source": "DWCS",
+      "sport": "MMA",
+      "promotion": "DWCS",
+      "eventName": "Dana White's Contender Series: Season 10, Week 3",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Five UFC contract fights",
+      "startsAt": "2026-08-26T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.paramountplus.com/",
+        "note": "Season 10 streams exclusively on Paramount+"
+      },
+      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "bouts": [
+        "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-august-29-2026-2026-08-29",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Nurmagomedov vs Song",
+      "fighters": [
+        "Nurmagomedov",
+        "Song"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-08-29T10:00:00.000Z",
+      "venue": "Oriental Sports Center",
+      "location": "Pudong District, China",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-29-2026",
+      "bouts": [
+        "Nurmagomedov vs Song"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-92-2026-08-29",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC 92 Boston Stewart Vs Gigliotti",
+      "fighters": [
+        "Stewart",
+        "Gigliotti"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-08-29T22:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-92",
+      "bouts": [
+        "Stewart vs Gigliotti"
+      ]
+    },
+    {
+      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-02",
+      "source": "DWCS",
+      "sport": "MMA",
+      "promotion": "DWCS",
+      "eventName": "Dana White's Contender Series: Season 10, Week 4",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Five UFC contract fights",
+      "startsAt": "2026-09-02T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.paramountplus.com/",
+        "note": "Season 10 streams exclusively on Paramount+"
+      },
+      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "bouts": [
+        "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-september-05-2026-2026-09-05",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Hooker vs Parnasse",
+      "fighters": [
+        "Hooker",
+        "Parnasse"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-09-05T19:00:00.000Z",
+      "venue": "Accor Arena",
+      "location": "Paris, France",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-september-05-2026",
+      "bouts": [
+        "Hooker vs Parnasse"
+      ]
+    },
+    {
+      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-09",
+      "source": "DWCS",
+      "sport": "MMA",
+      "promotion": "DWCS",
+      "eventName": "Dana White's Contender Series: Season 10, Week 5",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Five UFC contract fights",
+      "startsAt": "2026-09-09T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.paramountplus.com/",
+        "note": "Season 10 streams exclusively on Paramount+"
+      },
+      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "bouts": [
+        "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-93-hollywood-2026-09-11",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC 93 Hollywood Perdomo Vs Garrett",
+      "fighters": [
+        "Perdomo",
+        "Garrett"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-09-11T23:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-93-hollywood",
+      "bouts": [
+        "Perdomo vs Garrett"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-september-12-2026-2026-09-12",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-09-12T21:00:00.000Z",
+      "venue": "Desert Diamond Arena",
+      "location": "Glendale, AZ, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-september-12-2026",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-16",
+      "source": "DWCS",
+      "sport": "MMA",
+      "promotion": "DWCS",
+      "eventName": "Dana White's Contender Series: Season 10, Week 6",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Five UFC contract fights",
+      "startsAt": "2026-09-16T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.paramountplus.com/",
+        "note": "Season 10 streams exclusively on Paramount+"
+      },
+      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "bouts": [
+        "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-23",
+      "source": "DWCS",
+      "sport": "MMA",
+      "promotion": "DWCS",
+      "eventName": "Dana White's Contender Series: Season 10, Week 7",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Five UFC contract fights",
+      "startsAt": "2026-09-23T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.paramountplus.com/",
+        "note": "Season 10 streams exclusively on Paramount+"
+      },
+      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "bouts": [
+        "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-94-manchester-2026-09-26",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC 94 Manchester Till Vs Romero",
+      "fighters": [
+        "Till",
+        "Romero"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-09-26T18:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-94-manchester",
+      "bouts": [
+        "Till vs Romero"
+      ]
+    },
+    {
+      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-30",
+      "source": "DWCS",
+      "sport": "MMA",
+      "promotion": "DWCS",
+      "eventName": "Dana White's Contender Series: Season 10, Week 8",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Five UFC contract fights",
+      "startsAt": "2026-09-30T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.paramountplus.com/",
+        "note": "Season 10 streams exclusively on Paramount+"
+      },
+      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "bouts": [
+        "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-10-07",
+      "source": "DWCS",
+      "sport": "MMA",
+      "promotion": "DWCS",
+      "eventName": "Dana White's Contender Series: Season 10, Week 9",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Five UFC contract fights",
+      "startsAt": "2026-10-07T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.paramountplus.com/",
+        "note": "Season 10 streams exclusively on Paramount+"
+      },
+      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "bouts": [
+        "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-10-14",
+      "source": "DWCS",
+      "sport": "MMA",
+      "promotion": "DWCS",
+      "eventName": "Dana White's Contender Series: Season 10, Week 10",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Five UFC contract fights",
+      "startsAt": "2026-10-14T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.paramountplus.com/",
+        "note": "Season 10 streams exclusively on Paramount+"
+      },
+      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "bouts": [
+        "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-serbia-2026-10-17",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Belgrade Faulkner Vs Prasovic",
+      "fighters": [
+        "Faulkner",
+        "Prasovic"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-10-17T17:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-serbia",
+      "bouts": [
+        "Faulkner vs Prasovic"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-october-17-2026-2026-10-17",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-10-17T22:00:00.000Z",
+      "venue": "Rogers Place",
+      "location": "Edmonton, AB, Canada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-95-newark-2026-10-18",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC 95 Newark",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-10-18T00:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-95-newark",
+      "bouts": [
+        "Fights to be announced by BKFC"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-fight-night-clearwater-4-2026-10-24",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Fight Night Clearwater",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-10-24T00:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-clearwater-4",
+      "bouts": [
+        "Fights to be announced by BKFC"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-glasgow-2026-11-07",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Fight Night Glasgow",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-11-07T19:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-glasgow",
+      "bouts": [
+        "Fights to be announced by BKFC"
+      ]
+    }
+  ]
+}
