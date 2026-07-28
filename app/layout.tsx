@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { PwaRegister } from "./PwaRegister";
 import "./globals.css";
 
 const siteUrl = (
@@ -8,6 +9,7 @@ const siteUrl = (
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl}/`),
+  applicationName: "Fight List",
   title: "Fight List — Upcoming fights",
   description:
     "Upcoming MMA, boxing, kickboxing, Muay Thai, bare-knuckle, jiu-jitsu, and wrestling events with local start times and official watch links.",
@@ -33,6 +35,15 @@ export const metadata: Metadata = {
       "Upcoming combat sports, local start times, and the official place to watch.",
     images: [`${siteUrl}/og.png`],
   },
+  manifest:
+    process.env.GITHUB_PAGES === "true"
+      ? "/fight-list/manifest.webmanifest"
+      : "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black",
+    title: "Fight List",
+  },
 };
 
 export const viewport: Viewport = {
@@ -47,7 +58,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <PwaRegister />
+      </body>
     </html>
   );
 }

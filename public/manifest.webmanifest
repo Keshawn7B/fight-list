@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "Fight List — Combat Sports Schedule",
+  "short_name": "Fight List",
+  "description": "Upcoming combat sports, local start times, fight details, and official watch links.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "any",
+  "categories": ["sports", "entertainment"],
+  "icons": [
+    {
+      "src": "./icons/fight-list-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/fight-list-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

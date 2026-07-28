@@ -21,8 +21,15 @@ clearly labeled as free, included, subscription, or pay-per-view.
 - Device-local saved events
 - Downloadable `.ics` calendar events
 - Responsive, keyboard-friendly interface
+- Installable Android app with offline access to previously opened pages
 - Official promotion and broadcaster links only
 - Share preview metadata
+
+## Install on Android
+
+Open the public app in Chrome. Tap **Install app** when it appears, or open the
+Chrome menu and choose **Add to Home screen**. Fight List then opens from its
+own icon in a standalone app window.
 
 ## Update the schedule
 

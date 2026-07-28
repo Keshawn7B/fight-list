@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { BrandMark } from "./BrandMark";
+import { InstallAppButton } from "./InstallAppButton";
 import {
   fightEvents,
   type FightEvent,
@@ -193,6 +194,7 @@ export function FightTracker() {
           <strong>Fight List</strong>
         </Link>
         <nav aria-label="Primary navigation">
+          <InstallAppButton />
           <button
             className={savedOnly ? "nav-active" : ""}
             type="button"

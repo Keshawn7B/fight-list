@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 async function render(pathname = "/") {
@@ -47,6 +48,9 @@ test("server-renders the Fight List product shell", async () => {
   assert.match(html, /U17 World Championships/i);
   assert.match(html, /href="\/events\/ufc-ankalaev-guskov\/?"/i);
   assert.match(html, /Fight List/);
+  assert.match(html, /rel="manifest"/i);
+  assert.match(html, /manifest\.webmanifest/i);
+  assert.match(html, /mobile-web-app-capable/i);
   assert.doesNotMatch(html, /hero-actions|next-card|human-note|hero-stats|Upcoming cards|100%|codex-preview|react-loading-skeleton/i);
 });
 
@@ -65,4 +69,19 @@ test("server-renders a dedicated event screen and straightforward fight card", a
   assert.match(html, /Add to calendar/i);
   assert.match(html, /Verify full card on the official page/i);
   assert.doesNotMatch(html, /bout-photo|visual-fight-list|fact-number|listed bouts/i);
+});
+
+test("ships an installable Android web app manifest", async () => {
+  const manifest = JSON.parse(
+    await readFile(new URL("../public/manifest.webmanifest", import.meta.url), "utf8"),
+  );
+
+  assert.equal(manifest.short_name, "Fight List");
+  assert.equal(manifest.display, "standalone");
+  assert.equal(manifest.start_url, "./");
+  assert.equal(manifest.scope, "./");
+  assert.deepEqual(
+    manifest.icons.map(({ sizes }) => sizes),
+    ["192x192", "512x512"],
+  );
 });
