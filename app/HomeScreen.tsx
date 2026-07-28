@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { EventList, upcomingEvents } from "./EventComponents";
 import { useClientClock, usePreferences, useSavedEvents } from "./appState";
@@ -15,13 +16,14 @@ export function HomeScreen() {
   return (
     <main className="page-shell app-main home-page" id="main-content">
       <section className="home-hero">
-        <div>
-          <p className="eyebrow">Combat sports, in one place</p>
-          <h1>Know what&apos;s fighting next.</h1>
-          <p>
-            Local start times, announced cards, and the official place to watch.
-          </p>
-        </div>
+        <Image
+          className="home-hero-image"
+          src="/home-hero.jpg"
+          alt="A striker and a grappler facing off in a dark red arena"
+          width={1840}
+          height={856}
+          priority
+        />
         <div className="home-actions" aria-label="Quick actions">
           <Link className="primary-action" href="/schedule/">
             Browse schedule
@@ -53,19 +55,6 @@ export function HomeScreen() {
         />
       </section>
 
-      <section className="home-help">
-        <div>
-          <p className="eyebrow">Useful shortcut</p>
-          <h2>Make fight night easier.</h2>
-          <p>
-            Save any event with the star, then add it to your calendar from the
-            event page for a reminder.
-          </p>
-        </div>
-        <Link className="secondary-action" href="/settings/">
-          App settings
-        </Link>
-      </section>
     </main>
   );
 }

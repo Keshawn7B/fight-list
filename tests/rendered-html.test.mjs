@@ -37,7 +37,8 @@ test("server-renders the multi-page Fight List home", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Fight List — Upcoming fights<\/title>/i);
-  assert.match(html, /Know what.+fighting next/i);
+  assert.match(html, /home-hero\.jpg/i);
+  assert.match(html, /A striker and a grappler facing off/i);
   assert.match(html, /Next 5 fights/i);
   assert.equal((html.match(/class="event-card"/g) ?? []).length, 5);
   assert.match(html, /Browse schedule/i);
@@ -49,7 +50,7 @@ test("server-renders the multi-page Fight List home", async () => {
   assert.match(html, /rel="manifest"/i);
   assert.match(html, /manifest\.webmanifest/i);
   assert.match(html, /mobile-web-app-capable/i);
-  assert.doesNotMatch(html, /After that|Coming soon|filter-panel|hero-stats|100%|codex-preview|react-loading-skeleton/i);
+  assert.doesNotMatch(html, /Combat sports, in one place|Know what.+fighting next|Local start times, announced cards|Make fight night easier|After that|Coming soon|filter-panel|hero-stats|100%|codex-preview|react-loading-skeleton/i);
 });
 
 test("server-renders the full searchable schedule on its own page", async () => {
