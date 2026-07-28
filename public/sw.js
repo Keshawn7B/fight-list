@@ -1,4 +1,4 @@
-const CACHE_NAME = "fight-list-v2";
+const CACHE_NAME = "fight-list-v3";
 const scopePath = new URL(self.registration.scope).pathname.replace(/\/$/, "");
 const appShell = [
   `${scopePath}/`,

@@ -121,3 +121,14 @@ test("ships an installable Android web app manifest", async () => {
     ["Schedule", "Saved"],
   );
 });
+
+test("keeps mobile event cards readable", async () => {
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  const serviceWorker = await readFile(new URL("../public/sw.js", import.meta.url), "utf8");
+
+  assert.match(css, /grid-template-columns:\s*72px minmax\(0, 1fr\)/);
+  assert.match(css, /max-width:\s*72px/);
+  assert.match(css, /font-size:\s*clamp\(18px, 5\.2vw, 22px\)/);
+  assert.match(css, /word-break:\s*normal/);
+  assert.match(serviceWorker, /fight-list-v3/);
+});

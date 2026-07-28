@@ -358,8 +358,9 @@ select:focus-visible {
 
 .event-card-main {
   display: grid;
-  grid-template-columns: 116px minmax(0, 1fr) 34px;
+  grid-template-columns: 104px minmax(0, 1fr) 34px;
   min-width: 0;
+  overflow: hidden;
 }
 
 .event-save {
@@ -403,9 +404,10 @@ select:focus-visible {
 .time-block strong {
   margin: 4px 0;
   font-family: var(--font-display);
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 600;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .event-summary-copy {
@@ -1463,7 +1465,8 @@ select:focus-visible {
   }
 
   .event-card-main {
-    grid-template-columns: 82px minmax(0, 1fr) 27px;
+    width: 100%;
+    grid-template-columns: 72px minmax(0, 1fr);
   }
 
   .event-save {
@@ -1471,7 +1474,11 @@ select:focus-visible {
   }
 
   .time-block {
-    padding: 9px 5px;
+    box-sizing: border-box;
+    width: 72px;
+    min-width: 72px;
+    max-width: 72px;
+    padding: 8px 4px;
   }
 
   .time-block span,
@@ -1480,12 +1487,13 @@ select:focus-visible {
   }
 
   .time-block strong {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .event-summary-copy {
+    overflow: hidden;
     gap: 5px;
-    padding: 12px 10px;
+    padding: 11px 12px;
   }
 
   .promotion-label {
@@ -1493,22 +1501,16 @@ select:focus-visible {
   }
 
   .event-title {
-    font-size: clamp(19px, 6.2vw, 25px);
+    font-size: clamp(18px, 5.2vw, 22px);
+    line-height: 1.12;
+    overflow-wrap: normal;
     text-overflow: clip;
     white-space: normal;
+    word-break: normal;
   }
 
   .event-toggle {
-    justify-content: center;
-    padding: 0 5px 0 0;
-  }
-
-  .event-toggle span {
     display: none;
-  }
-
-  .event-toggle i {
-    font-size: 18px;
   }
 
   .site-footer,
