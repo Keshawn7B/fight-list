@@ -67,7 +67,29 @@ test("server-renders the full searchable schedule on its own page", async () => 
   assert.match(html, /Wrestling/i);
   assert.match(html, /BJJ Stars 19/i);
   assert.match(html, /U17 World Championships/i);
+  assert.match(html, /Dana White.+Contender Series/i);
+  assert.match(html, /UFC BJJ 10/i);
   assert.match(html, /aria-label="Save /i);
+});
+
+test("tracks DWCS and UFC BJJ with official event details", async () => {
+  const dwcsResponse = await render("/events/dwcs-season-10-week-1/");
+  assert.equal(dwcsResponse.status, 200);
+  const dwcsHtml = await dwcsResponse.text();
+  assert.match(dwcsHtml, /Dana White.+Contender Series/i);
+  assert.match(dwcsHtml, /Season 10/i);
+  assert.match(dwcsHtml, /Five bouts scheduled/i);
+  assert.match(dwcsHtml, /Paramount\+/i);
+
+  const bjjResponse = await render("/events/ufc-bjj-10/");
+  assert.equal(bjjResponse.status, 200);
+  const bjjHtml = await bjjResponse.text();
+  assert.match(bjjHtml, /UFC BJJ 10/i);
+  assert.match(bjjHtml, /Andrew Tackett/i);
+  assert.match(bjjHtml, /Jonnatas Gracie/i);
+  assert.match(bjjHtml, /Rebeca Lima vs Brianna Ste-Marie/i);
+  assert.match(bjjHtml, /UFC BJJ YouTube/i);
+  assert.match(bjjHtml, />Free</i);
 });
 
 test("server-renders dedicated saved and settings pages", async () => {

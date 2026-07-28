@@ -30,7 +30,7 @@ export type FightEvent = {
   bouts: string[];
 };
 
-export const verifiedDate = "July 26, 2026";
+export const verifiedDate = "July 28, 2026";
 
 export const fightEvents: FightEvent[] = [
   {
@@ -346,6 +346,26 @@ export const fightEvents: FightEvent[] = [
     bouts: ["Bryant Acheson vs Mike Jones"],
   },
   {
+    id: "dwcs-season-10-week-1",
+    sport: "MMA",
+    promotion: "DWCS",
+    eventName: "Dana White's Contender Series: Season 10, Week 1",
+    fighters: ["Card", "To be announced"],
+    stakes: "Five UFC contract fights in the Season 10 opener",
+    startsAt: "2026-08-12T00:00:00.000Z",
+    venue: "Meta APEX",
+    location: "Las Vegas, Nevada",
+    watch: {
+      provider: "Paramount+",
+      access: "Subscription",
+      href: "https://www.paramountplus.com/",
+      note: "All Season 10 episodes stream exclusively on Paramount+",
+    },
+    detailsUrl:
+      "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+    bouts: ["Five bouts scheduled; official matchups to be announced"],
+  },
+  {
     id: "one-fight-night-46",
     sport: "Muay Thai",
     promotion: "ONE",
@@ -386,6 +406,35 @@ export const fightEvents: FightEvent[] = [
     },
     detailsUrl: "https://www.ufc.com/events",
     bouts: ["Full card and bout order on UFC.com"],
+  },
+  {
+    id: "ufc-bjj-10",
+    sport: "Jiu-Jitsu",
+    promotion: "UFC BJJ",
+    eventName: "UFC BJJ 10",
+    fighters: ["Andrew Tackett", "Jonnatas Gracie"],
+    stakes: "UFC BJJ welterweight championship main event",
+    startsAt: "2026-08-21T00:00:00.000Z",
+    venue: "Meta APEX",
+    location: "Las Vegas, Nevada",
+    watch: {
+      provider: "UFC BJJ YouTube",
+      access: "Free",
+      href: "https://www.youtube.com/@ufcbjj",
+      note: "Live and free on the official UFC BJJ YouTube channel",
+    },
+    detailsUrl:
+      "https://www.ufc.com/news/ufc-bjj-10-tackett-vs-gracie-fight-card",
+    bouts: [
+      "Andrew Tackett vs Jonnatas Gracie",
+      "Rebeca Lima vs Brianna Ste-Marie",
+      "Renato Canuto vs Ethan Crelinsten",
+      "William Tackett vs Fedor Nikolov",
+      "Vagner Rocha vs Andy Varela",
+      "Cassia Moura vs Bre Stikk",
+      "Adele Fornarino vs Carol Brunacio",
+      "Ana Lima vs Danielle Kelly",
+    ],
   },
   {
     id: "bkfc-mohegan-sun",
