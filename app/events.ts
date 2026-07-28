@@ -7,7 +7,8 @@ export type FightSport =
   | "Muay Thai"
   | "Bare Knuckle"
   | "Jiu-Jitsu"
-  | "Wrestling";
+  | "Wrestling"
+  | "Karate";
 
 export type WatchAccess = "Free" | "Included" | "Subscription" | "PPV";
 
@@ -1020,7 +1021,7 @@ const normalizedWords = (value: string) => value
   .trim()
   .split(" ")
   .filter((word) => word.length > 2 && ![
-    "the", "fight", "night", "card", "versus", "ufc", "bjj", "dwcs", "one", "pfl", "bkfc", "raf", "mma",
+    "the", "fight", "night", "card", "versus", "ufc", "bjj", "dwcs", "one", "pfl", "bkfc", "raf", "mma", "karate", "combat",
   ].includes(word));
 
 const sharesIdentity = (curated: FightEvent, automatic: FightEvent) => {

@@ -3,6 +3,7 @@ import test from "node:test";
 import {
   parseBkfcEvents,
   parseDwcsEvents,
+  parseKarateCombatEvents,
   parseLocalDateTime,
   parseOneEvents,
   parsePflEvents,
@@ -91,6 +92,41 @@ test("parses the timed RAF card from the official home page", () => {
   assert.equal(events.length, 1);
   assert.equal(events[0].eventName, "RAF12: Dvalishvili vs Cejudo 2");
   assert.equal(events[0].startsAt, "2026-08-23T00:00:00.000Z");
+});
+
+test("parses Karate Combat's exact timestamp and full official card", () => {
+  const tickets = `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify({
+    props: { pageProps: { event: {
+      name: "KC 63 - Miami",
+      slug: "kc-63-miami",
+      date: "2026-08-28T19:00:00.000-04:00",
+      mainFighters: "Raymond Daniels vs Rafael Aghayev",
+      coMainFighters: "Fighter Three vs Fighter Four",
+      description: "Karate Combat returns in Miami, FL.",
+    } } },
+  })}</script>`;
+  const detail = `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify({
+    props: { pageProps: { fightEvent: {
+      id: "kc-63-miami",
+      mainFighters: "Raymond Daniels vs Rafael Aghayev",
+      description: "Karate Combat returns in Miami, FL.",
+      fightsCollection: { items: [
+        { redFighter: { fullName: "Raymond Daniels" }, blueFighter: { fullName: "Rafael Aghayev" } },
+        { redFighter: { fullName: "Fighter Three" }, blueFighter: { fullName: "Fighter Four" } },
+      ] },
+    } } },
+  })}</script>`;
+  const events = parseKarateCombatEvents(tickets, detail, now);
+
+  assert.equal(events.length, 1);
+  assert.equal(events[0].sport, "Karate");
+  assert.equal(events[0].startsAt, "2026-08-28T23:00:00.000Z");
+  assert.equal(events[0].location, "Miami, FL");
+  assert.deepEqual(events[0].bouts, [
+    "Raymond Daniels vs Rafael Aghayev",
+    "Fighter Three vs Fighter Four",
+  ]);
+  assert.equal(events[0].watch.access, "Free");
 });
 
 test("parses the current UFC BJJ hub event", () => {

@@ -19,6 +19,7 @@ const sportFilters: Array<typeof ALL_SPORTS | FightSport> = [
   "Bare Knuckle",
   "Jiu-Jitsu",
   "Wrestling",
+  "Karate",
 ];
 
 export function FightTracker() {
@@ -42,6 +43,7 @@ export function FightTracker() {
       const haystack = [
         event.sport,
         event.sport === "Jiu-Jitsu" ? "jiujitsu jujitsu bjj grappling" : "",
+        event.sport === "Karate" ? "karate combat kc full contact karate" : "",
         event.promotion,
         event.eventName,
         ...event.fighters,

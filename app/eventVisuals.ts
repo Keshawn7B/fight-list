@@ -50,6 +50,12 @@ const visuals: Record<FightSport, EventVisual> = {
     credit: "Oboakpeyrenyehavwo",
     source: "https://unsplash.com/photos/wrestlers-competing-on-a-mat-during-a-match-iRgD_oHskBs",
   },
+  Karate: {
+    src: "https://images.unsplash.com/photo-1525680996651-0222228be6f0?auto=format&fit=crop&q=88&w=1800",
+    alt: "Full-contact karate fighters competing in a ring",
+    credit: "Pablo Rebolledo",
+    source: "https://unsplash.com/s/photos/karate-fight",
+  },
 };
 
 export function getEventVisual(event: FightEvent) {

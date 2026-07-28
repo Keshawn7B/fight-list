@@ -65,6 +65,7 @@ test("server-renders the full searchable schedule on its own page", async () => 
   assert.match(html, /Free to watch/i);
   assert.match(html, /Jiu-Jitsu/i);
   assert.match(html, /Wrestling/i);
+  assert.match(html, /Karate/i);
   assert.match(html, /BJJ Stars 19/i);
   assert.match(html, /U17 World Championships/i);
   assert.match(html, /Dana White.+Contender Series/i);
@@ -131,6 +132,7 @@ test("server-renders dedicated saved and settings pages", async () => {
   assert.match(settingsHtml, /Android app/i);
   assert.match(settingsHtml, /Schedule updates/i);
   assert.match(settingsHtml, /every six hours/i);
+  assert.match(settingsHtml, /<option[^>]*>Karate<\/option>/i);
   assert.match(settingsHtml, /12-hour/i);
   assert.match(settingsHtml, /24-hour/i);
 });

@@ -18,6 +18,7 @@ const sports: Array<"All" | FightSport> = [
   "Bare Knuckle",
   "Jiu-Jitsu",
   "Wrestling",
+  "Karate",
 ];
 
 const timeOptions: Array<{ value: TimeFormat; label: string }> = [

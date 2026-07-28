@@ -16,7 +16,8 @@ const titleCase = (value) => clean(value)
   .replace(/\bBjj\b/g, "BJJ")
   .replace(/\bBkfc\b/g, "BKFC")
   .replace(/\bPfl\b/g, "PFL")
-  .replace(/\bRaf\b/g, "RAF");
+  .replace(/\bRaf\b/g, "RAF")
+  .replace(/\bKc\b/g, "KC");
 
 const slugify = (value) => clean(value)
   .toLowerCase()
@@ -91,7 +92,7 @@ export function parseLocalDateTime(dateText, timeText, now = new Date(), timeZon
 }
 
 function splitMatchup(value) {
-  const withoutPrefix = clean(value).replace(/^(?:UFC BJJ\s+\d+|RAF\d+)\s*:\s*/i, "");
+  const withoutPrefix = clean(value).replace(/^(?:UFC BJJ\s+\d+|RAF\d+|KC\s*\d+)\s*:\s*/i, "");
   const match = withoutPrefix.match(/^(.+?)\s+vs\.?\s+(.+)$/i);
   if (!match || /^TBD$/i.test(match[1])) return ["Card", "To be announced"];
 
@@ -424,6 +425,69 @@ export function parseUfcBjjEvents(html, now = new Date()) {
   })];
 }
 
+function nextPageProps(html) {
+  const $ = cheerio.load(html);
+  const payload = $("#__NEXT_DATA__").first().text();
+  if (!payload) return null;
+
+  try {
+    return JSON.parse(payload)?.props?.pageProps ?? null;
+  } catch {
+    return null;
+  }
+}
+
+export function parseKarateCombatEvents(ticketsHtml, eventHtml = "", now = new Date()) {
+  const ticketEvent = nextPageProps(ticketsHtml)?.event;
+  if (!ticketEvent?.name || !ticketEvent?.date || !ticketEvent?.slug) return [];
+
+  const timestamp = Date.parse(ticketEvent.date);
+  if (!Number.isFinite(timestamp)) return [];
+  const startsAt = new Date(timestamp).toISOString();
+  if (!futureEnough(startsAt, now)) return [];
+
+  const detailsUrl = `https://www.karate.com/events/${ticketEvent.slug}`;
+  const detailEvent = nextPageProps(eventHtml)?.fightEvent;
+  const officialEvent = detailEvent?.id === ticketEvent.slug ? detailEvent : ticketEvent;
+  const mainFighters = clean(officialEvent.mainFighters ?? ticketEvent.mainFighters);
+  const fighters = splitMatchup(mainFighters);
+  const eventName = mainFighters && !clean(ticketEvent.name).includes(mainFighters)
+    ? `${ticketEvent.name}: ${mainFighters}`
+    : ticketEvent.name;
+
+  const listedBouts = (officialEvent.fightsCollection?.items ?? [])
+    .map((fight) => {
+      const red = clean(fight?.redFighter?.fullName);
+      const blue = clean(fight?.blueFighter?.fullName);
+      return red && blue ? `${red} vs ${blue}` : null;
+    })
+    .filter(Boolean);
+  const fallbackBouts = [mainFighters, clean(officialEvent.coMainFighters ?? ticketEvent.coMainFighters)]
+    .filter(Boolean);
+  const bouts = [...new Set(listedBouts.length ? listedBouts : fallbackBouts)];
+  const description = clean(officialEvent.description ?? ticketEvent.description);
+  const location = description.match(/\bin\s+([^,.]+),\s*([A-Z]{2})(?:\.|,|\s|$)/)?.slice(1).join(", ") ?? "Location TBA";
+  const venue = clean(ticketEvent.name.split(/\s+-\s+/).slice(1).join(" - ")) || "Venue TBA";
+
+  return [makeEvent({
+    source: "Karate Combat",
+    sport: "Karate",
+    promotion: "Karate Combat",
+    eventName,
+    fighters,
+    stakes: "Official Karate Combat card",
+    startsAt,
+    venue,
+    location,
+    provider: "Karate Combat YouTube",
+    access: "Free",
+    watchHref: "https://www.youtube.com/@KarateCombat",
+    watchNote: "Official free stream; regional broadcast options may vary",
+    detailsUrl,
+    bouts: bouts.length ? bouts : ["Full card pending official announcement"],
+  })];
+}
+
 export function parseDwcsEvents(hubHtml, announcementHtml, now = new Date()) {
   const $ = cheerio.load(hubHtml);
   const combined = clean(`${$("article").first().text()} ${cheerio.load(announcementHtml).root().text()}`);
@@ -516,5 +580,17 @@ export const sourceAdapters = [
   {
     name: "RAF",
     run: async (now) => parseRafEvents(await fetchOfficialHtml("https://www.realamericanfreestyle.com/?direct=true"), now),
+  },
+  {
+    name: "Karate Combat",
+    allowEmpty: true,
+    run: async (now) => {
+      const ticketsHtml = await fetchOfficialHtml("https://www.karate.com/tickets");
+      const ticketEvent = nextPageProps(ticketsHtml)?.event;
+      const eventHtml = ticketEvent?.slug
+        ? await fetchOfficialHtml(`https://www.karate.com/events/${ticketEvent.slug}`)
+        : "";
+      return parseKarateCombatEvents(ticketsHtml, eventHtml, now);
+    },
   },
 ];

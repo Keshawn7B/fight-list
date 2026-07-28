@@ -23,7 +23,9 @@ for (const adapter of sourceAdapters) {
     const previousFutureCount = previousEvents.filter(
       (event) => Date.parse(event.startsAt) >= now.getTime() - (36 * 60 * 60 * 1000),
     ).length;
-    if (!events.length) throw new Error("no upcoming events were recognized");
+    if (!events.length && (!adapter.allowEmpty || previousFutureCount > 0)) {
+      throw new Error("no upcoming events were recognized");
+    }
     if (previousFutureCount >= 4 && events.length < Math.ceil(previousFutureCount / 3)) {
       throw new Error(`recognized only ${events.length} of ${previousFutureCount} previous upcoming events`);
     }

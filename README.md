@@ -1,7 +1,7 @@
 # Fight List
 
-A free, open-source combat sports tracker for upcoming MMA, boxing, Muay Thai,
-and bare-knuckle events.
+A free, open-source combat sports tracker for upcoming MMA, boxing, kickboxing,
+Muay Thai, bare-knuckle, jiu-jitsu, wrestling, and karate events.
 
 [Open the public Fight List app](https://keshawn7b.github.io/fight-list/)
 
@@ -36,7 +36,10 @@ own icon in a standalone app window.
 
 ## Update the schedule
 
-Events live in [`app/events.ts`](app/events.ts). Each record includes:
+The updater checks official UFC, DWCS, UFC BJJ, ONE, PFL, BKFC, RAF, and Karate
+Combat schedules every six hours. Curated events live in
+[`app/events.ts`](app/events.ts), and validated automatic results are stored in
+[`app/generated-events.json`](app/generated-events.json). Each record includes:
 
 - promotion and sport
 - headline matchup and supporting bouts
@@ -44,9 +47,9 @@ Events live in [`app/events.ts`](app/events.ts). Each record includes:
 - venue and location
 - broadcaster, access type, and official links
 
-Use ISO 8601 UTC timestamps so every visitor gets the right local time. Confirm
-changes against the official UFC, PFL, ONE, Matchroom, or BKFC event page before
-opening a pull request.
+Use ISO 8601 timestamps so every visitor gets the right local time. Confirm any
+manual changes against the promotion's official event page before opening a pull
+request.
 
 ## Run locally
 
