@@ -69,6 +69,7 @@ test("server-renders the full searchable schedule on its own page", async () => 
   assert.match(html, /U17 World Championships/i);
   assert.match(html, /Dana White.+Contender Series/i);
   assert.match(html, /UFC BJJ 10/i);
+  assert.match(html, /RAF12.+Dvalishvili vs Cejudo 2/i);
   assert.match(html, /aria-label="Save /i);
 });
 
@@ -90,6 +91,20 @@ test("tracks DWCS and UFC BJJ with official event details", async () => {
   assert.match(bjjHtml, /Rebeca Lima vs Brianna Ste-Marie/i);
   assert.match(bjjHtml, /UFC BJJ YouTube/i);
   assert.match(bjjHtml, />Free</i);
+});
+
+test("tracks Real American Freestyle with its official RAF12 card", async () => {
+  const response = await render("/events/raf12-dvalishvili-cejudo/");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /RAF12/i);
+  assert.match(html, /Merab Dvalishvili/i);
+  assert.match(html, /Henry Cejudo/i);
+  assert.match(html, /Jordan Burroughs vs Sean Brady/i);
+  assert.match(html, /Gable Steveson vs Anthony Cassioppi/i);
+  assert.match(html, /FOX Nation/i);
+  assert.match(html, /Wrestling/i);
 });
 
 test("server-renders dedicated saved and settings pages", async () => {
