@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { EventList, upcomingEvents } from "./EventComponents";
 import { useClientClock, usePreferences, useSavedEvents } from "./appState";
@@ -12,17 +11,21 @@ export function HomeScreen() {
   const { preferences } = usePreferences();
   const upcoming = upcomingEvents(fightEvents, now);
   const nextFive = upcoming.slice(0, 5);
+  const heroImagePath = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/home-hero.jpg`;
 
   return (
     <main className="page-shell app-main home-page" id="main-content">
       <section className="home-hero">
-        <Image
+        {/* This direct image path works in both Sites and GitHub Pages. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           className="home-hero-image"
-          src="/home-hero.jpg"
+          src={heroImagePath}
           alt="A striker and a grappler facing off in a dark red arena"
           width={1840}
           height={856}
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="home-actions" aria-label="Quick actions">
           <Link className="primary-action" href="/schedule/">

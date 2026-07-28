@@ -512,8 +512,9 @@ select:focus-visible {
 
 .home-hero-image {
   display: block;
-  width: 100%;
-  height: clamp(210px, 42vw, 460px);
+  width: min(100%, 720px);
+  height: clamp(220px, 40vw, 400px);
+  margin-inline: auto;
   border-left: 4px solid var(--red);
   background: var(--black);
   object-fit: cover;
@@ -540,6 +541,8 @@ select:focus-visible {
 }
 
 .home-actions {
+  width: min(100%, 720px);
+  margin-inline: auto;
   justify-content: flex-end;
 }
 

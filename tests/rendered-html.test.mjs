@@ -38,7 +38,9 @@ test("server-renders the multi-page Fight List home", async () => {
   const html = await response.text();
   assert.match(html, /<title>Fight List — Upcoming fights<\/title>/i);
   assert.match(html, /home-hero\.jpg/i);
+  assert.match(html, /src="\/home-hero\.jpg"/i);
   assert.match(html, /A striker and a grappler facing off/i);
+  assert.doesNotMatch(html, /_next\/image/i);
   assert.match(html, /Next 5 fights/i);
   assert.equal((html.match(/class="event-card"/g) ?? []).length, 5);
   assert.match(html, /Browse schedule/i);
@@ -131,5 +133,6 @@ test("keeps mobile event cards readable", async () => {
   assert.match(css, /max-width:\s*72px/);
   assert.match(css, /font-size:\s*clamp\(18px, 5\.2vw, 22px\)/);
   assert.match(css, /word-break:\s*normal/);
-  assert.match(serviceWorker, /fight-list-v3/);
+  assert.match(serviceWorker, /fight-list-v4/);
+  assert.match(serviceWorker, /home-hero\.jpg/);
 });
