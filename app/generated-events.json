@@ -784,10 +784,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC Fight Night: TBD vs TBD",
+      "eventName": "UFC Fight Night: Buckley vs Malott",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Buckley",
+        "Malott"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2026-10-17T22:00:00.000Z",
@@ -801,7 +801,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
       "bouts": [
-        "Full card pending official announcement"
+        "Buckley vs Malott"
       ]
     },
     {
