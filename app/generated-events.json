@@ -2,6 +2,31 @@
   "verifiedDate": "August 1, 2026",
   "events": [
     {
+      "id": "auto-ufc-ufc-fight-night-august-01-2026-2026-08-01",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Medic vs Rodriguez",
+      "fighters": [
+        "Medic",
+        "Rodriguez"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-08-01T17:00:00.000Z",
+      "venue": "Belgrade Arena",
+      "location": "BG, Serbia",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-01-2026",
+      "bouts": [
+        "Medic vs Rodriguez"
+      ]
+    },
+    {
       "id": "auto-bkfc-bkfc-fight-night-newcastle-garside-vs-taylor-2026-08-01",
       "source": "BKFC",
       "sport": "Bare Knuckle",
