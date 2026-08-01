@@ -1,82 +1,6 @@
 {
-  "verifiedDate": "July 31, 2026",
+  "verifiedDate": "August 1, 2026",
   "events": [
-    {
-      "id": "auto-one-one-friday-fights-164-2026-07-31",
-      "source": "ONE",
-      "sport": "Muay Thai",
-      "promotion": "ONE",
-      "eventName": "ONE Friday Fights 164 & The Inner Circle 24",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-07-31T11:30:00.000Z",
-      "venue": "Lumpinee Stadium",
-      "location": "Bangkok",
-      "watch": {
-        "provider": "Live.ONE / ONE YouTube",
-        "access": "Free",
-        "href": "https://live.onefc.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-164/",
-      "bouts": [
-        "Full card pending official announcement"
-      ]
-    },
-    {
-      "id": "auto-pfl-pfl-ny-2026-2026-07-31",
-      "source": "PFL",
-      "sport": "MMA",
-      "promotion": "PFL",
-      "eventName": "PFL New York",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official PFL card",
-      "startsAt": "2026-07-31T20:30:00.000Z",
-      "mainCardAt": "2026-07-31T23:00:00.000Z",
-      "venue": "UBS Arena",
-      "location": "Belmont Park, New York",
-      "watch": {
-        "provider": "ESPN App / ESPN",
-        "access": "Subscription",
-        "href": "https://www.espn.com/watch/",
-        "note": "U.S. listing; regional availability may vary"
-      },
-      "detailsUrl": "https://pflmma.com/event/pfl-ny-2026",
-      "bouts": [
-        "Full matchups on the official PFL card"
-      ]
-    },
-    {
-      "id": "auto-ufc-ufc-fight-night-august-01-2026-2026-08-01",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Medic vs Rodriguez",
-      "fighters": [
-        "Medic",
-        "Rodriguez"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-08-01T17:00:00.000Z",
-      "venue": "Belgrade Arena",
-      "location": "BG, Serbia",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-01-2026",
-      "bouts": [
-        "Medic vs Rodriguez"
-      ]
-    },
     {
       "id": "auto-bkfc-bkfc-fight-night-newcastle-garside-vs-taylor-2026-08-01",
       "source": "BKFC",
@@ -151,6 +75,31 @@
       "detailsUrl": "https://pflmma.com/event/pfl-charlotte",
       "bouts": [
         "Full matchups on the official PFL card"
+      ]
+    },
+    {
+      "id": "auto-one-one-samurai-2-2026-08-08",
+      "source": "ONE",
+      "sport": "Kickboxing",
+      "promotion": "ONE",
+      "eventName": "ONE SAMURAI 2",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-08-08T08:30:00.000Z",
+      "venue": "EBARA WAVE Arena Ota",
+      "location": "Tokyo",
+      "watch": {
+        "provider": "Live.ONE / U-NEXT",
+        "access": "Subscription",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-samurai-2/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
@@ -352,31 +301,6 @@
       "detailsUrl": "https://pflmma.com/event/pfl-tampa",
       "bouts": [
         "Full matchups on the official PFL card"
-      ]
-    },
-    {
-      "id": "auto-ufc-ufc-fight-night-august-22-2026-2026-08-23",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Hernandez vs Rodrigues",
-      "fighters": [
-        "Hernandez",
-        "Rodrigues"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-08-23T00:00:00.000Z",
-      "venue": "Golden 1 Center",
-      "location": "Sacramento, CA, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-22-2026",
-      "bouts": [
-        "Hernandez vs Rodrigues"
       ]
     },
     {
