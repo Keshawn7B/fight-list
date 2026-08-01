@@ -579,6 +579,31 @@
       ]
     },
     {
+      "id": "auto-ufc-ufc-331-2026-09-20",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC 331: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-09-20T01:00:00.000Z",
+      "venue": "Crypto.com Arena",
+      "location": "Los Angeles, CA, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-331",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-23",
       "source": "DWCS",
       "sport": "MMA",
@@ -729,7 +754,7 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-fight-night-october-17-2026-2026-10-17",
+      "id": "auto-ufc-ufc-fight-night-october-17-2026-2026-10-18",
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
@@ -739,7 +764,7 @@
         "Malott"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-10-17T22:00:00.000Z",
+      "startsAt": "2026-10-18T00:00:00.000Z",
       "venue": "Rogers Place",
       "location": "Edmonton, AB, Canada",
       "watch": {
