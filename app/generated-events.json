@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "August 1, 2026",
+  "verifiedDate": "August 2, 2026",
   "events": [
     {
       "id": "auto-ufc-ufc-fight-night-august-01-2026-2026-08-01",
@@ -579,11 +579,11 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-331-2026-09-20",
+      "id": "auto-ufc-cryptocom-ufc-331-2026-09-20",
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC 331: TBD vs TBD",
+      "eventName": "UFC Fight Night: TBD vs TBD",
       "fighters": [
         "Card",
         "To be announced"
@@ -598,7 +598,7 @@
         "href": "https://www.ufc.com/watch/schedule",
         "note": "U.S. listing; availability varies by country"
       },
-      "detailsUrl": "https://www.ufc.com/event/ufc-331",
+      "detailsUrl": "https://www.ufc.com/event/cryptocom-ufc-331",
       "bouts": [
         "Full card pending official announcement"
       ]
