@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "August 3, 2026",
+  "verifiedDate": "August 4, 2026",
   "events": [
     {
       "id": "auto-one-one-friday-fights-165-2026-08-07",
@@ -276,6 +276,31 @@
       "detailsUrl": "https://pflmma.com/event/pfl-tampa",
       "bouts": [
         "Full matchups on the official PFL card"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-august-22-2026-2026-08-23",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Hernandez vs Rodrigues",
+      "fighters": [
+        "Hernandez",
+        "Rodrigues"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-08-23T00:00:00.000Z",
+      "venue": "Golden 1 Center",
+      "location": "Sacramento, CA, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-22-2026",
+      "bouts": [
+        "Hernandez vs Rodrigues"
       ]
     },
     {
