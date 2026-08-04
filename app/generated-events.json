@@ -508,10 +508,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC Fight Night: TBD vs TBD",
+      "eventName": "UFC Fight Night: Rodriguez vs Silva",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Rodriguez",
+        "Silva"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2026-09-12T21:00:00.000Z",
@@ -525,7 +525,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-september-12-2026",
       "bouts": [
-        "Full card pending official announcement"
+        "Rodriguez vs Silva"
       ]
     },
     {
