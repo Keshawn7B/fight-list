@@ -802,31 +802,6 @@
       "bouts": [
         "Fights to be announced by BKFC"
       ]
-    },
-    {
-      "id": "auto-bkfc-bkfc-glasgow-2026-11-07",
-      "source": "BKFC",
-      "sport": "Bare Knuckle",
-      "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Glasgow Cooke Vs Weir",
-      "fighters": [
-        "Cooke",
-        "Weir"
-      ],
-      "stakes": "Official BKFC card",
-      "startsAt": "2026-11-07T19:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "BKFC+ / Fubo Sports",
-        "access": "Subscription",
-        "href": "https://watch.bkfc.com/",
-        "note": "Official BKFC stream; regional options may vary"
-      },
-      "detailsUrl": "https://www.bkfc.com/events/bkfc-glasgow",
-      "bouts": [
-        "Cooke vs Weir"
-      ]
     }
   ]
 }
