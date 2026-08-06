@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "August 5, 2026",
+  "verifiedDate": "August 6, 2026",
   "events": [
     {
       "id": "auto-one-one-friday-fights-165-2026-08-07",
@@ -558,10 +558,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC Fight Night: TBD vs TBD",
+      "eventName": "UFC Fight Night: Van vs Pantoja 2",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Van",
+        "Pantoja"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2026-09-20T01:00:00.000Z",
@@ -575,7 +575,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/cryptocom-ufc-331",
       "bouts": [
-        "Full card pending official announcement"
+        "Van vs Pantoja"
       ]
     },
     {
