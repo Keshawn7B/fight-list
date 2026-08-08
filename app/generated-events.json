@@ -1,31 +1,6 @@
 {
-  "verifiedDate": "August 7, 2026",
+  "verifiedDate": "August 8, 2026",
   "events": [
-    {
-      "id": "auto-one-one-friday-fights-165-2026-08-07",
-      "source": "ONE",
-      "sport": "Muay Thai",
-      "promotion": "ONE",
-      "eventName": "ONE Friday Fights 165 & The Inner Circle 25",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-08-07T11:30:00.000Z",
-      "venue": "Lumpinee Stadium",
-      "location": "Bangkok",
-      "watch": {
-        "provider": "Live.ONE / ONE YouTube",
-        "access": "Free",
-        "href": "https://live.onefc.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-165/",
-      "bouts": [
-        "Full card pending official announcement"
-      ]
-    },
     {
       "id": "auto-pfl-pfl-charlotte-2026-08-07",
       "source": "PFL",
@@ -153,6 +128,31 @@
       ]
     },
     {
+      "id": "auto-one-one-friday-fights-166-2026-08-14",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 166 & The Inner Circle 26",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-08-14T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-166/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-ufc-ufc-330-2026-08-16",
       "source": "UFC",
       "sport": "MMA",
@@ -263,8 +263,8 @@
         "To be announced"
       ],
       "stakes": "Official PFL card",
-      "startsAt": "2026-08-22T23:00:00.000Z",
-      "mainCardAt": "2026-08-23T02:00:00.000Z",
+      "startsAt": "2026-08-22T21:30:00.000Z",
+      "mainCardAt": "2026-08-23T01:00:00.000Z",
       "venue": "Benchmark International Arena",
       "location": "Tampa, FL",
       "watch": {
