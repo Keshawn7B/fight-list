@@ -2,32 +2,6 @@
   "verifiedDate": "August 8, 2026",
   "events": [
     {
-      "id": "auto-pfl-pfl-charlotte-2026-08-07",
-      "source": "PFL",
-      "sport": "MMA",
-      "promotion": "PFL",
-      "eventName": "PFL Charlotte",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official PFL card",
-      "startsAt": "2026-08-07T22:30:00.000Z",
-      "mainCardAt": "2026-08-08T02:00:00.000Z",
-      "venue": "Bojangles Coliseum",
-      "location": "Charlotte, North Carolina",
-      "watch": {
-        "provider": "ESPN App / ESPN",
-        "access": "Subscription",
-        "href": "https://www.espn.com/watch/",
-        "note": "U.S. listing; regional availability may vary"
-      },
-      "detailsUrl": "https://pflmma.com/event/pfl-charlotte",
-      "bouts": [
-        "Full matchups on the official PFL card"
-      ]
-    },
-    {
       "id": "auto-one-one-samurai-2-2026-08-08",
       "source": "ONE",
       "sport": "Kickboxing",
