@@ -27,31 +27,6 @@
       ]
     },
     {
-      "id": "auto-bkfc-bkfc-fight-night-sturgis-2026-08-09",
-      "source": "BKFC",
-      "sport": "Bare Knuckle",
-      "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Sturgis Acheson Vs Jones",
-      "fighters": [
-        "Acheson",
-        "Jones"
-      ],
-      "stakes": "Official BKFC card",
-      "startsAt": "2026-08-09T00:30:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "BKFC+ / Fubo Sports",
-        "access": "Subscription",
-        "href": "https://watch.bkfc.com/",
-        "note": "Official BKFC stream; regional options may vary"
-      },
-      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-sturgis",
-      "bouts": [
-        "Acheson vs Jones"
-      ]
-    },
-    {
       "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-12",
       "source": "DWCS",
       "sport": "MMA",
@@ -650,6 +625,31 @@
       "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-332-2026-10-04",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC 332: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-10-04T01:00:00.000Z",
+      "venue": "Delta Center",
+      "location": "Salt Lake City, UT, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-332",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
