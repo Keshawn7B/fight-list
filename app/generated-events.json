@@ -2,31 +2,6 @@
   "verifiedDate": "August 10, 2026",
   "events": [
     {
-      "id": "auto-ufc-ufc-fight-night-august-08-2026-2026-08-09",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Gamrot vs Salkilld",
-      "fighters": [
-        "Gamrot",
-        "Salkilld"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-08-09T00:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, NV, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-08-2026",
-      "bouts": [
-        "Gamrot vs Salkilld"
-      ]
-    },
-    {
       "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-12",
       "source": "DWCS",
       "sport": "MMA",
@@ -253,28 +228,28 @@
       ]
     },
     {
-      "id": "auto-raf-raf-moscow-2026-08-23",
+      "id": "auto-raf-raf12-2026-08-23",
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
-      "eventName": ": RAF Moscow",
+      "eventName": "RAF12: Dvalishvili vs Cejudo 2",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Dvalishvili",
+        "Cejudo"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-08-23T00:00:00.000Z",
       "venue": "Venue TBA",
-      "location": "Location TBA",
+      "location": "Cleveland, OH",
       "watch": {
         "provider": "FOX Nation",
         "access": "Subscription",
         "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
         "note": "Streams live exclusively on FOX Nation"
       },
-      "detailsUrl": "https://www.realamericanfreestyle.com/",
+      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf12",
       "bouts": [
-        "Matchups pending official announcement"
+        "Dvalishvili vs Cejudo"
       ]
     },
     {
