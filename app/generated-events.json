@@ -253,28 +253,28 @@
       ]
     },
     {
-      "id": "auto-raf-raf12-2026-08-23",
+      "id": "auto-raf-raf-moscow-2026-08-23",
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
-      "eventName": "RAF12: Dvalishvili vs Cejudo 2",
+      "eventName": ": RAF Moscow",
       "fighters": [
-        "Dvalishvili",
-        "Cejudo"
+        "Card",
+        "To be announced"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-08-23T00:00:00.000Z",
       "venue": "Venue TBA",
-      "location": "Cleveland, OH",
+      "location": "Location TBA",
       "watch": {
         "provider": "FOX Nation",
         "access": "Subscription",
         "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
         "note": "Streams live exclusively on FOX Nation"
       },
-      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf12",
+      "detailsUrl": "https://www.realamericanfreestyle.com/",
       "bouts": [
-        "Dvalishvili vs Cejudo"
+        "Matchups pending official announcement"
       ]
     },
     {
