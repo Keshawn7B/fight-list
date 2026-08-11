@@ -428,7 +428,7 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-fight-night-september-12-2026-2026-09-13",
+      "id": "auto-ufc-ufc-fight-night-september-12-2026-2026-09-12",
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
@@ -438,7 +438,7 @@
         "Silva"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-09-13T00:00:00.000Z",
+      "startsAt": "2026-09-12T21:00:00.000Z",
       "venue": "Desert Diamond Arena",
       "location": "Glendale, AZ, United States",
       "watch": {
