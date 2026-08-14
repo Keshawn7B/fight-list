@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "August 13, 2026",
+  "verifiedDate": "August 14, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-12",
@@ -228,28 +228,28 @@
       ]
     },
     {
-      "id": "auto-raf-vs-2026-08-23",
+      "id": "auto-raf-raf12-2026-08-23",
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
-      "eventName": ": ЧИМАЕВ VS ВУДЛИ",
+      "eventName": "RAF12: Dvalishvili vs Cejudo 2",
       "fighters": [
-        "чимаев",
-        "вудли"
+        "Dvalishvili",
+        "Cejudo"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-08-23T00:00:00.000Z",
       "venue": "Venue TBA",
-      "location": "Location TBA",
+      "location": "Cleveland, OH",
       "watch": {
         "provider": "FOX Nation",
         "access": "Subscription",
         "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
         "note": "Streams live exclusively on FOX Nation"
       },
-      "detailsUrl": "https://www.realamericanfreestyle.com/",
+      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf12",
       "bouts": [
-        "чимаев vs вудли"
+        "Dvalishvili vs Cejudo"
       ]
     },
     {
