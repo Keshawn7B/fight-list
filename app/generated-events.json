@@ -27,31 +27,6 @@
       ]
     },
     {
-      "id": "auto-one-one-friday-fights-166-2026-08-14",
-      "source": "ONE",
-      "sport": "Muay Thai",
-      "promotion": "ONE",
-      "eventName": "ONE Friday Fights 166 & The Inner Circle 26",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-08-14T11:30:00.000Z",
-      "venue": "Lumpinee Stadium",
-      "location": "Bangkok",
-      "watch": {
-        "provider": "Live.ONE / ONE YouTube",
-        "access": "Free",
-        "href": "https://live.onefc.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-166/",
-      "bouts": [
-        "Full card pending official announcement"
-      ]
-    },
-    {
       "id": "auto-one-onefightnight46-2026-08-15",
       "source": "ONE",
       "sport": "MMA",
@@ -152,14 +127,39 @@
       ]
     },
     {
+      "id": "auto-one-one-friday-fights-167-2026-08-21",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 167 & The Inner Circle 27",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-08-21T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-167/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-bkfc-bkfc-fight-night-mohegan-sun-2-2026-08-21",
       "source": "BKFC",
       "sport": "Bare Knuckle",
       "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Mohegan Sun Henry Vs Trinidad",
+      "eventName": "BKFC Fight Night Mohegan Sun Henry Vs Trinidad-Snake",
       "fighters": [
         "Henry",
-        "Trinidad"
+        "Trinidad-Snake"
       ],
       "stakes": "Official BKFC card",
       "startsAt": "2026-08-21T22:00:00.000Z",
@@ -173,7 +173,7 @@
       },
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-mohegan-sun-2",
       "bouts": [
-        "Henry vs Trinidad"
+        "Henry vs Trinidad-Snake"
       ]
     },
     {
