@@ -757,10 +757,10 @@
       "source": "BKFC",
       "sport": "Bare Knuckle",
       "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Glasgow",
+      "eventName": "BKFC Fight Night Glasgow Cooke Vs Weir",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Cooke",
+        "Weir"
       ],
       "stakes": "Official BKFC card",
       "startsAt": "2026-11-07T19:00:00.000Z",
@@ -774,7 +774,7 @@
       },
       "detailsUrl": "https://www.bkfc.com/events/bkfc-glasgow",
       "bouts": [
-        "Fights to be announced by BKFC"
+        "Cooke vs Weir"
       ]
     }
   ]
