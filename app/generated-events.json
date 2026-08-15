@@ -2,28 +2,53 @@
   "verifiedDate": "August 15, 2026",
   "events": [
     {
-      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-12",
-      "source": "DWCS",
-      "sport": "MMA",
-      "promotion": "DWCS",
-      "eventName": "Dana White's Contender Series: Season 10, Week 1",
+      "id": "auto-one-one-friday-fights-166-2026-08-14",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 166 & The Inner Circle 26",
       "fighters": [
         "Card",
         "To be announced"
       ],
-      "stakes": "Five UFC contract fights",
-      "startsAt": "2026-08-12T00:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-08-14T11:30:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
       "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.paramountplus.com/",
-        "note": "Season 10 streams exclusively on Paramount+"
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
       },
-      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-166/",
       "bouts": [
-        "Five bouts scheduled; official matchups to be announced"
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-onefightnight46-2026-08-15",
+      "source": "ONE",
+      "sport": "MMA",
+      "promotion": "ONE",
+      "eventName": "ONE Fight Night 46: Hemetsberger vs. Diachkova",
+      "fighters": [
+        "Hemetsberger",
+        "Diachkova"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-08-15T01:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "Prime Video",
+        "access": "Included",
+        "href": "https://www.primevideo.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/onefightnight46/",
+      "bouts": [
+        "Hemetsberger vs Diachkova"
       ]
     },
     {
@@ -52,14 +77,14 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-19",
+      "id": "auto-dwcs-dwcs-season-10-episode-2-preview-athletes-bouts-start-times-streaming-2026-08-19",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
       "eventName": "Dana White's Contender Series: Season 10, Week 2",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Namo Fazil",
+        "Kaik Brito"
       ],
       "stakes": "Five UFC contract fights",
       "startsAt": "2026-08-19T00:00:00.000Z",
@@ -71,9 +96,13 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "detailsUrl": "https://www.ufc.com/news/dwcs-season-10-episode-2-preview-athletes-bouts-start-times-streaming",
       "bouts": [
-        "Five bouts scheduled; official matchups to be announced"
+        "Namo Fazil vs Kaik Brito",
+        "Douglas Rodrigues vs Trent Miller",
+        "Cristian Perez vs Logan Paxton",
+        "Alik Lorenz vs Mahamed Aly",
+        "Roman Puga vs Taner Trembley"
       ]
     },
     {
@@ -228,7 +257,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-26",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-3-2026-08-26",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -247,7 +276,7 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
       ]
@@ -328,7 +357,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-02",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-4-2026-09-02",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -347,9 +376,59 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-169-2026-09-04",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 169 & The Inner Circle 29",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-09-04T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-169/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-onefightnight47-2026-09-05",
+      "source": "ONE",
+      "sport": "MMA",
+      "promotion": "ONE",
+      "eventName": "ONE Fight Night 47",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-09-05T01:00:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Prime Video",
+        "access": "Included",
+        "href": "https://www.primevideo.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/onefightnight47/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
@@ -378,7 +457,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-09",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-5-2026-09-09",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -397,9 +476,34 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-170-2026-09-11",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 170 & The Inner Circle 30",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-09-11T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-170/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
@@ -428,6 +532,31 @@
       ]
     },
     {
+      "id": "auto-one-one-samurai-3-2026-09-12",
+      "source": "ONE",
+      "sport": "Kickboxing",
+      "promotion": "ONE",
+      "eventName": "ONE SAMURAI 3",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-09-12T08:30:00.000Z",
+      "venue": "Yokohama Buntai",
+      "location": "Yokohama",
+      "watch": {
+        "provider": "Live.ONE / U-NEXT",
+        "access": "Subscription",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-samurai-3/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-ufc-ufc-fight-night-september-12-2026-2026-09-12",
       "source": "UFC",
       "sport": "MMA",
@@ -453,7 +582,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-16",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-6-2026-09-16",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -472,9 +601,34 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-171-2026-09-18",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 171 & The Inner Circle 31",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-09-18T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-171/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
@@ -503,7 +657,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-23",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-7-2026-09-23",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -522,9 +676,34 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-172-2026-09-25",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 172 & The Inner Circle 32",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-09-25T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-172/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
@@ -578,7 +757,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-09-30",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-8-2026-09-30",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -597,9 +776,34 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-one-onefightnight48-2026-10-03",
+      "source": "ONE",
+      "sport": "MMA",
+      "promotion": "ONE",
+      "eventName": "ONE Fight Night 48",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-10-03T01:00:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Prime Video",
+        "access": "Included",
+        "href": "https://www.primevideo.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/onefightnight48/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
@@ -628,7 +832,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-10-07",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-9-2026-10-07",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -647,13 +851,13 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
       ]
     },
     {
-      "id": "auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-10-14",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-14",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -672,9 +876,34 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
+      "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-one-one-samurai-4-2026-10-17",
+      "source": "ONE",
+      "sport": "Kickboxing",
+      "promotion": "ONE",
+      "eventName": "ONE SAMURAI 4",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-10-17T07:00:00.000Z",
+      "venue": "Ariake Arena",
+      "location": "Tokyo",
+      "watch": {
+        "provider": "Live.ONE / U-NEXT",
+        "access": "Subscription",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-samurai-4/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
@@ -753,6 +982,31 @@
       ]
     },
     {
+      "id": "auto-one-onefightnight49-2026-11-07",
+      "source": "ONE",
+      "sport": "MMA",
+      "promotion": "ONE",
+      "eventName": "ONE Fight Night 49",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-11-07T02:00:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Prime Video",
+        "access": "Included",
+        "href": "https://www.primevideo.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/onefightnight49/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-bkfc-bkfc-glasgow-2026-11-07",
       "source": "BKFC",
       "sport": "Bare Knuckle",
@@ -775,6 +1029,106 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-glasgow",
       "bouts": [
         "Cooke vs Weir"
+      ]
+    },
+    {
+      "id": "auto-one-one-samurai-5-2026-11-18",
+      "source": "ONE",
+      "sport": "Kickboxing",
+      "promotion": "ONE",
+      "eventName": "ONE SAMURAI 5",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-11-18T08:30:00.000Z",
+      "venue": "EBARA WAVE Arena Ota",
+      "location": "Tokyo",
+      "watch": {
+        "provider": "Live.ONE / U-NEXT",
+        "access": "Subscription",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-samurai-5/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-samurai-6-2026-12-02",
+      "source": "ONE",
+      "sport": "Kickboxing",
+      "promotion": "ONE",
+      "eventName": "ONE SAMURAI 6",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-12-02T08:30:00.000Z",
+      "venue": "Yokohama Buntai",
+      "location": "Yokohama",
+      "watch": {
+        "provider": "Live.ONE / U-NEXT",
+        "access": "Subscription",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-samurai-6/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-onefightnight50-2026-12-12",
+      "source": "ONE",
+      "sport": "MMA",
+      "promotion": "ONE",
+      "eventName": "ONE Fight Night 50",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-12-12T02:00:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Prime Video",
+        "access": "Included",
+        "href": "https://www.primevideo.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/onefightnight50/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-qatar-2027-03-25",
+      "source": "ONE",
+      "sport": "MMA",
+      "promotion": "ONE",
+      "eventName": "ONE: Qatar",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-03-25T21:00:00.000Z",
+      "venue": "Aspire Dome",
+      "location": "Doha",
+      "watch": {
+        "provider": "Prime Video",
+        "access": "Included",
+        "href": "https://www.primevideo.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-qatar/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     }
   ]

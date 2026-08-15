@@ -53,6 +53,20 @@ test("parses ONE event timestamps without guessing a timezone", () => {
   assert.equal(events[0].watch.access, "Free");
 });
 
+test("parses ONE's full upcoming-card markup outside the featured link", () => {
+  const events = parseOneEvents(`
+    <div class="simple-post-card is-event">
+      <a class="title" href="https://www.onefc.com/events/one-friday-fights-169/" title="ONE Friday Fights 169 &amp; The Inner Circle 29"><h3>ONE Friday Fights 169 &amp; The Inner Circle 29</h3></a>
+      <div class="datetime" data-timestamp="1788521400"></div>
+      <div class="location">Lumpinee Stadium, Bangkok</div>
+    </div>
+  `, now);
+
+  assert.equal(events.length, 1);
+  assert.equal(events[0].eventName, "ONE Friday Fights 169 & The Inner Circle 29");
+  assert.equal(events[0].startsAt, "2026-09-04T11:30:00.000Z");
+});
+
 test("parses BKFC cards and ignores non-BKFC ticket links", () => {
   const events = parseBkfcEvents(`
     <div class="hero-slider_slide">
@@ -147,4 +161,21 @@ test("creates all ten weekly DWCS episodes from the official season announcement
   assert.equal(events.length, 10);
   assert.equal(events[0].startsAt, "2026-08-12T00:00:00.000Z");
   assert.match(events[9].eventName, /Week 10/);
+});
+
+test("keeps DWCS current when the hub replaces its launch announcement", () => {
+  const hub = `<main><h3>The Tuesday Night Showcase Returns For Its 10th Season On August 11</h3><p>100 Fighters, 10 Weeks</p></main>`;
+  const episode = `
+    <main><h1>DWCS Season 10 Episode 2 Preview: Athletes, Bouts, Start Times, Streaming</h1>
+      <p>The DWCS Season 10 will feature 10 weekly episodes every Tuesday night on Paramount+, beginning at 8:00 p.m. ET.</p>
+      <h2>DWCS S10 E2 Fight Card</h2>
+      <ul><li>Namo Fazil vs Kaik Brito</li><li>Douglas Rodrigues vs Trent Miller</li></ul>
+    </main>`;
+  const url = "https://www.ufc.com/news/dwcs-season-10-episode-2-preview-athletes-bouts-start-times-streaming";
+  const events = parseDwcsEvents(hub, episode, now, url);
+
+  assert.equal(events.length, 10);
+  assert.deepEqual(events[1].fighters, ["Namo Fazil", "Kaik Brito"]);
+  assert.deepEqual(events[1].bouts, ["Namo Fazil vs Kaik Brito", "Douglas Rodrigues vs Trent Miller"]);
+  assert.equal(events[1].detailsUrl, url);
 });

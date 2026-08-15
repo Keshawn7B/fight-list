@@ -21,6 +21,7 @@ export type FightEvent = {
   fighters: [string, string];
   stakes: string;
   startsAt: string;
+  timeTba?: boolean;
   mainCardAt?: string;
   venue: string;
   location: string;
@@ -690,7 +691,7 @@ const curatedFightEvents: FightEvent[] = [
     fighters: ["George Liddard", "Dario Morello"],
     stakes: "European middleweight title",
     startsAt: "2026-08-22T18:00:00.000Z",
-    venue: "York Hall",
+    venue: "Copper Box Arena",
     location: "London, United Kingdom",
     watch: {
       provider: "DAZN",
@@ -702,10 +703,30 @@ const curatedFightEvents: FightEvent[] = [
     bouts: [
       "George Liddard vs Dario Morello",
       "Jimmy Sains vs Tom Cowling",
-      "Emmanuel Buttigieg vs PA Gordon",
+      "Leli Buttigieg vs PA Gordon",
       "Tiah Mai Ayton vs Ellie Hellewell",
       "Pat McCormack vs opponent to be announced",
     ],
+  },
+  {
+    id: "lara-ornelas",
+    sport: "Boxing",
+    promotion: "Matchroom",
+    eventName: "Lara vs Ornelas",
+    fighters: ["Mauricio Lara", "Carlos Ornelas"],
+    stakes: "Super featherweight main event",
+    startsAt: "2026-08-29T18:00:00.000Z",
+    timeTba: true,
+    venue: "Complejo Deportivo Artes Marciales",
+    location: "Guadalajara, Mexico",
+    watch: {
+      provider: "DAZN",
+      access: "Subscription",
+      href: "https://www.dazn.com/",
+      note: "Live worldwide on DAZN; start time has not been announced",
+    },
+    detailsUrl: "https://www.matchroomboxing.com/events/lara-vs-ornelas/",
+    bouts: ["Mauricio Lara vs Carlos Ornelas", "Undercard pending Matchroom's official announcement"],
   },
   {
     id: "marksman-barreto",
@@ -747,7 +768,7 @@ const curatedFightEvents: FightEvent[] = [
       href: "https://www.dazn.com/",
       note: "Live worldwide on DAZN",
     },
-    detailsUrl: "https://www.matchroomboxing.com/events/ruiz-jr-vs-knyba/",
+    detailsUrl: "https://www.matchroomboxing.com/events/ruiz-vs-knyba/",
     bouts: [
       "Andy Ruiz Jr. vs Damian Knyba",
       "Vito Mielnicki Jr. vs Austin Williams",
@@ -798,7 +819,33 @@ const curatedFightEvents: FightEvent[] = [
       note: "Live worldwide on DAZN",
     },
     detailsUrl: "https://www.matchroomboxing.com/events/hedges-vs-brown/",
-    bouts: ["John Hedges vs Pat Brown", "More bouts to be announced by Matchroom"],
+    bouts: [
+      "John Hedges vs Pat Brown",
+      "Shabaz Masoud vs Ckari Mansilla",
+      "Kieron Conway vs Mark Jeffers",
+      "Joe Howarth vs Josh Holmes",
+      "Alfie Middlemiss vs Gerard Hughes",
+      "Tom Rafferty vs Liam Walsh",
+    ],
+  },
+  {
+    id: "smith-puello",
+    sport: "Boxing",
+    promotion: "Matchroom",
+    eventName: "Smith vs Puello",
+    fighters: ["Dalton Smith", "Alberto Puello"],
+    stakes: "WBC super lightweight world championship",
+    startsAt: "2026-10-24T15:00:00.000Z",
+    venue: "Utilita Arena",
+    location: "Sheffield, United Kingdom",
+    watch: {
+      provider: "DAZN",
+      access: "Subscription",
+      href: "https://www.dazn.com/",
+      note: "Live worldwide on DAZN",
+    },
+    detailsUrl: "https://www.matchroomboxing.com/events/smith-vs-puello/",
+    bouts: ["Dalton Smith vs Alberto Puello", "Undercard pending Matchroom's official announcement"],
   },
   {
     id: "whittaker-wallace",
@@ -957,11 +1004,10 @@ const curatedFightEvents: FightEvent[] = [
     id: "ufc-edmonton-october-2026",
     sport: "MMA",
     promotion: "UFC",
-    eventName: "UFC Fight Night Edmonton",
-    fighters: ["Card", "To be announced"],
-    stakes: "UFC Fight Night card",
-    startsAt: "2026-10-17T20:00:00.000Z",
-    mainCardAt: "2026-10-17T22:00:00.000Z",
+    eventName: "UFC Fight Night: Buckley vs Malott",
+    fighters: ["Joaquin Buckley", "Mike Malott"],
+    stakes: "Welterweight main event",
+    startsAt: "2026-10-18T00:00:00.000Z",
     venue: "Rogers Place",
     location: "Edmonton, Alberta",
     watch: {
@@ -971,7 +1017,16 @@ const curatedFightEvents: FightEvent[] = [
       note: "U.S. listing; availability varies by country",
     },
     detailsUrl: "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
-    bouts: ["Full card pending UFC's official announcement"],
+    bouts: [
+      "Joaquin Buckley vs Mike Malott",
+      "Erin Blanchfield vs Jasmine Jasudavicius",
+      "Marc-Andre Barriault vs Kyle Daukaus",
+      "Jamey-Lyn Horth vs Katlyn Cerminara",
+      "Tanner Boser vs Jhonata Diniz",
+      "Mandel Nallo vs Nate Landwehr",
+      "Melissa Croden vs Chelsea Chandler",
+      "Louis Jourdain vs Timmy Cuamba",
+    ],
   },
   {
     id: "bkfc-clearwater-october-2026",
@@ -1015,13 +1070,15 @@ const curatedFightEvents: FightEvent[] = [
 
 const automaticFightEvents = automaticEventData.events as FightEvent[];
 
-const normalizedWords = (value: string) => value
+const normalizedPhrase = (value: string) => value
   .toLowerCase()
   .replace(/[^a-z0-9]+/g, " ")
-  .trim()
+  .trim();
+
+const normalizedWords = (value: string) => normalizedPhrase(value)
   .split(" ")
   .filter((word) => word.length > 2 && ![
-    "the", "fight", "night", "card", "versus", "ufc", "bjj", "dwcs", "one", "pfl", "bkfc", "raf", "mma", "karate", "combat",
+    "the", "fight", "fights", "night", "card", "announced", "versus", "week", "season", "series", "episode", "inner", "circle", "championship", "ufc", "bjj", "dwcs", "one", "pfl", "bkfc", "raf", "mma", "karate", "combat",
   ].includes(word));
 
 const sharesIdentity = (curated: FightEvent, automatic: FightEvent) => {
@@ -1031,10 +1088,17 @@ const sharesIdentity = (curated: FightEvent, automatic: FightEvent) => {
   const timeDifference = Math.abs(Date.parse(curated.startsAt) - Date.parse(automatic.startsAt));
   if (timeDifference > 36 * 60 * 60 * 1000) return false;
   if (curated.detailsUrl === automatic.detailsUrl) return true;
+  const curatedName = normalizedPhrase(curated.eventName);
+  const automaticName = normalizedPhrase(automatic.eventName);
+  if (
+    curatedName === automaticName
+    || automaticName.startsWith(`${curatedName} `)
+    || curatedName.startsWith(`${automaticName} `)
+  ) return true;
 
   const curatedWords = new Set(normalizedWords(`${curated.eventName} ${curated.fighters.join(" ")}`));
   const automaticWords = normalizedWords(`${automatic.eventName} ${automatic.fighters.join(" ")}`);
-  return automaticWords.some((word) => curatedWords.has(word));
+  return automaticWords.filter((word) => curatedWords.has(word)).length >= 2;
 };
 
 const hasPlaceholderBouts = (event: FightEvent) => (

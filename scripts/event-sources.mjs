@@ -206,8 +206,12 @@ export function parseOneEvents(html, now = new Date()) {
 
   $(".datetime[data-timestamp]").each((_, element) => {
     const date = $(element);
-    const card = date.closest("a[href]");
-    const href = card.attr("href");
+    const linkedCard = date.closest("a[href]");
+    const card = linkedCard.length
+      ? linkedCard
+      : date.closest(".simple-post-card, [class*='event-card']");
+    const href = linkedCard.attr("href")
+      ?? card.find("a.title[href], a[href*='/events/']").first().attr("href");
     const timestamp = Number(date.attr("data-timestamp"));
     if (!href || !Number.isFinite(timestamp)) return;
 
@@ -216,7 +220,8 @@ export function parseOneEvents(html, now = new Date()) {
     const detailsUrl = absoluteUrl(href, "https://www.onefc.com/events/");
     if (eventsByUrl.has(detailsUrl)) return;
 
-    const eventName = clean(card.find(".title").first().text());
+    const eventName = clean(card.find(".title").first().text())
+      || clean(card.find("a.title").first().attr("title"));
     const place = clean(card.find(".location").first().text());
     if (!eventName) return;
     const [venue, ...locationParts] = place.split(",").map(clean);
@@ -488,36 +493,55 @@ export function parseKarateCombatEvents(ticketsHtml, eventHtml = "", now = new D
   })];
 }
 
-export function parseDwcsEvents(hubHtml, announcementHtml, now = new Date()) {
+export function parseDwcsEvents(hubHtml, announcementHtml, now = new Date(), announcementUrl = "https://www.ufc.com/dwcs") {
   const $ = cheerio.load(hubHtml);
-  const combined = clean(`${$("article").first().text()} ${cheerio.load(announcementHtml).root().text()}`);
+  const announcement = cheerio.load(announcementHtml);
+  announcement("script, style, noscript").remove();
+  const hubText = clean($.root().text());
+  const announcementText = clean(announcement.root().text());
+  const combined = clean(`${hubText} ${announcementText}`);
   const season = combined.match(/(?:historic\s+)?(\d+)(?:st|nd|rd|th)\s+season/i)?.[1]
     ?? combined.match(/SEASON\s+(\d+)/i)?.[1];
   const dateTime = combined.match(/([A-Za-z]+\s+\d{1,2})(?:,?\s+(\d{4}))?\s+at\s+(\d{1,2}(?::\d{2})?\s*[AP]M)\s*ET/i);
-  if (!season || !dateTime) return [];
-  const firstStart = parseLocalDateTime(
-    `${dateTime[1]}${dateTime[2] ? `, ${dateTime[2]}` : ""}`,
-    dateTime[3],
-    now,
-  );
+  const firstDate = hubText.match(/season\s+on\s+([A-Za-z]+\s+\d{1,2})(?:,?\s+(\d{4}))?/i)
+    ?? hubText.match(/season\s+(?:begins|starting)\s+(?:on\s+)?([A-Za-z]+\s+\d{1,2})(?:,?\s+(\d{4}))?/i);
+  const startDate = dateTime
+    ? `${dateTime[1]}${dateTime[2] ? `, ${dateTime[2]}` : ""}`
+    : firstDate?.slice(1).filter(Boolean).join(", ");
+  const startTime = dateTime?.[3]
+    ?? announcementText.match(/(?:beginning|airs?|starting)\s+at\s+(\d{1,2}(?::\d{2})?\s*[ap]\.?m\.?)\s*ET/i)?.[1]?.replaceAll(".", "");
+  if (!season || !startDate || !startTime) return [];
+  const firstStart = parseLocalDateTime(startDate, startTime, now);
   if (!firstStart) return [];
 
   const announcementHref = $("article a[href]").filter((_, link) => /contender series debuts|season\s+\d+\s+to debut/i.test($(link).text())).first().attr("href");
-  const detailsUrl = announcementHref
+  const seasonDetailsUrl = announcementHref
     ? absoluteUrl(announcementHref, "https://www.ufc.com/dwcs")
     : "https://www.ufc.com/dwcs";
   const episodes = Number(combined.match(/(\d+)\s+Weeks/i)?.[1] ?? 10);
+  const announcedEpisode = Number(announcementText.match(/Season\s+\d+\s+Episode\s+(\d+)/i)?.[1]);
+  const announcedBouts = announcement("h2").filter((_, heading) => /Fight Card/i.test(announcement(heading).text()))
+    .first()
+    .nextAll("ul")
+    .first()
+    .find("li")
+    .map((_, item) => clean(announcement(item).text()))
+    .get()
+    .filter((bout) => /\s+vs\.?\s+/i.test(bout));
   const events = [];
 
   for (let index = 0; index < episodes; index += 1) {
     const startsAt = new Date(Date.parse(firstStart) + (index * 7 * 24 * 60 * 60 * 1000)).toISOString();
     if (!futureEnough(startsAt, now)) continue;
+    const episodeNumber = index + 1;
+    const hasAnnouncedCard = episodeNumber === announcedEpisode && announcedBouts.length > 0;
+    const episodeFighters = hasAnnouncedCard ? splitMatchup(announcedBouts[0]) : ["Card", "To be announced"];
     events.push(makeEvent({
       source: "DWCS",
       sport: "MMA",
       promotion: "DWCS",
-      eventName: `Dana White's Contender Series: Season ${season}, Week ${index + 1}`,
-      fighters: ["Card", "To be announced"],
+      eventName: `Dana White's Contender Series: Season ${season}, Week ${episodeNumber}`,
+      fighters: episodeFighters,
       stakes: "Five UFC contract fights",
       startsAt,
       venue: "Meta APEX",
@@ -526,8 +550,8 @@ export function parseDwcsEvents(hubHtml, announcementHtml, now = new Date()) {
       access: "Subscription",
       watchHref: "https://www.paramountplus.com/",
       watchNote: `Season ${season} streams exclusively on Paramount+`,
-      detailsUrl,
-      bouts: ["Five bouts scheduled; official matchups to be announced"],
+      detailsUrl: hasAnnouncedCard ? announcementUrl : seasonDetailsUrl,
+      bouts: hasAnnouncedCard ? announcedBouts : ["Five bouts scheduled; official matchups to be announced"],
     }));
   }
 
@@ -556,9 +580,15 @@ export const sourceAdapters = [
     run: async (now) => {
       const hubHtml = await fetchOfficialHtml("https://www.ufc.com/dwcs");
       const $ = cheerio.load(hubHtml);
-      const href = $("article a[href]").filter((_, link) => /contender series debuts|season\s+\d+\s+to debut/i.test($(link).text())).first().attr("href");
-      const announcementHtml = href ? await fetchOfficialHtml(absoluteUrl(href, "https://www.ufc.com/dwcs")) : hubHtml;
-      return parseDwcsEvents(hubHtml, announcementHtml, now);
+      const href = $("a[href*='/news/']").filter((_, link) => {
+        const text = clean($(link).text());
+        const path = $(link).attr("href") ?? "";
+        return /contender series debuts|season\s+\d+\s+to debut/i.test(text)
+          || /dwcs-season-\d+-episode-\d+-preview/i.test(path);
+      }).first().attr("href");
+      const announcementUrl = href ? absoluteUrl(href, "https://www.ufc.com/dwcs") : "https://www.ufc.com/dwcs";
+      const announcementHtml = href ? await fetchOfficialHtml(announcementUrl) : hubHtml;
+      return parseDwcsEvents(hubHtml, announcementHtml, now, announcementUrl);
     },
   },
   {

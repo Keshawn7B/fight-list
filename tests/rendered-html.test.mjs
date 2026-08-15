@@ -76,6 +76,8 @@ test("server-renders the full searchable schedule on its own page", async () => 
   assert.match(html, /ONE SAMURAI 2/i);
   assert.match(html, /BKFC Belgrade/i);
   assert.match(html, /BKFC 95 Newark/i);
+  assert.match(html, /Lara vs Ornelas/i);
+  assert.match(html, /Smith vs Puello/i);
   assert.match(html, /aria-label="Save /i);
 });
 
@@ -88,9 +90,12 @@ test("tracks DWCS and UFC BJJ with official event details", async () => {
   assert.match(dwcsHtml, /Five bouts scheduled/i);
   assert.match(dwcsHtml, /Paramount\+/i);
 
-  const weekTwoResponse = await render("/events/auto-dwcs-dana-whites-contender-series-debuts-paramount-historic-10th-season-2026-08-19/");
+  const weekTwoResponse = await render("/events/auto-dwcs-dwcs-season-10-episode-2-preview-athletes-bouts-start-times-streaming-2026-08-19/");
   assert.equal(weekTwoResponse.status, 200);
-  assert.match(await weekTwoResponse.text(), /Season 10, Week 2/i);
+  const weekTwoHtml = await weekTwoResponse.text();
+  assert.match(weekTwoHtml, /Season 10, Week 2/i);
+  assert.match(weekTwoHtml, /Namo Fazil vs Kaik Brito/i);
+  assert.match(weekTwoHtml, /Roman Puga vs Taner Trembley/i);
 
   const bjjResponse = await render("/events/ufc-bjj-10/");
   assert.equal(bjjResponse.status, 200);
@@ -115,6 +120,36 @@ test("tracks Real American Freestyle with its official RAF12 card", async () => 
   assert.match(html, /Gable Steveson vs Anthony Cassioppi/i);
   assert.match(html, /FOX Nation/i);
   assert.match(html, /Wrestling/i);
+});
+
+test("keeps adjacent ONE cards separate when automatic data is merged", async () => {
+  const response = await render("/events/one-fight-night-47/");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /ONE Fight Night 47/i);
+  assert.match(html, /Prime Video/i);
+  assert.doesNotMatch(html, /ONE Friday Fights 169/i);
+});
+
+test("renders the newly announced UFC Edmonton main event and card", async () => {
+  const response = await render("/events/ufc-edmonton-october-2026/");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Buckley vs Malott/i);
+  assert.match(html, /Erin Blanchfield vs Jasmine Jasudavicius/i);
+  assert.match(html, /Louis Jourdain vs Timmy Cuamba/i);
+});
+
+test("labels an announced fight whose start time is still pending", async () => {
+  const response = await render("/events/lara-ornelas/");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Lara vs Ornelas/i);
+  assert.match(html, /Start time to be announced/i);
+  assert.match(html, /Calendar available when timed/i);
 });
 
 test("server-renders dedicated saved and settings pages", async () => {

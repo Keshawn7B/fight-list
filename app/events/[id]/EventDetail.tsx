@@ -162,9 +162,9 @@ export function EventDetail({
 
         <section className="detail-facts" aria-label="Event details">
           <article>
-            <small>{event.mainCardAt ? "Opening bell" : "Event starts"}</small>
-            <strong><LocalTime iso={event.startsAt} timeFormat={preferences.timeFormat} /></strong>
-            {event.mainCardAt && <p>Main card: <LocalTime iso={event.mainCardAt} timeFormat={preferences.timeFormat} /></p>}
+            <small>{event.timeTba ? "Event date" : event.mainCardAt ? "Opening bell" : "Event starts"}</small>
+            <strong>{event.timeTba ? "Start time to be announced" : <LocalTime iso={event.startsAt} timeFormat={preferences.timeFormat} />}</strong>
+            {!event.timeTba && event.mainCardAt && <p>Main card: <LocalTime iso={event.mainCardAt} timeFormat={preferences.timeFormat} /></p>}
           </article>
           <article>
             <small>Venue</small>
@@ -182,9 +182,13 @@ export function EventDetail({
           <a className="watch-action" href={event.watch.href} target="_blank" rel="noreferrer">
             Watch on {event.watch.provider}
           </a>
-          <button type="button" onClick={() => downloadCalendar(event)}>
-            Add to calendar
-          </button>
+          {event.timeTba ? (
+            <button type="button" disabled>Calendar available when timed</button>
+          ) : (
+            <button type="button" onClick={() => downloadCalendar(event)}>
+              Add to calendar
+            </button>
+          )}
           <button type="button" onClick={shareEvent}>
             {shareLabel}
           </button>

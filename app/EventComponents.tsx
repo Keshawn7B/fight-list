@@ -8,7 +8,7 @@ import type { FightEvent } from "./events";
 const EVENT_WINDOW = 5 * 60 * 60 * 1000;
 
 export function statusFor(event: FightEvent, now: number) {
-  if (!now) return null;
+  if (!now || event.timeTba) return null;
   const start = new Date(event.startsAt).getTime();
   const end = start + EVENT_WINDOW;
   if (now >= start && now < end) return "Live";
@@ -33,13 +33,35 @@ export function upcomingEvents(events: FightEvent[], now: number) {
 
 function EventTimeBlock({
   iso,
+  timeTba,
   mounted,
   timeFormat,
 }: {
   iso: string;
+  timeTba?: boolean;
   mounted: boolean;
   timeFormat: TimeFormat;
 }) {
+  if (timeTba) {
+    const date = new Date(iso);
+    const dateText = new Intl.DateTimeFormat("en-US", {
+      month: "short",
+      day: "numeric",
+      timeZone: "UTC",
+    }).format(date);
+    const weekdayText = new Intl.DateTimeFormat("en-US", {
+      weekday: "short",
+      timeZone: "UTC",
+    }).format(date);
+    return (
+      <span className="time-block" aria-label={`${weekdayText}, ${dateText}, start time to be announced`}>
+        <span>{dateText}</span>
+        <strong>TBA</strong>
+        <small>{weekdayText}</small>
+      </span>
+    );
+  }
+
   if (!mounted) {
     return (
       <span className="time-block" aria-label="Local start time loading">
@@ -102,6 +124,7 @@ export function EventCard({
       >
         <EventTimeBlock
           iso={event.startsAt}
+          timeTba={event.timeTba}
           mounted={mounted}
           timeFormat={timeFormat}
         />
