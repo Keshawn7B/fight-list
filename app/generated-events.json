@@ -27,31 +27,6 @@
       ]
     },
     {
-      "id": "auto-one-onefightnight46-2026-08-15",
-      "source": "ONE",
-      "sport": "MMA",
-      "promotion": "ONE",
-      "eventName": "ONE Fight Night 46: Hemetsberger vs. Diachkova",
-      "fighters": [
-        "Hemetsberger",
-        "Diachkova"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-08-15T01:00:00.000Z",
-      "venue": "Lumpinee Stadium",
-      "location": "Bangkok",
-      "watch": {
-        "provider": "Prime Video",
-        "access": "Included",
-        "href": "https://www.primevideo.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/onefightnight46/",
-      "bouts": [
-        "Hemetsberger vs Diachkova"
-      ]
-    },
-    {
       "id": "auto-ufc-ufc-330-2026-08-16",
       "source": "UFC",
       "sport": "MMA",
@@ -275,6 +250,31 @@
       "detailsUrl": "https://www.ufc.com/news/dana-whites-contender-series-debuts-paramount-historic-10th-season",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-168-2026-08-28",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 168 & The Inner Circle 28",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-08-28T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-168/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
