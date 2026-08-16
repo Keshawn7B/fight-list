@@ -907,6 +907,31 @@
       ]
     },
     {
+      "id": "auto-ufc-ufc-fight-night-october-17-2026-2026-10-18",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Buckley vs Malott",
+      "fighters": [
+        "Buckley",
+        "Malott"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-10-18T00:00:00.000Z",
+      "venue": "Rogers Place",
+      "location": "Edmonton, AB, Canada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
+      "bouts": [
+        "Buckley vs Malott"
+      ]
+    },
+    {
       "id": "auto-bkfc-bkfc-95-newark-2026-10-18",
       "source": "BKFC",
       "sport": "Bare Knuckle",
