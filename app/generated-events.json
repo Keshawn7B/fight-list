@@ -2,31 +2,6 @@
   "verifiedDate": "August 16, 2026",
   "events": [
     {
-      "id": "auto-one-onefightnight46-2026-08-15",
-      "source": "ONE",
-      "sport": "MMA",
-      "promotion": "ONE",
-      "eventName": "ONE Fight Night 46: Hemetsberger vs. Diachkova",
-      "fighters": [
-        "Hemetsberger",
-        "Diachkova"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-08-15T01:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "Prime Video",
-        "access": "Included",
-        "href": "https://www.primevideo.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/onefightnight46/",
-      "bouts": [
-        "Hemetsberger vs Diachkova"
-      ]
-    },
-    {
       "id": "auto-ufc-ufc-330-2026-08-16",
       "source": "UFC",
       "sport": "MMA",
