@@ -2,31 +2,6 @@
   "verifiedDate": "August 17, 2026",
   "events": [
     {
-      "id": "auto-ufc-ufc-330-2026-08-16",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC 330: Makhachev vs Machado Garry",
-      "fighters": [
-        "Makhachev",
-        "Machado Garry"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-08-16T01:00:00.000Z",
-      "venue": "Xfinity Mobile Arena",
-      "location": "Philadelphia, PA, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-330",
-      "bouts": [
-        "Makhachev vs Machado Garry"
-      ]
-    },
-    {
       "id": "auto-dwcs-dwcs-season-10-episode-2-preview-athletes-bouts-start-times-streaming-2026-08-19",
       "source": "DWCS",
       "sport": "MMA",
