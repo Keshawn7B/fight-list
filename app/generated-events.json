@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "August 18, 2026",
+  "verifiedDate": "August 19, 2026",
   "events": [
     {
       "id": "auto-dwcs-dwcs-season-10-episode-2-preview-athletes-bouts-start-times-streaming-2026-08-19",
@@ -661,10 +661,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC Fight Night: TBD vs TBD",
+      "eventName": "UFC Fight Night: Rosas Jr. vs Barcelos",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Rosas Jr.",
+        "Barcelos"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2026-09-26T22:00:00.000Z",
@@ -678,7 +678,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-september-26-2026",
       "bouts": [
-        "Full card pending official announcement"
+        "Rosas Jr. vs Barcelos"
       ]
     },
     {
