@@ -2,35 +2,6 @@
   "verifiedDate": "August 21, 2026",
   "events": [
     {
-      "id": "auto-dwcs-dwcs-season-10-episode-2-preview-athletes-bouts-start-times-streaming-2026-08-19",
-      "source": "DWCS",
-      "sport": "MMA",
-      "promotion": "DWCS",
-      "eventName": "Dana White's Contender Series: Season 10, Week 2",
-      "fighters": [
-        "Namo Fazil",
-        "Kaik Brito"
-      ],
-      "stakes": "Five UFC contract fights",
-      "startsAt": "2026-08-19T00:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.paramountplus.com/",
-        "note": "Season 10 streams exclusively on Paramount+"
-      },
-      "detailsUrl": "https://www.ufc.com/news/dwcs-season-10-episode-2-preview-athletes-bouts-start-times-streaming",
-      "bouts": [
-        "Namo Fazil vs Kaik Brito",
-        "Douglas Rodrigues vs Trent Miller",
-        "Cristian Perez vs Logan Paxton",
-        "Alik Lorenz vs Mahamed Aly",
-        "Roman Puga vs Taner Trembley"
-      ]
-    },
-    {
       "id": "auto-ufc-bjj-ufc-bjj-10-tackett-vs-gracie-fight-card-2026-08-21",
       "source": "UFC BJJ",
       "sport": "Jiu-Jitsu",
@@ -182,17 +153,17 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-3-2026-08-26",
+      "id": "auto-dwcs-dwcs-season-10-episode-3-preview-athletes-bouts-start-times-streaming-2026-08-25",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
       "eventName": "Dana White's Contender Series: Season 10, Week 3",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Bella Mir",
+        "Alex Apodaca"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-08-26T00:00:00.000Z",
+      "startsAt": "2026-08-25T23:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -201,9 +172,12 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/dwcs",
+      "detailsUrl": "https://www.ufc.com/news/dwcs-season-10-episode-3-preview-athletes-bouts-start-times-streaming",
       "bouts": [
-        "Five bouts scheduled; official matchups to be announced"
+        "Bella Mir vs Alex Apodaca",
+        "Gary Balletto vs Sean Clancy Jr.",
+        "Ronald Humphrey vs Alexis Miranda",
+        "Carlos Petruzzella vs Nick Galanti"
       ]
     },
     {
@@ -282,7 +256,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-4-2026-09-02",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-4-2026-09-01",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -292,7 +266,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-02T00:00:00.000Z",
+      "startsAt": "2026-09-01T23:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -382,7 +356,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-5-2026-09-09",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-5-2026-09-08",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -392,7 +366,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-09T00:00:00.000Z",
+      "startsAt": "2026-09-08T23:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -507,7 +481,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-6-2026-09-16",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-6-2026-09-15",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -517,7 +491,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-16T00:00:00.000Z",
+      "startsAt": "2026-09-15T23:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -582,7 +556,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-7-2026-09-23",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-7-2026-09-22",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -592,7 +566,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-23T00:00:00.000Z",
+      "startsAt": "2026-09-22T23:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -682,7 +656,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-8-2026-09-30",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-8-2026-09-29",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -692,7 +666,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-30T00:00:00.000Z",
+      "startsAt": "2026-09-29T23:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -757,7 +731,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-9-2026-10-07",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-9-2026-10-06",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -767,7 +741,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-10-07T00:00:00.000Z",
+      "startsAt": "2026-10-06T23:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -782,7 +756,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-14",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -792,7 +766,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-10-14T00:00:00.000Z",
+      "startsAt": "2026-10-13T23:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
