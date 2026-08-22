@@ -52,31 +52,6 @@
       ]
     },
     {
-      "id": "auto-bkfc-bkfc-fight-night-mohegan-sun-2-2026-08-21",
-      "source": "BKFC",
-      "sport": "Bare Knuckle",
-      "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Mohegan Sun Henry Vs Trinidad-Snake",
-      "fighters": [
-        "Henry",
-        "Trinidad-Snake"
-      ],
-      "stakes": "Official BKFC card",
-      "startsAt": "2026-08-21T22:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "BKFC+ / Fubo Sports",
-        "access": "Subscription",
-        "href": "https://watch.bkfc.com/",
-        "note": "Official BKFC stream; regional options may vary"
-      },
-      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-mohegan-sun-2",
-      "bouts": [
-        "Henry vs Trinidad-Snake"
-      ]
-    },
-    {
       "id": "auto-pfl-pfl-tampa-2026-08-22",
       "source": "PFL",
       "sport": "MMA",
