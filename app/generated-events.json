@@ -78,31 +78,6 @@
       ]
     },
     {
-      "id": "auto-raf-raf12-2026-08-23",
-      "source": "RAF",
-      "sport": "Wrestling",
-      "promotion": "RAF",
-      "eventName": "RAF12: Dvalishvili vs Cejudo 2",
-      "fighters": [
-        "Dvalishvili",
-        "Cejudo"
-      ],
-      "stakes": "Official Real American Freestyle card",
-      "startsAt": "2026-08-23T00:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Cleveland, OH",
-      "watch": {
-        "provider": "FOX Nation",
-        "access": "Subscription",
-        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
-        "note": "Streams live exclusively on FOX Nation"
-      },
-      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf12",
-      "bouts": [
-        "Dvalishvili vs Cejudo"
-      ]
-    },
-    {
       "id": "auto-dwcs-dwcs-season-10-episode-3-preview-athletes-bouts-start-times-streaming-2026-08-25",
       "source": "DWCS",
       "sport": "MMA",
@@ -278,6 +253,31 @@
       "detailsUrl": "https://www.onefc.com/events/onefightnight47/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-raf-raf-moscow-chimaev-vs-woodley-2026-09-05",
+      "source": "RAF",
+      "sport": "Wrestling",
+      "promotion": "RAF",
+      "eventName": "RAF MOSCOW: CHIMAEV VS WOODLEY",
+      "fighters": [
+        "Chimaev",
+        "Woodley"
+      ],
+      "stakes": "Official Real American Freestyle card",
+      "startsAt": "2026-09-05T16:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Moscow, Russia",
+      "watch": {
+        "provider": "FOX Nation",
+        "access": "Subscription",
+        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
+        "note": "Streams live exclusively on FOX Nation"
+      },
+      "detailsUrl": "https://www.realamericanfreestyle.com/",
+      "bouts": [
+        "Chimaev vs Woodley"
       ]
     },
     {
@@ -853,6 +853,31 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-clearwater-4",
       "bouts": [
         "Fights to be announced by BKFC"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-333-2026-10-24",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC 333: Volkanovski vs Evloev",
+      "fighters": [
+        "Volkanovski",
+        "Evloev"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-10-24T18:00:00.000Z",
+      "venue": "Etihad Arena",
+      "location": "Abu Dhabi, United Arab Emirates",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-333",
+      "bouts": [
+        "Volkanovski vs Evloev"
       ]
     },
     {
