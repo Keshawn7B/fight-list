@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "August 22, 2026",
+  "verifiedDate": "August 23, 2026",
   "events": [
     {
       "id": "auto-ufc-bjj-ufc-bjj-10-tackett-vs-gracie-fight-card-2026-08-21",
@@ -24,31 +24,6 @@
       "detailsUrl": "https://www.ufc.com/news/ufc-bjj-10-tackett-vs-gracie-fight-card",
       "bouts": [
         "Tackett vs Gracie"
-      ]
-    },
-    {
-      "id": "auto-one-one-friday-fights-167-2026-08-21",
-      "source": "ONE",
-      "sport": "Muay Thai",
-      "promotion": "ONE",
-      "eventName": "ONE Friday Fights 167 & The Inner Circle 27",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-08-21T11:30:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "Live.ONE / ONE YouTube",
-        "access": "Free",
-        "href": "https://live.onefc.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-167/",
-      "bouts": [
-        "Full card pending official announcement"
       ]
     },
     {
