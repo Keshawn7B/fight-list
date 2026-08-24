@@ -53,31 +53,6 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-fight-night-august-22-2026-2026-08-23",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Hernandez vs Rodrigues",
-      "fighters": [
-        "Hernandez",
-        "Rodrigues"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-08-23T00:00:00.000Z",
-      "venue": "Golden 1 Center",
-      "location": "Sacramento, CA, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-22-2026",
-      "bouts": [
-        "Hernandez vs Rodrigues"
-      ]
-    },
-    {
       "id": "auto-dwcs-dwcs-season-10-episode-3-preview-athletes-bouts-start-times-streaming-2026-08-25",
       "source": "DWCS",
       "sport": "MMA",
