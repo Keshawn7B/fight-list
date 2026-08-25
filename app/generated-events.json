@@ -81,6 +81,31 @@
       ]
     },
     {
+      "id": "auto-ufc-road-to-ufc-season-5-semifinals-2026-08-28",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Maheshate vs Flowers",
+      "fighters": [
+        "Maheshate",
+        "Flowers"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-08-28T09:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/road-to-ufc-season-5-semifinals",
+      "bouts": [
+        "Maheshate vs Flowers"
+      ]
+    },
+    {
       "id": "auto-one-one-friday-fights-168-2026-08-28",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -631,6 +656,31 @@
       ]
     },
     {
+      "id": "auto-bkfc-bkfc-fight-night-australia-2026-10-03",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Fight Night Australia",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-10-03T09:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-australia",
+      "bouts": [
+        "Fights to be announced by BKFC"
+      ]
+    },
+    {
       "id": "auto-ufc-ufc-332-2026-10-04",
       "source": "UFC",
       "sport": "MMA",
@@ -828,31 +878,6 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-clearwater-4",
       "bouts": [
         "Fights to be announced by BKFC"
-      ]
-    },
-    {
-      "id": "auto-ufc-ufc-333-2026-10-24",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC 333: Volkanovski vs Evloev",
-      "fighters": [
-        "Volkanovski",
-        "Evloev"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-10-24T18:00:00.000Z",
-      "venue": "Etihad Arena",
-      "location": "Abu Dhabi, United Arab Emirates",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-333",
-      "bouts": [
-        "Volkanovski vs Evloev"
       ]
     },
     {
