@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "August 24, 2026",
+  "verifiedDate": "August 25, 2026",
   "events": [
     {
       "id": "auto-ufc-bjj-ufc-bjj-10-tackett-vs-gracie-fight-card-2026-08-21",
@@ -231,19 +231,19 @@
       ]
     },
     {
-      "id": "auto-raf-raf-moscow-chimaev-vs-woodley-2026-09-05",
+      "id": "auto-raf-vs-2026-09-05",
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
-      "eventName": "RAF MOSCOW: CHIMAEV VS WOODLEY",
+      "eventName": ": ЧИМАЕВ VS ВУДЛИ",
       "fighters": [
-        "Chimaev",
-        "Woodley"
+        "чимаев",
+        "вудли"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-09-05T16:00:00.000Z",
       "venue": "Venue TBA",
-      "location": "Moscow, Russia",
+      "location": "Location TBA",
       "watch": {
         "provider": "FOX Nation",
         "access": "Subscription",
@@ -252,7 +252,7 @@
       },
       "detailsUrl": "https://www.realamericanfreestyle.com/",
       "bouts": [
-        "Chimaev vs Woodley"
+        "чимаев vs вудли"
       ]
     },
     {
