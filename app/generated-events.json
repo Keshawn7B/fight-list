@@ -385,10 +385,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC Fight Night: Rodriguez vs Silva",
+      "eventName": "UFC Fight Night: Silva vs Delgado",
       "fighters": [
-        "Rodriguez",
-        "Silva"
+        "Silva",
+        "Delgado"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2026-09-12T21:00:00.000Z",
@@ -402,7 +402,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-september-12-2026",
       "bouts": [
-        "Rodriguez vs Silva"
+        "Silva vs Delgado"
       ]
     },
     {
