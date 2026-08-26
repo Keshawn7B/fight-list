@@ -635,10 +635,10 @@
       "source": "ONE",
       "sport": "MMA",
       "promotion": "ONE",
-      "eventName": "ONE Fight Night 48",
+      "eventName": "ONE Fight Night 48: Erdogan vs. Elliott on Prime Video",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Erdogan",
+        "Elliott On Prime Video"
       ],
       "stakes": "Official ONE Championship card",
       "startsAt": "2026-10-03T01:00:00.000Z",
@@ -652,7 +652,7 @@
       },
       "detailsUrl": "https://www.onefc.com/events/onefightnight48/",
       "bouts": [
-        "Full card pending official announcement"
+        "Erdogan vs Elliott On Prime Video"
       ]
     },
     {
