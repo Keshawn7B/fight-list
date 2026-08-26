@@ -256,19 +256,19 @@
       ]
     },
     {
-      "id": "auto-raf-vs-2026-09-05",
+      "id": "auto-raf-raf-moscow-chimaev-vs-woodley-2026-09-05",
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
-      "eventName": ": ЧИМАЕВ VS ВУДЛИ",
+      "eventName": "RAF MOSCOW: CHIMAEV VS WOODLEY",
       "fighters": [
-        "чимаев",
-        "вудли"
+        "Chimaev",
+        "Woodley"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-09-05T16:00:00.000Z",
       "venue": "Venue TBA",
-      "location": "Location TBA",
+      "location": "Moscow, Russia",
       "watch": {
         "provider": "FOX Nation",
         "access": "Subscription",
@@ -277,7 +277,7 @@
       },
       "detailsUrl": "https://www.realamericanfreestyle.com/",
       "bouts": [
-        "чимаев vs вудли"
+        "Chimaev vs Woodley"
       ]
     },
     {
