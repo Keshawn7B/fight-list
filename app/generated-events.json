@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "August 26, 2026",
+  "verifiedDate": "August 27, 2026",
   "events": [
     {
       "id": "auto-ufc-bjj-ufc-bjj-10-tackett-vs-gracie-fight-card-2026-08-21",
@@ -728,6 +728,31 @@
       "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-fight-night-bethlehem-2026-10-10",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Fight Night Bethlehem Cisneros Vs Petersen",
+      "fighters": [
+        "Cisneros",
+        "Petersen"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-10-10T00:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-bethlehem",
+      "bouts": [
+        "Cisneros vs Petersen"
       ]
     },
     {
