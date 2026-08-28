@@ -27,60 +27,6 @@
       ]
     },
     {
-      "id": "auto-pfl-pfl-tampa-2026-08-22",
-      "source": "PFL",
-      "sport": "MMA",
-      "promotion": "PFL",
-      "eventName": "PFL Tampa",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official PFL card",
-      "startsAt": "2026-08-22T21:30:00.000Z",
-      "mainCardAt": "2026-08-23T01:00:00.000Z",
-      "venue": "Benchmark International Arena",
-      "location": "Tampa, FL",
-      "watch": {
-        "provider": "ESPN App / ESPN",
-        "access": "Subscription",
-        "href": "https://www.espn.com/watch/",
-        "note": "U.S. listing; regional availability may vary"
-      },
-      "detailsUrl": "https://pflmma.com/event/pfl-tampa",
-      "bouts": [
-        "Full matchups on the official PFL card"
-      ]
-    },
-    {
-      "id": "auto-dwcs-dwcs-season-10-episode-3-preview-athletes-bouts-start-times-streaming-2026-08-25",
-      "source": "DWCS",
-      "sport": "MMA",
-      "promotion": "DWCS",
-      "eventName": "Dana White's Contender Series: Season 10, Week 3",
-      "fighters": [
-        "Bella Mir",
-        "Alex Apodaca"
-      ],
-      "stakes": "Five UFC contract fights",
-      "startsAt": "2026-08-25T23:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.paramountplus.com/",
-        "note": "Season 10 streams exclusively on Paramount+"
-      },
-      "detailsUrl": "https://www.ufc.com/news/dwcs-season-10-episode-3-preview-athletes-bouts-start-times-streaming",
-      "bouts": [
-        "Bella Mir vs Alex Apodaca",
-        "Gary Balletto vs Sean Clancy Jr.",
-        "Ronald Humphrey vs Alexis Miranda",
-        "Carlos Petruzzella vs Nick Galanti"
-      ]
-    },
-    {
       "id": "auto-ufc-road-to-ufc-season-5-semifinals-2026-08-28",
       "source": "UFC",
       "sport": "MMA",
@@ -181,17 +127,17 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-4-2026-09-01",
+      "id": "auto-dwcs-dwcs-season-10-episode-4-preview-athletes-bouts-start-times-streaming-2026-09-02",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
       "eventName": "Dana White's Contender Series: Season 10, Week 4",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Patrick Rivera",
+        "Adam Darby"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-01T23:00:00.000Z",
+      "startsAt": "2026-09-02T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -200,9 +146,13 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/dwcs",
+      "detailsUrl": "https://www.ufc.com/news/dwcs-season-10-episode-4-preview-athletes-bouts-start-times-streaming",
       "bouts": [
-        "Five bouts scheduled; official matchups to be announced"
+        "Patrick Rivera vs. Adam Darby",
+        "Brandon Holmes vs. Modestino Rodrigues",
+        "Liam McCracken vs. Silvestre Sanchez",
+        "Gabriel Lourenço vs. Charlie Cleveland",
+        "Hunter Smith vs. Adam Livingston"
       ]
     },
     {
@@ -235,10 +185,10 @@
       "source": "ONE",
       "sport": "MMA",
       "promotion": "ONE",
-      "eventName": "ONE Fight Night 47",
+      "eventName": "ONE Fight Night 47: Stamp vs. Flores on Prime Video",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Stamp",
+        "Flores On Prime Video"
       ],
       "stakes": "Official ONE Championship card",
       "startsAt": "2026-09-05T01:00:00.000Z",
@@ -252,7 +202,7 @@
       },
       "detailsUrl": "https://www.onefc.com/events/onefightnight47/",
       "bouts": [
-        "Full card pending official announcement"
+        "Stamp vs Flores On Prime Video"
       ]
     },
     {
@@ -306,7 +256,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-5-2026-09-08",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-5-2026-09-09",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -316,7 +266,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-08T23:00:00.000Z",
+      "startsAt": "2026-09-09T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -431,7 +381,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-6-2026-09-15",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-6-2026-09-16",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -441,7 +391,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-15T23:00:00.000Z",
+      "startsAt": "2026-09-16T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -506,7 +456,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-7-2026-09-22",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-7-2026-09-23",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -516,7 +466,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-22T23:00:00.000Z",
+      "startsAt": "2026-09-23T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -606,7 +556,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-8-2026-09-29",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-8-2026-09-30",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -616,7 +566,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-29T23:00:00.000Z",
+      "startsAt": "2026-09-30T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -706,7 +656,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-9-2026-10-06",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-9-2026-10-07",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -716,7 +666,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-10-06T23:00:00.000Z",
+      "startsAt": "2026-10-07T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -756,7 +706,7 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
+      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-14",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
@@ -766,7 +716,7 @@
         "To be announced"
       ],
       "stakes": "Five UFC contract fights",
-      "startsAt": "2026-10-13T23:00:00.000Z",
+      "startsAt": "2026-10-14T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
@@ -778,6 +728,32 @@
       "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-pfl-2026-chicago2-2026-10-17",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL Chicago",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-10-17T03:00:00.000Z",
+      "mainCardAt": "2026-10-16T07:00:00.000Z",
+      "venue": "Wintrust Arena",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/2026-chicago2",
+      "bouts": [
+        "Full matchups on the official PFL card"
       ]
     },
     {
@@ -903,6 +879,31 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-clearwater-4",
       "bouts": [
         "Fights to be announced by BKFC"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-333-2026-10-24",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC 333: Volkanovski vs Evloev",
+      "fighters": [
+        "Volkanovski",
+        "Evloev"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-10-24T18:00:00.000Z",
+      "venue": "Etihad Arena",
+      "location": "Abu Dhabi, United Arab Emirates",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-333",
+      "bouts": [
+        "Volkanovski vs Evloev"
       ]
     },
     {
