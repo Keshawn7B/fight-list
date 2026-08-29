@@ -957,6 +957,31 @@
       ]
     },
     {
+      "id": "auto-ufc-ufc-fight-night-november-07-2026-2026-11-07",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Bonfim vs Brady",
+      "fighters": [
+        "Bonfim",
+        "Brady"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-11-07T22:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, NV, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-november-07-2026",
+      "bouts": [
+        "Bonfim vs Brady"
+      ]
+    },
+    {
       "id": "auto-one-one-samurai-5-2026-11-18",
       "source": "ONE",
       "sport": "Kickboxing",
