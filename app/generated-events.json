@@ -761,10 +761,10 @@
       "source": "BKFC",
       "sport": "Bare Knuckle",
       "promotion": "BKFC",
-      "eventName": "BKFC 95 Newark",
+      "eventName": "BKFC 95 Newark Herring Vs Dodson",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Herring",
+        "Dodson"
       ],
       "stakes": "Official BKFC card",
       "startsAt": "2026-10-18T00:00:00.000Z",
@@ -778,7 +778,7 @@
       },
       "detailsUrl": "https://www.bkfc.com/events/bkfc-95-newark",
       "bouts": [
-        "Fights to be announced by BKFC"
+        "Herring vs Dodson"
       ]
     },
     {
