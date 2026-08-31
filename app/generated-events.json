@@ -606,6 +606,31 @@
       ]
     },
     {
+      "id": "auto-ufc-ufc-fight-night-october-10-2026-2026-10-11",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-10-11T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, NV, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
       "source": "DWCS",
       "sport": "MMA",
@@ -854,31 +879,6 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-glasgow",
       "bouts": [
         "Cooke vs Weir"
-      ]
-    },
-    {
-      "id": "auto-ufc-ufc-fight-night-november-07-2026-2026-11-07",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Bonfim vs Brady",
-      "fighters": [
-        "Bonfim",
-        "Brady"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-11-07T22:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, NV, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-november-07-2026",
-      "bouts": [
-        "Bonfim vs Brady"
       ]
     },
     {
