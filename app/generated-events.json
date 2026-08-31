@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "August 30, 2026",
+  "verifiedDate": "August 31, 2026",
   "events": [
     {
       "id": "auto-ufc-bjj-ufc-bjj-10-tackett-vs-gracie-fight-card-2026-08-21",
@@ -24,31 +24,6 @@
       "detailsUrl": "https://www.ufc.com/news/ufc-bjj-10-tackett-vs-gracie-fight-card",
       "bouts": [
         "Tackett vs Gracie"
-      ]
-    },
-    {
-      "id": "auto-ufc-ufc-fight-night-august-29-2026-2026-08-29",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Nurmagomedov vs Song",
-      "fighters": [
-        "Nurmagomedov",
-        "Song"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-08-29T10:00:00.000Z",
-      "venue": "Oriental Sports Center",
-      "location": "Pudong District, China",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-august-29-2026",
-      "bouts": [
-        "Nurmagomedov vs Song"
       ]
     },
     {
