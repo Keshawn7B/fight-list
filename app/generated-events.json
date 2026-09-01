@@ -481,6 +481,31 @@
       ]
     },
     {
+      "id": "auto-one-one-friday-fights-173-2026-10-02",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 173 & The Inner Circle 33",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-10-02T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-173/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-one-onefightnight48-2026-10-03",
       "source": "ONE",
       "sport": "MMA",
@@ -581,6 +606,31 @@
       ]
     },
     {
+      "id": "auto-one-one-friday-fights-174-2026-10-09",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 174 & The Inner Circle 34",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-10-09T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-174/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-bkfc-bkfc-fight-night-bethlehem-2026-10-10",
       "source": "BKFC",
       "sport": "Bare Knuckle",
@@ -610,10 +660,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC Fight Night: TBD vs TBD",
+      "eventName": "UFC Fight Night: Allen vs Duncan",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Allen",
+        "Duncan"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2026-10-11T00:00:00.000Z",
@@ -627,7 +677,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
       "bouts": [
-        "Full card pending official announcement"
+        "Allen vs Duncan"
       ]
     },
     {
@@ -656,11 +706,36 @@
       ]
     },
     {
+      "id": "auto-one-one-friday-fights-175-2026-10-16",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 175 & The Inner Circle 35",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-10-16T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-175/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-pfl-2026-chicago2-2026-10-17",
       "source": "PFL",
       "sport": "MMA",
       "promotion": "PFL",
-      "eventName": "PFL Chicago",
+      "eventName": "PFL Chicago 2",
       "fighters": [
         "Card",
         "To be announced"
@@ -832,6 +907,56 @@
       ]
     },
     {
+      "id": "auto-one-one-friday-fights-176-2026-10-30",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 176 & The Inner Circle 36",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-10-30T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-176/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-177-2026-11-06",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 177 & The Inner Circle 37",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-11-06T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-177/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-one-onefightnight49-2026-11-07",
       "source": "ONE",
       "sport": "MMA",
@@ -879,6 +1004,31 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-glasgow",
       "bouts": [
         "Cooke vs Weir"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-178-2026-11-13",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 178 & The Inner Circle 38",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-11-13T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-178/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
@@ -932,6 +1082,56 @@
       ]
     },
     {
+      "id": "auto-one-one-friday-fights-179-2026-11-20",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 179 & The Inner Circle 39",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-11-20T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-179/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-180-2026-11-27",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 180 & The Inner Circle 40",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-11-27T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-180/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-one-one-samurai-6-2026-12-02",
       "source": "ONE",
       "sport": "Kickboxing",
@@ -957,6 +1157,56 @@
       ]
     },
     {
+      "id": "auto-one-one-friday-fights-181-2026-12-04",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 181 & The Inner Circle 41",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-12-04T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-181/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-182-2026-12-11",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 182 & The Inner Circle 42",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-12-11T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-182/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-one-onefightnight50-2026-12-12",
       "source": "ONE",
       "sport": "MMA",
@@ -977,6 +1227,31 @@
         "note": "Official stream; regional availability may vary"
       },
       "detailsUrl": "https://www.onefc.com/events/onefightnight50/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-183-2026-12-18",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 183 & The Inner Circle 43",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-12-18T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-183/",
       "bouts": [
         "Full card pending official announcement"
       ]
