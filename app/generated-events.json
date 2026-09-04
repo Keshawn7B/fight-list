@@ -38,8 +38,8 @@
       ],
       "stakes": "Official ONE Championship card",
       "startsAt": "2026-09-04T11:30:00.000Z",
-      "venue": "Lumpinee Stadium",
-      "location": "Bangkok",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
       "watch": {
         "provider": "Live.ONE / ONE YouTube",
         "access": "Free",
@@ -836,10 +836,10 @@
       "source": "BKFC",
       "sport": "Bare Knuckle",
       "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Clearwater",
+      "eventName": "BKFC Fight Night Clearwater Reber Vs Street",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Reber",
+        "Street"
       ],
       "stakes": "Official BKFC card",
       "startsAt": "2026-10-24T00:00:00.000Z",
@@ -853,7 +853,7 @@
       },
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-clearwater-4",
       "bouts": [
-        "Fights to be announced by BKFC"
+        "Reber vs Street"
       ]
     },
     {
