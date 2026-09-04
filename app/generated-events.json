@@ -27,35 +27,6 @@
       ]
     },
     {
-      "id": "auto-dwcs-dwcs-season-10-episode-4-preview-athletes-bouts-start-times-streaming-2026-09-01",
-      "source": "DWCS",
-      "sport": "MMA",
-      "promotion": "DWCS",
-      "eventName": "Dana White's Contender Series: Season 10, Week 4",
-      "fighters": [
-        "Patrick Rivera",
-        "Adam Darby"
-      ],
-      "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-01T23:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.paramountplus.com/",
-        "note": "Season 10 streams exclusively on Paramount+"
-      },
-      "detailsUrl": "https://www.ufc.com/news/dwcs-season-10-episode-4-preview-athletes-bouts-start-times-streaming",
-      "bouts": [
-        "Patrick Rivera vs Adam Darby",
-        "Brandon Holmes vs Modestino Rodrigues",
-        "Liam McCracken vs Silvestre Sanchez",
-        "Gabriel Lourenço vs Charlie Cleveland",
-        "Hunter Smith vs Adam Livingston"
-      ]
-    },
-    {
       "id": "auto-one-one-friday-fights-169-2026-09-04",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -156,14 +127,14 @@
       ]
     },
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-5-2026-09-08",
+      "id": "auto-dwcs-dwcs-season-10-episode-5-preview-athletes-bouts-start-times-streaming-2026-09-08",
       "source": "DWCS",
       "sport": "MMA",
       "promotion": "DWCS",
       "eventName": "Dana White's Contender Series: Season 10, Week 5",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Quentin Pasley",
+        "Arlind Berisha"
       ],
       "stakes": "Five UFC contract fights",
       "startsAt": "2026-09-08T23:00:00.000Z",
@@ -175,9 +146,13 @@
         "href": "https://www.paramountplus.com/",
         "note": "Season 10 streams exclusively on Paramount+"
       },
-      "detailsUrl": "https://www.ufc.com/dwcs",
+      "detailsUrl": "https://www.ufc.com/news/dwcs-season-10-episode-5-preview-athletes-bouts-start-times-streaming",
       "bouts": [
-        "Five bouts scheduled; official matchups to be announced"
+        "Quentin Pasley vs Arlind Berisha",
+        "Isaac Moreno vs Reginaldo Junior",
+        "Martin Kozák vs Christian Echols",
+        "Kwon Won Il vs Apollo Gomes",
+        "Colton Loud vs Christian Natividad"
       ]
     },
     {
