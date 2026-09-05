@@ -2,31 +2,6 @@
   "verifiedDate": "September 5, 2026",
   "events": [
     {
-      "id": "auto-ufc-bjj-ufc-bjj-10-tackett-vs-gracie-fight-card-2026-08-21",
-      "source": "UFC BJJ",
-      "sport": "Jiu-Jitsu",
-      "promotion": "UFC BJJ",
-      "eventName": "UFC BJJ 10: Tackett vs Gracie",
-      "fighters": [
-        "Tackett",
-        "Gracie"
-      ],
-      "stakes": "Official UFC BJJ card",
-      "startsAt": "2026-08-21T00:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "UFC BJJ YouTube",
-        "access": "Free",
-        "href": "https://www.youtube.com/@ufcbjj",
-        "note": "Live and free on the official UFC BJJ YouTube channel"
-      },
-      "detailsUrl": "https://www.ufc.com/news/ufc-bjj-10-tackett-vs-gracie-fight-card",
-      "bouts": [
-        "Tackett vs Gracie"
-      ]
-    },
-    {
       "id": "auto-one-one-friday-fights-169-2026-09-04",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -356,6 +331,31 @@
       ]
     },
     {
+      "id": "auto-ufc-bjj-ufc-bjj-11-musumeci-vs-mitchell-fight-card-2026-09-25",
+      "source": "UFC BJJ",
+      "sport": "Jiu-Jitsu",
+      "promotion": "UFC BJJ",
+      "eventName": "UFC BJJ 11: Musumeci vs Mitchell",
+      "fighters": [
+        "Musumeci",
+        "Mitchell"
+      ],
+      "stakes": "Official UFC BJJ card",
+      "startsAt": "2026-09-25T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "UFC BJJ YouTube",
+        "access": "Free",
+        "href": "https://www.youtube.com/@ufcbjj",
+        "note": "Live and free on the official UFC BJJ YouTube channel"
+      },
+      "detailsUrl": "https://www.ufc.com/news/ufc-bjj-11-musumeci-vs-mitchell-fight-card",
+      "bouts": [
+        "Musumeci vs Mitchell"
+      ]
+    },
+    {
       "id": "auto-one-one-friday-fights-172-2026-09-25",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -535,13 +535,13 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC 332: TBD vs TBD",
+      "eventName": "UFC 332: Silva vs Cong",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Silva",
+        "Cong"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-10-04T01:00:00.000Z",
+      "startsAt": "2026-10-04T00:00:00.000Z",
       "venue": "Delta Center",
       "location": "Salt Lake City, UT, United States",
       "watch": {
@@ -552,7 +552,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-332",
       "bouts": [
-        "Full card pending official announcement"
+        "Silva vs Cong"
       ]
     },
     {
