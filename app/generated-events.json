@@ -1,31 +1,6 @@
 {
-  "verifiedDate": "September 5, 2026",
+  "verifiedDate": "September 6, 2026",
   "events": [
-    {
-      "id": "auto-one-one-friday-fights-169-2026-09-04",
-      "source": "ONE",
-      "sport": "Muay Thai",
-      "promotion": "ONE",
-      "eventName": "ONE Friday Fights 169 & The Inner Circle 29",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-09-04T11:30:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "Live.ONE / ONE YouTube",
-        "access": "Free",
-        "href": "https://live.onefc.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-169/",
-      "bouts": [
-        "Full card pending official announcement"
-      ]
-    },
     {
       "id": "auto-one-onefightnight47-2026-09-05",
       "source": "ONE",
@@ -49,31 +24,6 @@
       "detailsUrl": "https://www.onefc.com/events/onefightnight47/",
       "bouts": [
         "Stamp vs Flores On Prime Video"
-      ]
-    },
-    {
-      "id": "auto-raf-raf-moscow-chimaev-vs-woodley-2026-09-05",
-      "source": "RAF",
-      "sport": "Wrestling",
-      "promotion": "RAF",
-      "eventName": "RAF MOSCOW: CHIMAEV VS WOODLEY",
-      "fighters": [
-        "Chimaev",
-        "Woodley"
-      ],
-      "stakes": "Official Real American Freestyle card",
-      "startsAt": "2026-09-05T16:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Moscow, Russia",
-      "watch": {
-        "provider": "FOX Nation",
-        "access": "Subscription",
-        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
-        "note": "Streams live exclusively on FOX Nation"
-      },
-      "detailsUrl": "https://www.realamericanfreestyle.com/",
-      "bouts": [
-        "Chimaev vs Woodley"
       ]
     },
     {
@@ -278,6 +228,31 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-171/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-raf-raf13-2026-09-19",
+      "source": "RAF",
+      "sport": "Wrestling",
+      "promotion": "RAF",
+      "eventName": "RAF13: Covington vs Muhammad",
+      "fighters": [
+        "Covington",
+        "Muhammad"
+      ],
+      "stakes": "Official Real American Freestyle card",
+      "startsAt": "2026-09-19T00:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Miami, FL",
+      "watch": {
+        "provider": "FOX Nation",
+        "access": "Subscription",
+        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
+        "note": "Streams live exclusively on FOX Nation"
+      },
+      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf13",
+      "bouts": [
+        "Covington vs Muhammad"
       ]
     },
     {
@@ -535,10 +510,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC 332: Silva vs Cong",
+      "eventName": "UFC 332: Silva vs Wang",
       "fighters": [
         "Silva",
-        "Cong"
+        "Wang"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2026-10-04T00:00:00.000Z",
@@ -552,7 +527,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-332",
       "bouts": [
-        "Silva vs Cong"
+        "Silva vs Wang"
       ]
     },
     {
@@ -902,6 +877,31 @@
         "note": "Official stream; regional availability may vary"
       },
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-176/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-october-31-2026-2026-11-01",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-11-01T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, NV, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
       "bouts": [
         "Full card pending official announcement"
       ]
