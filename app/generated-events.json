@@ -2,31 +2,6 @@
   "verifiedDate": "September 6, 2026",
   "events": [
     {
-      "id": "auto-one-onefightnight47-2026-09-05",
-      "source": "ONE",
-      "sport": "MMA",
-      "promotion": "ONE",
-      "eventName": "ONE Fight Night 47: Stamp vs. Flores on Prime Video",
-      "fighters": [
-        "Stamp",
-        "Flores On Prime Video"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-09-05T01:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "Prime Video",
-        "access": "Included",
-        "href": "https://www.primevideo.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/onefightnight47/",
-      "bouts": [
-        "Stamp vs Flores On Prime Video"
-      ]
-    },
-    {
       "id": "auto-ufc-ufc-fight-night-september-05-2026-2026-09-05",
       "source": "UFC",
       "sport": "MMA",
