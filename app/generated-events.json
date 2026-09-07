@@ -2,31 +2,6 @@
   "verifiedDate": "September 7, 2026",
   "events": [
     {
-      "id": "auto-ufc-ufc-fight-night-september-05-2026-2026-09-05",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Hooker vs Parnasse",
-      "fighters": [
-        "Hooker",
-        "Parnasse"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-09-05T19:00:00.000Z",
-      "venue": "Accor Arena",
-      "location": "Paris, France",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-september-05-2026",
-      "bouts": [
-        "Hooker vs Parnasse"
-      ]
-    },
-    {
       "id": "auto-dwcs-dwcs-season-10-episode-5-preview-athletes-bouts-start-times-streaming-2026-09-08",
       "source": "DWCS",
       "sport": "MMA",
