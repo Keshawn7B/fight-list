@@ -331,7 +331,7 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-fight-night-september-26-2026-2026-09-26",
+      "id": "auto-ufc-ufc-fight-night-september-26-2026-2026-09-27",
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
@@ -341,7 +341,7 @@
         "Barcelos"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-09-26T22:00:00.000Z",
+      "startsAt": "2026-09-27T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, NV, United States",
       "watch": {
