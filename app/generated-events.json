@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "September 8, 2026",
+  "verifiedDate": "September 9, 2026",
   "events": [
     {
       "id": "auto-dwcs-dwcs-season-10-episode-5-preview-athletes-bouts-start-times-streaming-2026-09-08",
@@ -435,10 +435,10 @@
       "source": "BKFC",
       "sport": "Bare Knuckle",
       "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Australia",
+      "eventName": "BKFC Fight Night Australia Hepi Vs Shewmaker",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Hepi",
+        "Shewmaker"
       ],
       "stakes": "Official BKFC card",
       "startsAt": "2026-10-03T09:00:00.000Z",
@@ -452,7 +452,7 @@
       },
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-australia",
       "bouts": [
-        "Fights to be announced by BKFC"
+        "Hepi vs Shewmaker"
       ]
     },
     {
