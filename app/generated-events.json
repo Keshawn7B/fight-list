@@ -1157,6 +1157,32 @@
       ]
     },
     {
+      "id": "auto-pfl-pfl-lyon-2026-2026-12-19",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL Lyon 2026",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-12-19T21:00:00.000Z",
+      "mainCardAt": "2026-12-20T00:00:00.000Z",
+      "venue": "Lyon",
+      "location": "France",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pfl-lyon-2026",
+      "bouts": [
+        "Full matchups on the official PFL card"
+      ]
+    },
+    {
       "id": "auto-one-one-qatar-2027-03-25",
       "source": "ONE",
       "sport": "MMA",
