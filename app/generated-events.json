@@ -2,35 +2,6 @@
   "verifiedDate": "September 11, 2026",
   "events": [
     {
-      "id": "auto-dwcs-dwcs-season-10-episode-5-preview-athletes-bouts-start-times-streaming-2026-09-08",
-      "source": "DWCS",
-      "sport": "MMA",
-      "promotion": "DWCS",
-      "eventName": "Dana White's Contender Series: Season 10, Week 5",
-      "fighters": [
-        "Quentin Pasley",
-        "Arlind Berisha"
-      ],
-      "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-08T23:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.paramountplus.com/",
-        "note": "Season 10 streams exclusively on Paramount+"
-      },
-      "detailsUrl": "https://www.ufc.com/news/dwcs-season-10-episode-5-preview-athletes-bouts-start-times-streaming",
-      "bouts": [
-        "Quentin Pasley vs Arlind Berisha",
-        "Isaac Moreno vs Reginaldo Junior",
-        "Martin Kozák vs Christian Echols",
-        "Kwon Won Il vs Apollo Gomes",
-        "Colton Loud vs Christian Natividad"
-      ]
-    },
-    {
       "id": "auto-one-one-friday-fights-170-2026-09-11",
       "source": "ONE",
       "sport": "Muay Thai",
