@@ -1,31 +1,6 @@
 {
-  "verifiedDate": "September 12, 2026",
+  "verifiedDate": "September 13, 2026",
   "events": [
-    {
-      "id": "auto-one-one-friday-fights-170-2026-09-11",
-      "source": "ONE",
-      "sport": "Muay Thai",
-      "promotion": "ONE",
-      "eventName": "ONE Friday Fights 170 & The Inner Circle 30",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-09-11T11:30:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "Live.ONE / ONE YouTube",
-        "access": "Free",
-        "href": "https://live.onefc.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-170/",
-      "bouts": [
-        "Full card pending official announcement"
-      ]
-    },
     {
       "id": "auto-one-one-samurai-3-2026-09-12",
       "source": "ONE",
