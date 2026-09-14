@@ -2,31 +2,6 @@
   "verifiedDate": "September 14, 2026",
   "events": [
     {
-      "id": "auto-ufc-ufc-fight-night-september-12-2026-2026-09-12",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Silva vs Delgado",
-      "fighters": [
-        "Silva",
-        "Delgado"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-09-12T21:00:00.000Z",
-      "venue": "Desert Diamond Arena",
-      "location": "Glendale, AZ, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-september-12-2026",
-      "bouts": [
-        "Silva vs Delgado"
-      ]
-    },
-    {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-6-2026-09-15",
       "source": "DWCS",
       "sport": "MMA",
