@@ -707,10 +707,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC Fight Night: Moicano vs Nolan",
+      "eventName": "UFC Fight Night: モイカノ vs ノーラン",
       "fighters": [
-        "Moicano",
-        "Nolan"
+        "モイカノ",
+        "ノーラン"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2026-11-01T00:00:00.000Z",
@@ -724,7 +724,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
       "bouts": [
-        "Moicano vs Nolan"
+        "モイカノ vs ノーラン"
       ]
     },
     {
