@@ -62,7 +62,7 @@
         "Pantoja"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-09-20T02:00:00.000Z",
+      "startsAt": "2026-09-20T01:00:00.000Z",
       "venue": "Crypto.com Arena",
       "location": "Los Angeles, CA, United States",
       "watch": {
@@ -187,7 +187,7 @@
         "Barcelos"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-09-27T01:00:00.000Z",
+      "startsAt": "2026-09-27T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, NV, United States",
       "watch": {
@@ -312,7 +312,7 @@
         "Wang"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-10-04T01:00:00.000Z",
+      "startsAt": "2026-10-04T00:00:00.000Z",
       "venue": "Delta Center",
       "location": "Salt Lake City, UT, United States",
       "watch": {
@@ -412,7 +412,7 @@
         "Duncan"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-10-11T01:00:00.000Z",
+      "startsAt": "2026-10-11T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, NV, United States",
       "watch": {
@@ -553,6 +553,31 @@
       ]
     },
     {
+      "id": "auto-ufc-ufc-fight-night-october-17-2026-2026-10-18",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Buckley vs Malott",
+      "fighters": [
+        "Buckley",
+        "Malott"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-10-18T00:00:00.000Z",
+      "venue": "Rogers Place",
+      "location": "Edmonton, AB, Canada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
+      "bouts": [
+        "Buckley vs Malott"
+      ]
+    },
+    {
       "id": "auto-bkfc-bkfc-95-newark-2026-10-18",
       "source": "BKFC",
       "sport": "Bare Knuckle",
@@ -575,31 +600,6 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-95-newark",
       "bouts": [
         "Herring vs Dodson"
-      ]
-    },
-    {
-      "id": "auto-ufc-ufc-fight-night-october-17-2026-2026-10-18",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Buckley vs Malott",
-      "fighters": [
-        "Buckley",
-        "Malott"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-10-18T01:00:00.000Z",
-      "venue": "Rogers Place",
-      "location": "Edmonton, AB, Canada",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-17-2026",
-      "bouts": [
-        "Buckley vs Malott"
       ]
     },
     {
@@ -663,7 +663,7 @@
         "Evloev"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-10-24T19:00:00.000Z",
+      "startsAt": "2026-10-24T18:00:00.000Z",
       "venue": "Etihad Arena",
       "location": "Abu Dhabi, United Arab Emirates",
       "watch": {
@@ -713,7 +713,7 @@
         "Nolan"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-11-01T01:00:00.000Z",
+      "startsAt": "2026-11-01T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, NV, United States",
       "watch": {
@@ -803,7 +803,7 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-fight-night-november-07-2026-2026-11-08",
+      "id": "auto-ufc-ufc-fight-night-november-07-2026-2026-11-07",
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
@@ -813,7 +813,7 @@
         "Brady"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-11-08T00:00:00.000Z",
+      "startsAt": "2026-11-07T22:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, NV, United States",
       "watch": {
