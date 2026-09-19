@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "September 18, 2026",
+  "verifiedDate": "September 19, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-6-2026-09-15",
@@ -38,8 +38,8 @@
       ],
       "stakes": "Official ONE Championship card",
       "startsAt": "2026-09-18T11:30:00.000Z",
-      "venue": "Lumpinee Stadium",
-      "location": "Bangkok",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
       "watch": {
         "provider": "Live.ONE / ONE YouTube",
         "access": "Free",
@@ -49,31 +49,6 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-171/",
       "bouts": [
         "Full card pending official announcement"
-      ]
-    },
-    {
-      "id": "auto-raf-raf13-2026-09-19",
-      "source": "RAF",
-      "sport": "Wrestling",
-      "promotion": "RAF",
-      "eventName": "RAF13: Covington vs Muhammad",
-      "fighters": [
-        "Covington",
-        "Muhammad"
-      ],
-      "stakes": "Official Real American Freestyle card",
-      "startsAt": "2026-09-19T00:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Miami, FL",
-      "watch": {
-        "provider": "FOX Nation",
-        "access": "Subscription",
-        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
-        "note": "Streams live exclusively on FOX Nation"
-      },
-      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf13",
-      "bouts": [
-        "Covington vs Muhammad"
       ]
     },
     {
@@ -650,6 +625,31 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-clearwater-4",
       "bouts": [
         "Reber vs Street"
+      ]
+    },
+    {
+      "id": "auto-raf-raf14-2026-10-24",
+      "source": "RAF",
+      "sport": "Wrestling",
+      "promotion": "RAF",
+      "eventName": "RAF14: Tsarukyan vs Danis",
+      "fighters": [
+        "Tsarukyan",
+        "Danis"
+      ],
+      "stakes": "Official Real American Freestyle card",
+      "startsAt": "2026-10-24T01:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Las Vegas, NV",
+      "watch": {
+        "provider": "FOX Nation",
+        "access": "Subscription",
+        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
+        "note": "Streams live exclusively on FOX Nation"
+      },
+      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf14",
+      "bouts": [
+        "Tsarukyan vs Danis"
       ]
     },
     {
