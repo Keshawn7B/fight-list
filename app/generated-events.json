@@ -27,31 +27,6 @@
       ]
     },
     {
-      "id": "auto-ufc-cryptocom-ufc-331-2026-09-20",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Van vs Pantoja 2",
-      "fighters": [
-        "Van",
-        "Pantoja"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-09-20T01:00:00.000Z",
-      "venue": "Crypto.com Arena",
-      "location": "Los Angeles, CA, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/cryptocom-ufc-331",
-      "bouts": [
-        "Van vs Pantoja"
-      ]
-    },
-    {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-7-2026-09-22",
       "source": "DWCS",
       "sport": "MMA",
