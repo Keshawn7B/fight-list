@@ -807,10 +807,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC 334: TBD vs TBD",
+      "eventName": "UFC 334: Gane vs Hokit",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Gane",
+        "Hokit"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2026-11-15T02:00:00.000Z",
@@ -824,7 +824,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-334",
       "bouts": [
-        "Full card pending official announcement"
+        "Gane vs Hokit"
       ]
     },
     {
