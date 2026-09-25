@@ -2,56 +2,6 @@
   "verifiedDate": "September 25, 2026",
   "events": [
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-6-2026-09-15",
-      "source": "DWCS",
-      "sport": "MMA",
-      "promotion": "DWCS",
-      "eventName": "Dana White's Contender Series: Season 10, Week 6",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-15T23:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.paramountplus.com/",
-        "note": "Season 10 streams exclusively on Paramount+"
-      },
-      "detailsUrl": "https://www.ufc.com/dwcs",
-      "bouts": [
-        "Five bouts scheduled; official matchups to be announced"
-      ]
-    },
-    {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-7-2026-09-22",
-      "source": "DWCS",
-      "sport": "MMA",
-      "promotion": "DWCS",
-      "eventName": "Dana White's Contender Series: Season 10, Week 7",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-22T23:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.paramountplus.com/",
-        "note": "Season 10 streams exclusively on Paramount+"
-      },
-      "detailsUrl": "https://www.ufc.com/dwcs",
-      "bouts": [
-        "Five bouts scheduled; official matchups to be announced"
-      ]
-    },
-    {
       "id": "auto-ufc-bjj-ufc-bjj-11-musumeci-vs-mitchell-fight-card-2026-09-25",
       "source": "UFC BJJ",
       "sport": "Jiu-Jitsu",
