@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "September 25, 2026",
+  "verifiedDate": "September 26, 2026",
   "events": [
     {
       "id": "auto-ufc-bjj-ufc-bjj-11-musumeci-vs-mitchell-fight-card-2026-09-25",
@@ -8,22 +8,29 @@
       "promotion": "UFC BJJ",
       "eventName": "UFC BJJ 11: Musumeci vs Mitchell",
       "fighters": [
-        "Musumeci",
-        "Mitchell"
+        "Mikey Musumeci",
+        "Bryce Mitchell"
       ],
       "stakes": "Official UFC BJJ card",
       "startsAt": "2026-09-25T00:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, Nevada",
       "watch": {
-        "provider": "UFC BJJ YouTube",
-        "access": "Free",
-        "href": "https://www.youtube.com/@ufcbjj",
-        "note": "Live and free on the official UFC BJJ YouTube channel"
+        "provider": "UFC Fight Pass",
+        "access": "Subscription",
+        "href": "https://ufcfightpass.com/",
+        "note": "Streams live on UFC Fight Pass"
       },
       "detailsUrl": "https://www.ufc.com/news/ufc-bjj-11-musumeci-vs-mitchell-fight-card",
       "bouts": [
-        "Musumeci vs Mitchell"
+        "Mikey Musumeci vs Bryce Mitchell",
+        "Mason Fowler vs Nick Rodriguez",
+        "Aurelie Le Vern vs Rana Willink",
+        "Jay Rodriguez vs Kevin Beuhring",
+        "Pedro Machado vs Lucas Norat",
+        "Ryan Elgarico Jr. vs Jordan Holy",
+        "Mason Stritzel vs Seve Zazueta",
+        "Kolby Gonzalez vs Daniel Deeder"
       ]
     },
     {
@@ -38,8 +45,8 @@
       ],
       "stakes": "Official ONE Championship card",
       "startsAt": "2026-09-25T11:30:00.000Z",
-      "venue": "Lumpinee Stadium",
-      "location": "Bangkok",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
       "watch": {
         "provider": "Live.ONE / ONE YouTube",
         "access": "Free",
@@ -152,6 +159,74 @@
       ]
     },
     {
+      "id": "auto-pfl-pflmena11-2026-10-02",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL Mena 11",
+      "fighters": [
+        "Fatima Al Ammari",
+        "Aya Lounes"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-10-02T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Riyadh",
+      "location": "KSA",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pflmena11",
+      "bouts": [
+        "Mostafa Rashed Neda vs Osama El Saidy",
+        "Badreddine Diani vs Hazem Kayyali",
+        "Elias Boudegzdame vs Islam Youssef",
+        "Ylies Djiroun vs Basel Shalaan",
+        "Omar Hussein vs Abdelkrim Zouad",
+        "Hassan Shaaban vs Assem Ghanem",
+        "Mehdi Saadi vs Shadi Kabbani",
+        "Mohammad Fahmi vs Ahmed El Sisy",
+        "Haif Al Qahtani vs Ali Alshowakh",
+        "Fatima Al Ammari vs Aya Lounes"
+      ]
+    },
+    {
+      "id": "auto-matchroom-jones-vs-sanchez-2026-10-02",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Jones vs Sanchez",
+      "fighters": [
+        "Omari Jones",
+        "Alan Sanchez"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-10-02T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Caribe Royale Orlando",
+      "location": "Caribe Royale Orlando, USA",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/jones-vs-sanchez/",
+      "bouts": [
+        "Omari Jones vs Alan Sanchez",
+        "Jordan Orozco vs Yusniel Abrahante",
+        "Donte Layne vs Keithland King",
+        "Diego Nieves vs Fidencio Hernandez",
+        "Ronny Alvarez vs Narciso Carmona",
+        "Jusiyah Shirley vs Kevin Castillo",
+        "Angel Hernandez vs Dulio Arath Jaramillo",
+        "Ryan Santiago vs Jesus Ivan Monila"
+      ]
+    },
+    {
       "id": "auto-one-onefightnight48-2026-10-03",
       "source": "ONE",
       "sport": "MMA",
@@ -199,6 +274,39 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-australia",
       "bouts": [
         "Hepi vs Shewmaker"
+      ]
+    },
+    {
+      "id": "auto-matchroom-whittaker-vs-wallace-2026-10-03",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Whittaker vs Wallace",
+      "fighters": [
+        "Ben Whittaker",
+        "Conor Wallace"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-10-03T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Utilita Arena",
+      "location": "Utilita Arena, Birmingham, UK",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/whittaker-vs-wallace/",
+      "bouts": [
+        "Ben Whittaker vs Conor Wallace",
+        "Odel Kamara vs Thodoris Ritzakis",
+        "Sean Bruce vs Hamza Uddin",
+        "Bilal Fawaz vs Eithan James",
+        "Ibraheem Sulaimaan vs Sonny Hardy",
+        "Aaron Bowen vs Klint Baptiste",
+        "Harley Burrows vs Matias Ezequiel Herrera",
+        "Paige Murney vs Linzi Buczynskyj"
       ]
     },
     {
@@ -302,6 +410,38 @@
       ]
     },
     {
+      "id": "auto-pfl-pfl-morocco-2026-10-10",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL Africa Morocco",
+      "fighters": [
+        "Dwight Joseph",
+        "Boule Godogo"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-10-10T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "CASABLANCA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pfl-morocco",
+      "bouts": [
+        "Abdoulaye Kane vs Badr Medkouri",
+        "Karim Henniene vs Raphael Uchegbu",
+        "Shido Boris Esperanca vs Peace Nguphane",
+        "Patrick Ocheme vs Cornel Thompson",
+        "Rivaldo Pereira vs David Samuel",
+        "Demba Seck vs Hussain Al Kurdi",
+        "Dwight Joseph vs Boule Godogo"
+      ]
+    },
+    {
       "id": "auto-ufc-ufc-fight-night-october-10-2026-2026-10-11",
       "source": "UFC",
       "sport": "MMA",
@@ -383,8 +523,8 @@
       "promotion": "PFL",
       "eventName": "PFL Chicago 2",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Liz Carmouche",
+        "Jena Bishop"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-10-16T22:00:00.000Z",
@@ -399,7 +539,20 @@
       },
       "detailsUrl": "https://pflmma.com/event/2026-chicago2",
       "bouts": [
-        "Full matchups on the official PFL card"
+        "Levan Khabalaev vs Morquez Forest",
+        "Benita Van Rooji vs Giulliany Perêa",
+        "Noah Hermosillo vs Caden Cox",
+        "Paulina Wisniewska vs Chelsea Hackett",
+        "Cobey Fehr vs Rosario Romero",
+        "Eliezer Kubanza vs Trey Waters",
+        "Cássio Barão vs Kevin Pease",
+        "Shannon Clark vs Lucero Acosta",
+        "Gamid Khizriev vs Michael Boylan",
+        "Emiliano Sordi vs Abraham Bably",
+        "Oualy Tandia vs JP Saint Louis",
+        "Sarvarjon Khamidov vs Rafael do Nascimento",
+        "Timur Khizriev vs Gabriel Braga",
+        "Liz Carmouche vs Jena Bishop"
       ]
     },
     {
@@ -534,8 +687,8 @@
       "promotion": "RAF",
       "eventName": "RAF14: Tsarukyan vs Danis",
       "fighters": [
-        "Tsarukyan",
-        "Danis"
+        "Arman Tsarukyan",
+        "Dillon Danis"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-10-24T01:00:00.000Z",
@@ -545,11 +698,51 @@
         "provider": "FOX Nation",
         "access": "Subscription",
         "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
-        "note": "Streams live exclusively on FOX Nation"
+        "note": "Official RAF stream; regional availability may vary"
       },
       "detailsUrl": "https://www.realamericanfreestyle.com/events/raf14",
       "bouts": [
-        "Tsarukyan vs Danis"
+        "Arman Tsarukyan vs Dillon Danis",
+        "Khamzat Chimaev vs Robbie Lawler",
+        "Lucia Yepez vs Sarah Hildebrandt",
+        "Sebastian Rivera vs Vito Arujau",
+        "Jordan Burroughs vs Michael Caliendo",
+        "Jordan Oliver vs Ridge Lovett",
+        "Yonger Bastida vs Greg Kerkvliet",
+        "Mekhi Lewis vs Akhmed Gadzhimagomedov",
+        "Bella Mir vs Hope Chase",
+        "Pat Downey vs Magomed Magomedkerimov",
+        "Brendan Allen vs Alexander Shlemenko",
+        "Nick Suriano vs Dylan Ragusin"
+      ]
+    },
+    {
+      "id": "auto-matchroom-smith-vs-puello-2026-10-24",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Smith vs Puello",
+      "fighters": [
+        "Dalton Smith",
+        "Alberto Puello"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-10-24T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Utilita Arena",
+      "location": "Utilita Arena, Sheffield, UK",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/smith-vs-puello/",
+      "bouts": [
+        "Dalton Smith vs Alberto Puello",
+        "Giorgio Visioli vs Maxi Hughes",
+        "Shannon Ryan vs Emma Dolan",
+        "Joe Hayden vs Will Harrison"
       ]
     },
     {
@@ -753,14 +946,40 @@
       ]
     },
     {
+      "id": "auto-raf-raf-abu-dhabi-2026-11-14",
+      "source": "RAF",
+      "sport": "Wrestling",
+      "promotion": "RAF",
+      "eventName": "RAF ABU DHABI",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official Real American Freestyle card",
+      "startsAt": "2026-11-14T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Venue TBA",
+      "location": "Abu Dhabi, UAE",
+      "watch": {
+        "provider": "FOX Nation",
+        "access": "Subscription",
+        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
+        "note": "Official RAF stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf-abu-dhabi",
+      "bouts": [
+        "Matchups pending official announcement"
+      ]
+    },
+    {
       "id": "auto-pfl-pfl-returns-to-dubai-2026-11-14",
       "source": "PFL",
       "sport": "MMA",
       "promotion": "PFL",
       "eventName": "PFL Dubai",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Vadim Nemkov",
+        "Sergey Bilostenniy"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-11-14T14:00:00.000Z",
@@ -775,7 +994,13 @@
       },
       "detailsUrl": "https://pflmma.com/event/pfl-returns-to-dubai",
       "bouts": [
-        "Full matchups on the official PFL card"
+        "Khasan Magomedsharipov vs Adam Borics",
+        "Asaël Adjoudj vs Movlid Khaybulaev",
+        "Sergio Pettis vs Joji Goto",
+        "Abubakar Nurmagomedov vs David Martinez",
+        "Pouya Rahmani vs Oleg Popov",
+        "Patrick Habirora vs Omar El Dafrawy",
+        "Vadim Nemkov vs Sergey Bilostenniy"
       ]
     },
     {
@@ -879,6 +1104,32 @@
       ]
     },
     {
+      "id": "auto-raf-raf15-2026-11-28",
+      "source": "RAF",
+      "sport": "Wrestling",
+      "promotion": "RAF",
+      "eventName": "RAF15",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official Real American Freestyle card",
+      "startsAt": "2026-11-28T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Venue TBA",
+      "location": "Chicago, IL",
+      "watch": {
+        "provider": "FOX Nation",
+        "access": "Subscription",
+        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
+        "note": "Official RAF stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf15",
+      "bouts": [
+        "Matchups pending official announcement"
+      ]
+    },
+    {
       "id": "auto-one-one-samurai-6-2026-12-02",
       "source": "ONE",
       "sport": "Kickboxing",
@@ -954,6 +1205,32 @@
       ]
     },
     {
+      "id": "auto-matchroom-fury-vs-joshua-2026-12-11",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Fury vs Joshua",
+      "fighters": [
+        "Tyson Fury",
+        "Anthony Joshua"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-12-11T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Principality Stadium",
+      "location": "Principality Stadium, Cardiff, UK",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/fury-vs-joshua/",
+      "bouts": [
+        "Tyson Fury vs Anthony Joshua"
+      ]
+    },
+    {
       "id": "auto-bkfc-bkfc-hollywood-3-2026-12-12",
       "source": "BKFC",
       "sport": "Bare Knuckle",
@@ -1004,6 +1281,32 @@
       ]
     },
     {
+      "id": "auto-matchroom-monte-carlo-showdown-vii-2026-12-12",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Monte Carlo Showdown VII",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-12-12T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Salle des Étoiles",
+      "location": "Salle des Étoiles, Monte Carlo, Monaco",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/monte-carlo-showdown-vii/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-one-one-friday-fights-183-2026-12-18",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -1035,8 +1338,8 @@
       "promotion": "PFL",
       "eventName": "PFL Lyon",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Taylor Lapilus",
+        "Mitch Mckee"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-12-19T16:00:00.000Z",
@@ -1051,7 +1354,10 @@
       },
       "detailsUrl": "https://pflmma.com/event/pfl-lyon-2026",
       "bouts": [
-        "Full matchups on the official PFL card"
+        "Fabian Edwards vs Ilian Bouafia",
+        "Abdoul Abdouraguimov vs Andreeas Binder",
+        "Boris Atangana vs Bryan Battle",
+        "Taylor Lapilus vs Mitch McKee"
       ]
     },
     {

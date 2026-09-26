@@ -1047,25 +1047,6 @@ const curatedFightEvents: FightEvent[] = [
     detailsUrl: "https://www.bkfc.com/events",
     bouts: ["Fights to be announced by BKFC"],
   },
-  {
-    id: "bkfc-glasgow-november-2026",
-    sport: "Bare Knuckle",
-    promotion: "BKFC",
-    eventName: "BKFC Fight Night Glasgow",
-    fighters: ["Card", "To be announced"],
-    stakes: "Bare-knuckle card",
-    startsAt: "2026-11-07T18:00:00.000Z",
-    venue: "TBA",
-    location: "Glasgow, United Kingdom",
-    watch: {
-      provider: "BKFC+ / Fubo Sports",
-      access: "Subscription",
-      href: "https://watch.bkfc.com/",
-      note: "Official BKFC stream; regional options may vary",
-    },
-    detailsUrl: "https://www.bkfc.com/events",
-    bouts: ["Fights to be announced by BKFC"],
-  },
 ];
 
 const automaticFightEvents = automaticEventData.events as FightEvent[];
@@ -1128,7 +1109,12 @@ const mergedCuratedEvents = curatedFightEvents.map((curated) => {
     id: curated.id,
     sport: curated.sport,
     stakes: /^Official /i.test(automatic.stakes) ? curated.stakes : automatic.stakes,
-    startsAt: automatic.source === "UFC" && curated.mainCardAt ? curated.startsAt : automatic.startsAt,
+    startsAt: automatic.source === "Matchroom"
+      ? curated.startsAt
+      : automatic.source === "UFC" && curated.mainCardAt
+        ? curated.startsAt
+        : automatic.startsAt,
+    timeTba: automatic.source === "Matchroom" ? curated.timeTba : automatic.timeTba ?? curated.timeTba,
     mainCardAt: automatic.source === "UFC" && curated.mainCardAt ? automatic.startsAt : automatic.mainCardAt ?? curated.mainCardAt,
     venue: isGenericVenue ? curated.venue : automatic.venue,
     location: isGenericLocation ? curated.location : automatic.location,

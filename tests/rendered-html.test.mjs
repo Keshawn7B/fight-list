@@ -90,22 +90,25 @@ test("tracks DWCS and UFC BJJ with official event details", async () => {
   assert.match(dwcsHtml, /Five bouts scheduled/i);
   assert.match(dwcsHtml, /Paramount\+/i);
 
-  const weekTwoResponse = await render("/events/auto-dwcs-dwcs-season-10-episode-2-preview-athletes-bouts-start-times-streaming-2026-08-19/");
-  assert.equal(weekTwoResponse.status, 200);
-  const weekTwoHtml = await weekTwoResponse.text();
-  assert.match(weekTwoHtml, /Season 10, Week 2/i);
-  assert.match(weekTwoHtml, /Namo Fazil vs Kaik Brito/i);
-  assert.match(weekTwoHtml, /Roman Puga vs Taner Trembley/i);
+  const generated = JSON.parse(await readFile(new URL("../app/generated-events.json", import.meta.url), "utf8"));
+  const currentDwcs = generated.events.find((event) => event.source === "DWCS");
+  assert.ok(currentDwcs);
+  const currentDwcsResponse = await render(`/events/${currentDwcs.id}/`);
+  assert.equal(currentDwcsResponse.status, 200);
+  const currentDwcsHtml = await currentDwcsResponse.text();
+  assert.match(currentDwcsHtml, /Season 10, Week/i);
+  assert.match(currentDwcsHtml, /Five bouts scheduled/i);
+  assert.match(currentDwcsHtml, /Paramount\+/i);
 
-  const bjjResponse = await render("/events/ufc-bjj-10/");
+  const currentBjj = generated.events.find((event) => event.source === "UFC BJJ");
+  assert.ok(currentBjj);
+  const bjjResponse = await render(`/events/${currentBjj.id}/`);
   assert.equal(bjjResponse.status, 200);
   const bjjHtml = await bjjResponse.text();
-  assert.match(bjjHtml, /UFC BJJ 10/i);
-  assert.match(bjjHtml, /Andrew Tackett/i);
-  assert.match(bjjHtml, /Jonnatas Gracie/i);
-  assert.match(bjjHtml, /Rebeca Lima vs Brianna Ste-Marie/i);
-  assert.match(bjjHtml, /UFC BJJ YouTube/i);
-  assert.match(bjjHtml, />Free</i);
+  assert.match(bjjHtml, /UFC BJJ/i);
+  assert.match(bjjHtml, new RegExp(currentBjj.fighters[0], "i"));
+  assert.match(bjjHtml, /UFC Fight Pass/i);
+  assert.match(bjjHtml, />Subscription</i);
 });
 
 test("tracks Real American Freestyle with its official RAF12 card", async () => {

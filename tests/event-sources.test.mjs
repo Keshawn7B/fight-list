@@ -5,6 +5,7 @@ import {
   parseDwcsEvents,
   parseKarateCombatEvents,
   parseLocalDateTime,
+  parseMatchroomEvents,
   parseOneEvents,
   parsePflEvents,
   parseRafEvents,
@@ -82,30 +83,118 @@ test("parses BKFC cards and ignores non-BKFC ticket links", () => {
 });
 
 test("parses early and main PFL card times", () => {
+  const url = "https://pflmma.com/event/pfl-ny-2026";
   const events = parsePflEvents(`
     <div class="event-hub"><div class="event-card-info">
       <div class="mb-1 text-uppercase">Fri, Jul 31</div>
       <div class="mb-2 text-uppercase">4pm ET Early Card | 7pm ET Main Card</div>
       <div class="mb-2">PFL NEW YORK</div>
       <div class="mb-4">UBS Arena, Belmont Park, New York</div>
-      <a href="https://pflmma.com/event/pfl-ny-2026">MATCHUPS</a>
+      <a href="${url}">MATCHUPS</a>
     </div></div>
-  `, now);
+  `, now, new Map([[url, `<script type="application/ld+json">${JSON.stringify({
+    performer: [
+      { name: "Prelim Red vs Prelim Blue" },
+      { name: "Main Red vs Main Blue" },
+    ],
+  })}</script>`]]));
 
   assert.equal(events.length, 1);
   assert.equal(events[0].startsAt, "2026-07-31T20:00:00.000Z");
   assert.equal(events[0].mainCardAt, "2026-07-31T23:00:00.000Z");
+  assert.deepEqual(events[0].fighters, ["Main Red", "Main Blue"]);
+  assert.deepEqual(events[0].bouts, ["Prelim Red vs Prelim Blue", "Main Red vs Main Blue"]);
+});
+
+test("keeps PFL cards whose official start time is still TBA", () => {
+  const events = parsePflEvents(`
+    <div class="event-hub"><div class="event-card-info">
+      <div class="mb-1 text-uppercase">Fri, Oct 2</div>
+      <div class="mb-2">PFL MENA 11</div>
+      <div class="mb-4">Riyadh, KSA</div>
+      <a href="https://pflmma.com/event/pfl-mena-11">MATCHUPS</a>
+    </div></div>
+  `, now);
+
+  assert.equal(events.length, 1);
+  assert.equal(events[0].startsAt, "2026-10-02T12:00:00.000Z");
+  assert.equal(events[0].timeTba, true);
+});
+
+test("ignores old PFL cards when the page includes its past tab", () => {
+  const eventCard = (name, href, date) => `<div class="event-hub"><div class="event-card-info">
+    <div class="mb-1 text-uppercase">${date}</div><div class="mb-2">${name}</div>
+    <div class="mb-4">Arena, City</div><a href="${href}">MATCHUPS</a>
+  </div></div>`;
+  const events = parsePflEvents(`
+    <div id="nav-upcoming">${eventCard("PFL MENA 11", "/event/pfl-mena-11", "Fri, Oct 2")}</div>
+    <div id="nav-past">${eventCard("BCS 3", "/event/2024-cs-3", "Fri, Jun 22")}</div>
+  `, now);
+
+  assert.deepEqual(events.map((event) => event.eventName), ["PFL Mena 11"]);
+});
+
+test("parses Matchroom dates, full names, and undercards", () => {
+  const url = "https://www.matchroomboxing.com/events/jones-vs-sanchez/";
+  const schedule = `
+    <section class="events-upcoming"><div class="fight-card">
+      <a class="button--wide" href="${url}" title="Jones vs Sanchez">See event</a>
+      <p class="date"><span class="day">02 Oct</span></p>
+      <p class="boxers"><span class="location">Caribe Royale, Orlando, USA</span></p>
+    </div></section>
+  `;
+  const detail = `
+    <title>Jones vs Sanchez - Matchroom Boxing</title>
+    <section class="single-event-hero"><p class="date">Friday 02 October 2026</p>
+      <div class="boxer-1"><h2><span class="first-name">Omari</span><span class="last-name">Jones</span></h2></div>
+      <div class="boxer-2"><h2><span class="first-name">Alan</span><span class="last-name">Sanchez</span></h2></div>
+    </section>
+    <section class="undercard"><div class="fight">
+      <div class="boxer-1"><h2><span class="first-name">Jordan</span><span class="last-name">Orozco</span></h2></div>
+      <div class="boxer-2"><h2><span class="first-name">Yusniel</span><span class="last-name">Abrahante</span></h2></div>
+    </div></section>
+  `;
+  const events = parseMatchroomEvents(schedule, new Map([[url, detail]]), now);
+
+  assert.equal(events.length, 1);
+  assert.deepEqual(events[0].fighters, ["Omari Jones", "Alan Sanchez"]);
+  assert.deepEqual(events[0].bouts, [
+    "Omari Jones vs Alan Sanchez",
+    "Jordan Orozco vs Yusniel Abrahante",
+  ]);
+  assert.equal(events[0].timeTba, true);
 });
 
 test("parses the timed RAF card from the official home page", () => {
+  const url = "https://www.realamericanfreestyle.com/events/raf12";
   const events = parseRafEvents(`
     <div class="w-dyn-item"><div class="text-block-28">RAF12</div><div class="text-block-28-copy">Dvalishvili vs Cejudo 2</div><div class="event-card_date small">August 22, 2026</div><div class="event-card_location">Cleveland, OH</div></div>
     <div>watch on FOX Nation live streamAug 22, 2026 8:00 PMest</div>
-  `, now);
+  `, now, new Map([[url, `
+    <div id="matchups"><div class="w-dyn-item">
+      <div class="awthlete-name">Merab Dvalishvili</div><div class="awthlete-name">vs</div>
+      <div class="aathlete-name">Henry Cejudo</div>
+    </div></div>
+  `]]));
 
   assert.equal(events.length, 1);
   assert.equal(events[0].eventName, "RAF12: Dvalishvili vs Cejudo 2");
   assert.equal(events[0].startsAt, "2026-08-23T00:00:00.000Z");
+  assert.deepEqual(events[0].fighters, ["Merab Dvalishvili", "Henry Cejudo"]);
+  assert.deepEqual(events[0].bouts, ["Merab Dvalishvili vs Henry Cejudo"]);
+});
+
+test("keeps later RAF cards with unannounced start times", () => {
+  const events = parseRafEvents(`
+    <div class="w-dyn-item"><div class="text-block-28">RAF14</div><div class="text-block-28-copy">Tsarukyan vs Danis</div><div class="event-card_date small">October 23, 2026</div><div class="event-card_location">Las Vegas, NV</div></div>
+    <div class="w-dyn-item"><div class="text-block-28">RAF15</div><div class="text-block-28-copy">RAF15</div><div class="event-card_date small">November 28, 2026</div><div class="event-card_location">Chicago, IL</div></div>
+    <div>watch on FOX Nation live streamOct 23, 2026 9:00 PMest</div>
+  `, now);
+
+  assert.equal(events.length, 2);
+  assert.equal(events[0].timeTba, undefined);
+  assert.equal(events[1].timeTba, true);
+  assert.equal(events[1].startsAt, "2026-11-28T12:00:00.000Z");
 });
 
 test("parses Karate Combat's exact timestamp and full official card", () => {
@@ -146,11 +235,20 @@ test("parses Karate Combat's exact timestamp and full official card", () => {
 test("parses the current UFC BJJ hub event", () => {
   const events = parseUfcBjjEvents(`
     <article><h1>UFC BJJ 10</h1><p>UFC BJJ 10: Tackett vs Gracie Is Live Thursday, August 20 At 8pm ET/5pm PT</p><a href="/news/ufc-bjj-10-tackett-vs-gracie-fight-card">Fight Card</a></article>
-  `, now);
+  `, now, `
+    <h3>Main Event: Welterweight - Andrew Tackett vs Kron Gracie</h3>
+    <h3>Lightweight - Athlete Three vs Athlete Four</h3>
+  `);
 
   assert.equal(events.length, 1);
-  assert.equal(events[0].watch.access, "Free");
+  assert.equal(events[0].watch.provider, "UFC Fight Pass");
+  assert.equal(events[0].watch.access, "Subscription");
   assert.equal(events[0].startsAt, "2026-08-21T00:00:00.000Z");
+  assert.deepEqual(events[0].fighters, ["Andrew Tackett", "Kron Gracie"]);
+  assert.deepEqual(events[0].bouts, [
+    "Andrew Tackett vs Kron Gracie",
+    "Athlete Three vs Athlete Four",
+  ]);
 });
 
 test("creates all ten weekly DWCS episodes from the official season announcement", () => {

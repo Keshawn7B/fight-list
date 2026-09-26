@@ -118,6 +118,7 @@ function makeEvent({
   fighters,
   stakes,
   startsAt,
+  timeTba,
   mainCardAt,
   venue,
   location,
@@ -137,6 +138,7 @@ function makeEvent({
     fighters,
     stakes,
     startsAt,
+    ...(timeTba ? { timeTba: true } : {}),
     ...(mainCardAt ? { mainCardAt } : {}),
     venue: clean(venue) || "Venue TBA",
     location: clean(location) || "Location TBA",
@@ -309,11 +311,46 @@ export function parseBkfcEvents(html, now = new Date()) {
   return [...eventsByUrl.values()];
 }
 
-export function parsePflEvents(html, now = new Date()) {
+function pflBoutsFromDetail(html) {
+  if (!html) return [];
+  const $ = cheerio.load(html);
+  const bouts = [];
+
+  $("script").each((_, script) => {
+    const payload = $(script).text();
+    if (!payload.includes('"performer"')) return;
+    try {
+      const parsed = JSON.parse(payload);
+      const visit = (value) => {
+        if (!value || typeof value !== "object") return;
+        if (Array.isArray(value)) {
+          value.forEach(visit);
+          return;
+        }
+        if (Array.isArray(value.performer)) {
+          value.performer.forEach((performer) => {
+            const name = clean(performer?.name);
+            if (/\s+vs\.?\s+/i.test(name)) bouts.push(name.replace(/\s+vs\.?\s+/i, " vs "));
+          });
+        }
+        Object.values(value).forEach(visit);
+      };
+      visit(parsed);
+    } catch {
+      // Ignore unrelated inline scripts that are not valid JSON-LD.
+    }
+  });
+
+  return [...new Set(bouts)];
+}
+
+export function parsePflEvents(html, now = new Date(), detailsByUrl = new Map()) {
   const $ = cheerio.load(html);
   const events = [];
+  const upcomingCards = $("#nav-upcoming .event-hub");
+  const cards = upcomingCards.length ? upcomingCards : $(".event-hub");
 
-  $(".event-hub").each((_, element) => {
+  cards.each((_, element) => {
     const card = $(element);
     const dateText = clean(card.find(".event-card-info > .mb-1").first().text());
     const timesText = clean(card.find(".event-card-info > .mb-2.text-uppercase").first().text());
@@ -322,12 +359,17 @@ export function parsePflEvents(html, now = new Date()) {
     const href = card.find("a[href]").filter((_, link) => /matchups/i.test($(link).text())).first().attr("href");
     const early = timesText.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm))\s*ET\s*Early/i)?.[1];
     const main = timesText.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm))\s*ET\s*Main/i)?.[1];
-    if (!dateText || !eventName || !href || (!early && !main)) return;
+    if (!dateText || !eventName || !href) return;
 
-    const startsAt = parseLocalDateTime(dateText, early ?? main, now);
+    const timeTba = !early && !main;
+    const startsAt = timeTba
+      ? parseLocalDateTime(dateText, "12:00 PM", now, "UTC")
+      : parseLocalDateTime(dateText, early ?? main, now);
     const mainCardAt = main ? parseLocalDateTime(dateText, main, now) : null;
     if (!startsAt || !futureEnough(startsAt, now)) return;
     const detailsUrl = absoluteUrl(href, "https://pflmma.com/events");
+    const bouts = pflBoutsFromDetail(detailsByUrl.get(detailsUrl));
+    const fighters = bouts.length ? splitMatchup(bouts.at(-1)) : ["Card", "To be announced"];
     const [venue, ...locationParts] = place.split(",").map(clean);
 
     events.push(makeEvent({
@@ -335,9 +377,10 @@ export function parsePflEvents(html, now = new Date()) {
       sport: "MMA",
       promotion: "PFL",
       eventName,
-      fighters: ["Card", "To be announced"],
+      fighters,
       stakes: "Official PFL card",
       startsAt,
+      timeTba,
       mainCardAt,
       venue,
       location: locationParts.join(", "),
@@ -346,55 +389,161 @@ export function parsePflEvents(html, now = new Date()) {
       watchHref: "https://www.espn.com/watch/",
       watchNote: "U.S. listing; regional availability may vary",
       detailsUrl,
-      bouts: ["Full matchups on the official PFL card"],
+      bouts: bouts.length ? bouts : ["Full matchups on the official PFL card"],
+    }));
+  });
+
+  return [...new Map(events.map((event) => [event.detailsUrl, event])).values()];
+}
+
+function matchroomFighterName($, root) {
+  const parts = $(root).find(".first-name, .last-name")
+    .map((_, part) => clean($(part).text()))
+    .get()
+    .filter(Boolean);
+  return clean(parts.join(" ")) || clean($(root).text()).replace(/\s+VS$/i, "");
+}
+
+export function parseMatchroomEvents(html, detailsByUrl = new Map(), now = new Date()) {
+  const $ = cheerio.load(html);
+  const events = [];
+
+  $("section.events-upcoming .fight-card").each((_, element) => {
+    const card = $(element);
+    const link = card.find("a.button--wide[href]").first();
+    const href = link.attr("href");
+    if (!href) return;
+    const detailsUrl = absoluteUrl(href, "https://www.matchroomboxing.com/events/");
+    const dateText = clean(card.find(".date .day").first().text());
+    const listedName = clean(link.attr("title"));
+    const listedLocation = clean(card.find(".boxers .location").first().text());
+    const detailHtml = detailsByUrl.get(detailsUrl) ?? "";
+    const detail = cheerio.load(detailHtml);
+    const exactDate = clean(detail(".single-event-hero .date").first().text()) || dateText;
+    const dayFirstDate = exactDate.match(/(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?/);
+    const normalizedDate = dayFirstDate
+      ? `${dayFirstDate[2]} ${dayFirstDate[1]}${dayFirstDate[3] ? `, ${dayFirstDate[3]}` : ""}`
+      : exactDate;
+    const startsAt = parseLocalDateTime(normalizedDate, "12:00 PM", now, "UTC");
+    if (!listedName || !startsAt || !futureEnough(startsAt, now)) return;
+
+    const pageTitle = clean(detail("title").first().text()).replace(/\s*-\s*Matchroom Boxing$/i, "");
+    const eventName = pageTitle || listedName;
+    const first = matchroomFighterName(detail, ".single-event-hero .boxer-1 h2");
+    const second = matchroomFighterName(detail, ".single-event-hero .boxer-2 h2");
+    const hasMainEvent = first && second && !/^TBC(?:\s+TBC)?$/i.test(first) && !/^TBC(?:\s+TBC)?$/i.test(second);
+    const fighters = hasMainEvent ? [first, second] : ["Card", "To be announced"];
+    const bouts = hasMainEvent ? [`${first} vs ${second}`] : [];
+
+    detail(".undercard .fight").each((__, fight) => {
+      const red = matchroomFighterName(detail, detail(fight).find(".boxer-1 h2").first());
+      const blue = matchroomFighterName(detail, detail(fight).find(".boxer-2 h2").first());
+      if (red && blue && !/^TBC$/i.test(red) && !/^TBC$/i.test(blue)) bouts.push(`${red} vs ${blue}`);
+    });
+
+    const locationParts = listedLocation.split(",").map(clean).filter(Boolean);
+    const venue = locationParts.length > 1 ? locationParts[0] : "Venue TBA";
+    const location = listedLocation;
+
+    events.push(makeEvent({
+      source: "Matchroom",
+      sport: "Boxing",
+      promotion: "Matchroom",
+      eventName,
+      fighters,
+      stakes: "Official Matchroom Boxing card",
+      startsAt,
+      timeTba: true,
+      venue,
+      location,
+      provider: "DAZN",
+      access: "Subscription",
+      watchHref: "https://www.dazn.com/",
+      watchNote: "Official Matchroom broadcaster; regional availability may vary",
+      detailsUrl,
+      bouts: bouts.length ? bouts : ["Full card pending official announcement"],
     }));
   });
 
   return events;
 }
 
-export function parseRafEvents(html, now = new Date()) {
+function rafBoutsFromDetail(html) {
+  if (!html) return [];
+  const $ = cheerio.load(html);
+  const bouts = [];
+
+  $("#matchups .w-dyn-item").each((_, matchup) => {
+    const red = $(matchup).find(".awthlete-name")
+      .map((__, name) => clean($(name).text()))
+      .get()
+      .find((name) => name && name.toLowerCase() !== "vs" && !/\s+vs\.?\s+/i.test(name));
+    const blue = clean($(matchup).find(".aathlete-name").first().text());
+    if (red && blue) bouts.push(`${red} vs ${blue}`);
+  });
+
+  return [...new Set(bouts)];
+}
+
+export function parseRafEvents(html, now = new Date(), detailsByUrl = new Map()) {
   const $ = cheerio.load(html);
   const pageText = clean($.root().text());
   const timedEvent = pageText.match(/((?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+\d{1,2},\s+\d{4})\s+(\d{1,2}:\d{2}\s*[AP]M)\s*(?:EST|ET)/i);
-  if (!timedEvent) return [];
-  const startsAt = parseLocalDateTime(timedEvent[1], timedEvent[2], now);
-  if (!startsAt || !futureEnough(startsAt, now)) return [];
-
-  const matchingCard = $(".w-dyn-item").filter((_, element) => (
+  const exactTimedDay = timedEvent
+    ? parseLocalDateTime(timedEvent[1], "12:00 PM", now, "UTC")
+    : null;
+  const cards = $(".w-dyn-item").filter((_, element) => (
     $(element).find(".text-block-28").length > 0
-  )).first();
-  if (!matchingCard.length) return [];
+  ));
+  const events = [];
 
-  const code = clean(matchingCard.find(".text-block-28").first().text());
-  const subtitle = clean(matchingCard.find(".text-block-28-copy").first().text()) || code;
-  const location = clean(matchingCard.find(".event-card_location").first().text());
-  const eventName = subtitle === code ? code : `${code}: ${subtitle}`;
-  const detailsUrl = /^RAF\d+$/i.test(code)
-    ? `https://www.realamericanfreestyle.com/events/${code.toLowerCase()}`
-    : "https://www.realamericanfreestyle.com/";
-  const fighters = splitMatchup(subtitle);
+  cards.each((_, element) => {
+    const card = $(element);
+    const code = clean(card.find(".text-block-28").first().text());
+    const subtitle = clean(card.find(".text-block-28-copy").first().text()) || code;
+    const dateText = clean(card.find(".event-card_date").first().text());
+    const location = clean(card.find(".event-card_location").first().text());
+    const cardDay = parseLocalDateTime(dateText, "12:00 PM", now, "UTC");
+    const hasExactTime = Boolean(timedEvent && cardDay === exactTimedDay);
+    const startsAt = hasExactTime
+      ? parseLocalDateTime(timedEvent[1], timedEvent[2], now)
+      : parseLocalDateTime(dateText, "12:00 PM", now, "UTC");
+    if (!code || !startsAt || !futureEnough(startsAt, now)) return;
 
-  return [makeEvent({
-    source: "RAF",
-    sport: "Wrestling",
-    promotion: "RAF",
-    eventName,
-    fighters,
-    stakes: "Official Real American Freestyle card",
-    startsAt,
-    venue: "Venue TBA",
-    location,
-    provider: "FOX Nation",
-    access: "Subscription",
-    watchHref: "https://nation.foxnews.com/real-american-freestyle-nation/",
-    watchNote: "Streams live exclusively on FOX Nation",
-    detailsUrl,
-    bouts: fighters[0] === "Card" ? ["Matchups pending official announcement"] : [`${fighters[0]} vs ${fighters[1]}`],
-  })];
+    const eventName = subtitle === code ? code : `${code}: ${subtitle}`;
+    const slug = slugify(code);
+    const detailsUrl = `https://www.realamericanfreestyle.com/events/${slug}`;
+    const bouts = rafBoutsFromDetail(detailsByUrl.get(detailsUrl));
+    const fighters = bouts.length ? splitMatchup(bouts[0]) : splitMatchup(subtitle);
+
+    events.push(makeEvent({
+      source: "RAF",
+      sport: "Wrestling",
+      promotion: "RAF",
+      eventName,
+      fighters,
+      stakes: "Official Real American Freestyle card",
+      startsAt,
+      timeTba: !hasExactTime,
+      venue: "Venue TBA",
+      location,
+      provider: "FOX Nation",
+      access: "Subscription",
+      watchHref: "https://nation.foxnews.com/real-american-freestyle-nation/",
+      watchNote: "Official RAF stream; regional availability may vary",
+      detailsUrl,
+      bouts: bouts.length
+        ? bouts
+        : fighters[0] === "Card"
+          ? ["Matchups pending official announcement"]
+          : [`${fighters[0]} vs ${fighters[1]}`],
+    }));
+  });
+
+  return events;
 }
 
-export function parseUfcBjjEvents(html, now = new Date()) {
+export function parseUfcBjjEvents(html, now = new Date(), detailHtml = "") {
   const $ = cheerio.load(html);
   const article = $("article").first();
   const text = clean(article.text());
@@ -409,7 +558,13 @@ export function parseUfcBjjEvents(html, now = new Date()) {
   const detailsUrl = detailsHref
     ? absoluteUrl(detailsHref, "https://www.ufc.com/ufcbjj")
     : "https://www.ufc.com/ufcbjj";
-  const fighters = splitMatchup(subtitle);
+  const detail = cheerio.load(detailHtml);
+  const bouts = detail("h3")
+    .map((_, heading) => clean(detail(heading).text()))
+    .get()
+    .filter((heading) => /\s+vs\.?\s+/i.test(heading))
+    .map((heading) => clean(heading.split(/\s+-\s+/).at(-1)).replace(/\s+vs\.?\s+/i, " vs "));
+  const fighters = bouts.length ? splitMatchup(bouts[0]) : splitMatchup(subtitle);
 
   return [makeEvent({
     source: "UFC BJJ",
@@ -421,12 +576,16 @@ export function parseUfcBjjEvents(html, now = new Date()) {
     startsAt,
     venue: "Meta APEX",
     location: "Las Vegas, Nevada",
-    provider: "UFC BJJ YouTube",
-    access: "Free",
-    watchHref: "https://www.youtube.com/@ufcbjj",
-    watchNote: "Live and free on the official UFC BJJ YouTube channel",
+    provider: "UFC Fight Pass",
+    access: "Subscription",
+    watchHref: "https://ufcfightpass.com/",
+    watchNote: "Streams live on UFC Fight Pass",
     detailsUrl,
-    bouts: fighters[0] === "Card" ? ["Full card pending official announcement"] : [`${fighters[0]} vs ${fighters[1]}`],
+    bouts: bouts.length
+      ? bouts
+      : fighters[0] === "Card"
+        ? ["Full card pending official announcement"]
+        : [`${fighters[0]} vs ${fighters[1]}`],
   })];
 }
 
@@ -593,7 +752,20 @@ export const sourceAdapters = [
   },
   {
     name: "UFC BJJ",
-    run: async (now) => parseUfcBjjEvents(await fetchOfficialHtml("https://www.ufc.com/ufcbjj"), now),
+    run: async (now) => {
+      const hubHtml = await fetchOfficialHtml("https://www.ufc.com/ufcbjj");
+      const $ = cheerio.load(hubHtml);
+      const href = $("article a[href]").filter((_, link) => /fight card/i.test($(link).text())).first().attr("href");
+      let detailHtml = "";
+      if (href) {
+        try {
+          detailHtml = await fetchOfficialHtml(absoluteUrl(href, "https://www.ufc.com/ufcbjj"));
+        } catch {
+          // The hub still provides a valid main event when the card article is unavailable.
+        }
+      }
+      return parseUfcBjjEvents(hubHtml, now, detailHtml);
+    },
   },
   {
     name: "ONE",
@@ -601,7 +773,40 @@ export const sourceAdapters = [
   },
   {
     name: "PFL",
-    run: async (now) => parsePflEvents(await fetchOfficialHtml("https://pflmma.com/events"), now),
+    run: async (now) => {
+      const scheduleHtml = await fetchOfficialHtml("https://pflmma.com/events");
+      const $ = cheerio.load(scheduleHtml);
+      const urls = [...new Set($("#nav-upcoming .event-hub a[href]")
+        .filter((_, link) => /matchups/i.test($(link).text()))
+        .map((_, link) => absoluteUrl($(link).attr("href"), "https://pflmma.com/events"))
+        .get())];
+      const detailEntries = (await Promise.all(urls.map(async (url) => {
+        try {
+          return [url, await fetchOfficialHtml(url)];
+        } catch {
+          return null;
+        }
+      }))).filter(Boolean);
+      return parsePflEvents(scheduleHtml, now, new Map(detailEntries));
+    },
+  },
+  {
+    name: "Matchroom",
+    run: async (now) => {
+      const scheduleHtml = await fetchOfficialHtml("https://www.matchroomboxing.com/events/");
+      const $ = cheerio.load(scheduleHtml);
+      const urls = $("section.events-upcoming .fight-card a.button--wide[href]")
+        .map((_, link) => absoluteUrl($(link).attr("href"), "https://www.matchroomboxing.com/events/"))
+        .get();
+      const detailEntries = (await Promise.all(urls.map(async (url) => {
+        try {
+          return [url, await fetchOfficialHtml(url)];
+        } catch {
+          return null;
+        }
+      }))).filter(Boolean);
+      return parseMatchroomEvents(scheduleHtml, new Map(detailEntries), now);
+    },
   },
   {
     name: "BKFC",
@@ -609,7 +814,21 @@ export const sourceAdapters = [
   },
   {
     name: "RAF",
-    run: async (now) => parseRafEvents(await fetchOfficialHtml("https://www.realamericanfreestyle.com/?direct=true"), now),
+    run: async (now) => {
+      const scheduleHtml = await fetchOfficialHtml("https://www.realamericanfreestyle.com/?direct=true");
+      const $ = cheerio.load(scheduleHtml);
+      const urls = [...new Set($(".w-dyn-item .text-block-28").map((_, code) => (
+        `https://www.realamericanfreestyle.com/events/${slugify($(code).text())}`
+      )).get())];
+      const detailEntries = (await Promise.all(urls.map(async (url) => {
+        try {
+          return [url, await fetchOfficialHtml(url)];
+        } catch {
+          return null;
+        }
+      }))).filter(Boolean);
+      return parseRafEvents(scheduleHtml, now, new Map(detailEntries));
+    },
   },
   {
     name: "Karate Combat",
