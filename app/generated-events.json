@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "September 26, 2026",
+  "verifiedDate": "September 27, 2026",
   "events": [
     {
       "id": "auto-ufc-bjj-ufc-bjj-11-musumeci-vs-mitchell-fight-card-2026-09-25",
@@ -31,56 +31,6 @@
         "Ryan Elgarico Jr. vs Jordan Holy",
         "Mason Stritzel vs Seve Zazueta",
         "Kolby Gonzalez vs Daniel Deeder"
-      ]
-    },
-    {
-      "id": "auto-one-one-friday-fights-172-2026-09-25",
-      "source": "ONE",
-      "sport": "Muay Thai",
-      "promotion": "ONE",
-      "eventName": "ONE Friday Fights 172 & The Inner Circle 32",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-09-25T11:30:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "Live.ONE / ONE YouTube",
-        "access": "Free",
-        "href": "https://live.onefc.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-172/",
-      "bouts": [
-        "Full card pending official announcement"
-      ]
-    },
-    {
-      "id": "auto-bkfc-bkfc-94-manchester-2026-09-26",
-      "source": "BKFC",
-      "sport": "Bare Knuckle",
-      "promotion": "BKFC",
-      "eventName": "BKFC 94 Manchester Till Vs Romero",
-      "fighters": [
-        "Till",
-        "Romero"
-      ],
-      "stakes": "Official BKFC card",
-      "startsAt": "2026-09-26T18:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "BKFC+ / Fubo Sports",
-        "access": "Subscription",
-        "href": "https://watch.bkfc.com/",
-        "note": "Official BKFC stream; regional options may vary"
-      },
-      "detailsUrl": "https://www.bkfc.com/events/bkfc-94-manchester",
-      "bouts": [
-        "Till vs Romero"
       ]
     },
     {
@@ -1076,6 +1026,31 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-179/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-fight-night-myrtle-beach-2026-11-21",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Fight Night Myrtle Beach",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-11-21T01:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-myrtle-beach",
+      "bouts": [
+        "Fights to be announced by BKFC"
       ]
     },
     {
