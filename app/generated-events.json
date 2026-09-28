@@ -187,7 +187,7 @@
         "Shewmaker"
       ],
       "stakes": "Official BKFC card",
-      "startsAt": "2026-10-03T09:00:00.000Z",
+      "startsAt": "2026-10-03T08:30:00.000Z",
       "venue": "Venue TBA",
       "location": "Location TBA",
       "watch": {
@@ -1027,6 +1027,31 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-myrtle-beach",
       "bouts": [
         "Fights to be announced by BKFC"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-november-21-2026-2026-11-21",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-11-21T22:00:00.000Z",
+      "venue": "ABHA Arena",
+      "location": "Doha, Qatar",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
