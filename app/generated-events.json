@@ -34,31 +34,6 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-fight-night-september-26-2026-2026-09-27",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Rosas Jr. vs Barcelos",
-      "fighters": [
-        "Rosas Jr.",
-        "Barcelos"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-09-27T00:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, NV, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-september-26-2026",
-      "bouts": [
-        "Rosas Jr. vs Barcelos"
-      ]
-    },
-    {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-8-2026-09-29",
       "source": "DWCS",
       "sport": "MMA",
@@ -255,6 +230,7 @@
         "Bilal Fawaz vs Eithan James",
         "Ibraheem Sulaimaan vs Sonny Hardy",
         "Aaron Bowen vs Klint Baptiste",
+        "Adam Maca vs Rogger Rivera",
         "Harley Burrows vs Matias Ezequiel Herrera",
         "Paige Murney vs Linzi Buczynskyj"
       ]
