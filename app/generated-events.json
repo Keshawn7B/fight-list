@@ -465,16 +465,16 @@
       },
       "detailsUrl": "https://pflmma.com/event/2026-chicago2",
       "bouts": [
-        "Levan Khabalaev vs Morquez Forest",
         "Benita Van Rooji vs Giulliany Perêa",
         "Noah Hermosillo vs Caden Cox",
         "Paulina Wisniewska vs Chelsea Hackett",
+        "Levan Khabalaev vs Morquez Forest",
         "Cobey Fehr vs Rosario Romero",
-        "Eliezer Kubanza vs Trey Waters",
-        "Cássio Barão vs Kevin Pease",
-        "Shannon Clark vs Lucero Acosta",
         "Gamid Khizriev vs Michael Boylan",
+        "Shannon Clark vs Lucero Acosta",
+        "Cássio Barão vs Kevin Pease",
         "Emiliano Sordi vs Abraham Bably",
+        "Eliezer Kubanza vs Trey Waters",
         "Oualy Tandia vs JP Saint Louis",
         "Sarvarjon Khamidov vs Rafael do Nascimento",
         "Timur Khizriev vs Gabriel Braga",
@@ -922,6 +922,7 @@
       "bouts": [
         "Khasan Magomedsharipov vs Adam Borics",
         "Asaël Adjoudj vs Movlid Khaybulaev",
+        "Lewis McGrillen vs Nawras Abzakh",
         "Sergio Pettis vs Joji Goto",
         "Abubakar Nurmagomedov vs David Martinez",
         "Pouya Rahmani vs Oleg Popov",
@@ -1040,7 +1041,7 @@
         "To be announced"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2026-11-21T22:00:00.000Z",
+      "startsAt": "2026-11-21T18:00:00.000Z",
       "venue": "ABHA Arena",
       "location": "Doha, Qatar",
       "watch": {
@@ -1153,6 +1154,31 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-181/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-fight-night-hershey-2026-12-05",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Fight Night Hershey",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2026-12-05T00:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-hershey",
+      "bouts": [
+        "Fights to be announced by BKFC"
       ]
     },
     {
