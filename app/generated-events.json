@@ -876,10 +876,10 @@
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
-      "eventName": "RAF ABU DHABI",
+      "eventName": "RAF ABU DHABI: Chimaev vs Covington",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Khamzat Chimaev",
+        "Colby Covington"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-11-14T12:00:00.000Z",
@@ -894,7 +894,7 @@
       },
       "detailsUrl": "https://www.realamericanfreestyle.com/events/raf-abu-dhabi",
       "bouts": [
-        "Matchups pending official announcement"
+        "Khamzat Chimaev vs Colby Covington"
       ]
     },
     {
