@@ -2,38 +2,6 @@
   "verifiedDate": "September 30, 2026",
   "events": [
     {
-      "id": "auto-ufc-bjj-ufc-bjj-11-musumeci-vs-mitchell-fight-card-2026-09-25",
-      "source": "UFC BJJ",
-      "sport": "Jiu-Jitsu",
-      "promotion": "UFC BJJ",
-      "eventName": "UFC BJJ 11: Musumeci vs Mitchell",
-      "fighters": [
-        "Mikey Musumeci",
-        "Bryce Mitchell"
-      ],
-      "stakes": "Official UFC BJJ card",
-      "startsAt": "2026-09-25T00:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "UFC Fight Pass",
-        "access": "Subscription",
-        "href": "https://ufcfightpass.com/",
-        "note": "Streams live on UFC Fight Pass"
-      },
-      "detailsUrl": "https://www.ufc.com/news/ufc-bjj-11-musumeci-vs-mitchell-fight-card",
-      "bouts": [
-        "Mikey Musumeci vs Bryce Mitchell",
-        "Mason Fowler vs Nick Rodriguez",
-        "Aurelie Le Vern vs Rana Willink",
-        "Jay Rodriguez vs Kevin Beuhring",
-        "Pedro Machado vs Lucas Norat",
-        "Ryan Elgarico Jr. vs Jordan Holy",
-        "Mason Stritzel vs Seve Zazueta",
-        "Kolby Gonzalez vs Daniel Deeder"
-      ]
-    },
-    {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-8-2026-09-29",
       "source": "DWCS",
       "sport": "MMA",
@@ -283,6 +251,31 @@
       "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
+      ]
+    },
+    {
+      "id": "auto-ufc-bjj-ufc-bjj-12-moura-vs-fornarino-fight-card-2026-10-09",
+      "source": "UFC BJJ",
+      "sport": "Jiu-Jitsu",
+      "promotion": "UFC BJJ",
+      "eventName": "UFC BJJ 12: Moura vs Fornarino",
+      "fighters": [
+        "Moura",
+        "Fornarino"
+      ],
+      "stakes": "Official UFC BJJ card",
+      "startsAt": "2026-10-09T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "UFC Fight Pass",
+        "access": "Subscription",
+        "href": "https://ufcfightpass.com/",
+        "note": "Streams live on UFC Fight Pass"
+      },
+      "detailsUrl": "https://www.ufc.com/news/ufc-bjj-12-moura-vs-fornarino-fight-card",
+      "bouts": [
+        "Moura vs Fornarino"
       ]
     },
     {
@@ -1356,6 +1349,7 @@
       },
       "detailsUrl": "https://pflmma.com/event/pfl-lyon-2026",
       "bouts": [
+        "Baris Adiguzel vs Liam Gittins",
         "Fabian Edwards vs Ilian Bouafia",
         "Abdoul Abdouraguimov vs Andreeas Binder",
         "Boris Atangana vs Bryan Battle",
