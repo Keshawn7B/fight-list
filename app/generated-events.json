@@ -149,10 +149,10 @@
       "source": "BKFC",
       "sport": "Bare Knuckle",
       "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Australia Hepi Vs Shewmaker",
+      "eventName": "BKFC Fight Night Australia Kuhne Vs Curran",
       "fighters": [
-        "Hepi",
-        "Shewmaker"
+        "Kuhne",
+        "Curran"
       ],
       "stakes": "Official BKFC card",
       "startsAt": "2026-10-03T08:30:00.000Z",
@@ -166,7 +166,7 @@
       },
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-australia",
       "bouts": [
-        "Hepi vs Shewmaker"
+        "Kuhne vs Curran"
       ]
     },
     {
@@ -913,9 +913,11 @@
       },
       "detailsUrl": "https://pflmma.com/event/pfl-returns-to-dubai",
       "bouts": [
+        "Ernesto Rodriguez vs Rhys McKee",
         "Khasan Magomedsharipov vs Adam Borics",
         "Asaël Adjoudj vs Movlid Khaybulaev",
         "Lewis McGrillen vs Nawras Abzakh",
+        "Shem Rock vs Connor Hughes",
         "Sergio Pettis vs Joji Goto",
         "Abubakar Nurmagomedov vs David Martinez",
         "Pouya Rahmani vs Oleg Popov",
