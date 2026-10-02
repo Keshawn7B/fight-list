@@ -2,31 +2,6 @@
   "verifiedDate": "October 2, 2026",
   "events": [
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-8-2026-09-29",
-      "source": "DWCS",
-      "sport": "MMA",
-      "promotion": "DWCS",
-      "eventName": "Dana White's Contender Series: Season 10, Week 8",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Five UFC contract fights",
-      "startsAt": "2026-09-29T23:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.paramountplus.com/",
-        "note": "Season 10 streams exclusively on Paramount+"
-      },
-      "detailsUrl": "https://www.ufc.com/dwcs",
-      "bouts": [
-        "Five bouts scheduled; official matchups to be announced"
-      ]
-    },
-    {
       "id": "auto-one-one-friday-fights-173-2026-10-02",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -38,8 +13,8 @@
       ],
       "stakes": "Official ONE Championship card",
       "startsAt": "2026-10-02T11:30:00.000Z",
-      "venue": "Lumpinee Stadium",
-      "location": "Bangkok",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
       "watch": {
         "provider": "Live.ONE / ONE YouTube",
         "access": "Free",
@@ -49,41 +24,6 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-173/",
       "bouts": [
         "Full card pending official announcement"
-      ]
-    },
-    {
-      "id": "auto-pfl-pflmena11-2026-10-02",
-      "source": "PFL",
-      "sport": "MMA",
-      "promotion": "PFL",
-      "eventName": "PFL Mena 11",
-      "fighters": [
-        "Fatima Al Ammari",
-        "Aya Lounes"
-      ],
-      "stakes": "Official PFL card",
-      "startsAt": "2026-10-02T12:00:00.000Z",
-      "timeTba": true,
-      "venue": "Riyadh",
-      "location": "KSA",
-      "watch": {
-        "provider": "ESPN App / ESPN",
-        "access": "Subscription",
-        "href": "https://www.espn.com/watch/",
-        "note": "U.S. listing; regional availability may vary"
-      },
-      "detailsUrl": "https://pflmma.com/event/pflmena11",
-      "bouts": [
-        "Mostafa Rashed Neda vs Osama El Saidy",
-        "Badreddine Diani vs Hazem Kayyali",
-        "Elias Boudegzdame vs Islam Youssef",
-        "Ylies Djiroun vs Basel Shalaan",
-        "Omar Hussein vs Abdelkrim Zouad",
-        "Hassan Shaaban vs Assem Ghanem",
-        "Mehdi Saadi vs Shadi Kabbani",
-        "Mohammad Fahmi vs Ahmed El Sisy",
-        "Haif Al Qahtani vs Ali Alshowakh",
-        "Fatima Al Ammari vs Aya Lounes"
       ]
     },
     {
@@ -865,6 +805,32 @@
       ]
     },
     {
+      "id": "auto-matchroom-pacheco-vs-fulghum-2026-11-14",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Pacheco vs Fulghum",
+      "fighters": [
+        "Diego Pacheco",
+        "Darius Fulghum"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-11-14T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Dignity Health Sports Park",
+      "location": "Dignity Health Sports Park, Carson, CA, USA",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/pacheco-vs-fulghum/",
+      "bouts": [
+        "Diego Pacheco vs Darius Fulghum"
+      ]
+    },
+    {
       "id": "auto-raf-raf-abu-dhabi-2026-11-14",
       "source": "RAF",
       "sport": "Wrestling",
@@ -1201,6 +1167,58 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-182/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-pfl-pflmena-12-2026-12-11",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL Mena 12",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-12-11T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Khobar",
+      "location": "KSA",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pflmena-12",
+      "bouts": [
+        "Full matchups on the official PFL card"
+      ]
+    },
+    {
+      "id": "auto-pfl-pflmena12-2026-12-11",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL Mena 12",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-12-11T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Khobar",
+      "location": "KSA",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pflmena12",
+      "bouts": [
+        "Full matchups on the official PFL card"
       ]
     },
     {
