@@ -940,10 +940,10 @@
       "source": "BKFC",
       "sport": "Bare Knuckle",
       "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Myrtle Beach",
+      "eventName": "BKFC Fight Night Myrtle Beach Richardson Vs Oxendine",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Richardson",
+        "Oxendine"
       ],
       "stakes": "Official BKFC card",
       "startsAt": "2026-11-21T01:00:00.000Z",
@@ -957,7 +957,7 @@
       },
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-myrtle-beach",
       "bouts": [
-        "Fights to be announced by BKFC"
+        "Richardson vs Oxendine"
       ]
     },
     {
