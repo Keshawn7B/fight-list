@@ -2,31 +2,6 @@
   "verifiedDate": "October 4, 2026",
   "events": [
     {
-      "id": "auto-one-onefightnight48-2026-10-03",
-      "source": "ONE",
-      "sport": "MMA",
-      "promotion": "ONE",
-      "eventName": "ONE Fight Night 48: Erdogan vs. Elliott on Prime Video",
-      "fighters": [
-        "Erdogan",
-        "Elliott On Prime Video"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-10-03T01:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "Prime Video",
-        "access": "Included",
-        "href": "https://www.primevideo.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/onefightnight48/",
-      "bouts": [
-        "Erdogan vs Elliott On Prime Video"
-      ]
-    },
-    {
       "id": "auto-ufc-ufc-332-2026-10-04",
       "source": "UFC",
       "sport": "MMA",
