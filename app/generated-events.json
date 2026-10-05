@@ -2,31 +2,6 @@
   "verifiedDate": "October 5, 2026",
   "events": [
     {
-      "id": "auto-ufc-ufc-332-2026-10-04",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC 332: Silva vs Wang",
-      "fighters": [
-        "Silva",
-        "Wang"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-10-04T00:00:00.000Z",
-      "venue": "Delta Center",
-      "location": "Salt Lake City, UT, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-332",
-      "bouts": [
-        "Silva vs Wang"
-      ]
-    },
-    {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-9-2026-10-06",
       "source": "DWCS",
       "sport": "MMA",
