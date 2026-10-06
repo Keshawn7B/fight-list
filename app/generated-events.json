@@ -547,10 +547,10 @@
       "source": "ONE",
       "sport": "MMA",
       "promotion": "ONE",
-      "eventName": "ONE Fight Night 49",
+      "eventName": "ONE Fight Night 49: Gabriel Vs. Rasulov",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Gabriel",
+        "Rasulov"
       ],
       "stakes": "Official ONE Championship card",
       "startsAt": "2026-11-07T02:00:00.000Z",
@@ -564,7 +564,7 @@
       },
       "detailsUrl": "https://www.onefc.com/events/onefightnight49/",
       "bouts": [
-        "Full card pending official announcement"
+        "Gabriel vs Rasulov"
       ]
     },
     {
