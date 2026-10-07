@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "October 6, 2026",
+  "verifiedDate": "October 7, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-9-2026-10-06",
@@ -1092,31 +1092,6 @@
       ]
     },
     {
-      "id": "auto-one-onefightnight50-2026-12-12",
-      "source": "ONE",
-      "sport": "MMA",
-      "promotion": "ONE",
-      "eventName": "ONE Fight Night 50",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-12-12T02:00:00.000Z",
-      "venue": "Lumpinee Stadium",
-      "location": "Bangkok",
-      "watch": {
-        "provider": "Prime Video",
-        "access": "Included",
-        "href": "https://www.primevideo.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/onefightnight50/",
-      "bouts": [
-        "Full card pending official announcement"
-      ]
-    },
-    {
       "id": "auto-matchroom-monte-carlo-showdown-vii-2026-12-12",
       "source": "Matchroom",
       "sport": "Boxing",
@@ -1188,6 +1163,31 @@
         "note": "Official stream; regional availability may vary"
       },
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-183/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-onefightnight50-2026-12-19",
+      "source": "ONE",
+      "sport": "MMA",
+      "promotion": "ONE",
+      "eventName": "ONE Fight Night 50",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2026-12-19T02:00:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Prime Video",
+        "access": "Included",
+        "href": "https://www.primevideo.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/onefightnight50/",
       "bouts": [
         "Full card pending official announcement"
       ]
