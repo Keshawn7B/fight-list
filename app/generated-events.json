@@ -108,8 +108,8 @@
       "promotion": "PFL",
       "eventName": "PFL Africa Morocco",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Abderrahman Errachidy",
+        "Oussama El Idrissi"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-10-10T12:00:00.000Z",
@@ -124,7 +124,17 @@
       },
       "detailsUrl": "https://pflmma.com/event/pfl-morocco",
       "bouts": [
-        "Full matchups on the official PFL card"
+        "Abdoulaye Kane vs Badr Medkouri",
+        "Taha Bendaoud vs Yanis Ghemmouri",
+        "Shido Boris Esperança vs Peace Nguphane",
+        "Patrick Ocheme vs Cornel Thompson",
+        "Rivaldo Pereira vs David Samuel",
+        "Yabna N’tchala vs Mouhamed Tafsir Ba",
+        "Reda Abdellaoui vs Salim Mhamdi",
+        "Dwight Joseph vs Boule Godogo",
+        "Demba Seck vs Hussain Al Kurdi",
+        "Jane Osigwe vs Sanaa Mandar",
+        "Abderrahman Errachidy vs Oussama El Idrissi"
       ]
     },
     {
@@ -209,8 +219,8 @@
       "promotion": "PFL",
       "eventName": "PFL Chicago 2",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Benita Van Rooji",
+        "Giulliany PerêA"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-10-16T22:00:00.000Z",
@@ -225,7 +235,20 @@
       },
       "detailsUrl": "https://pflmma.com/event/2026-chicago2",
       "bouts": [
-        "Full matchups on the official PFL card"
+        "Liz Carmouche vs Jena Bishop",
+        "Timur Khizriev vs Gabriel Braga",
+        "Sarvarjon Khamidov vs Rafael do Nascimento",
+        "Oualy Tandia vs JP Saint Louis",
+        "Eliezer Kubanza vs Trey Waters",
+        "Emiliano Sordi vs Abraham Bably",
+        "Cássio Barão vs Kevin Pease",
+        "Shannon Clark vs Lucero Acosta",
+        "Gamid Khizriev vs Michael Boylan",
+        "Cobey Fehr vs Rosario Romero",
+        "Levan Khabalaev vs Morquez Forest",
+        "Paulina Wisniewska vs Chelsea Hackett",
+        "Noah Hermosillo vs Caden Cox",
+        "Benita Van Rooji vs Giulliany Perêa"
       ]
     },
     {
@@ -251,31 +274,6 @@
       "detailsUrl": "https://www.onefc.com/events/one-samurai-4/",
       "bouts": [
         "Full card pending official announcement"
-      ]
-    },
-    {
-      "id": "auto-bkfc-bkfc-serbia-2026-10-17",
-      "source": "BKFC",
-      "sport": "Bare Knuckle",
-      "promotion": "BKFC",
-      "eventName": "BKFC Belgrade Faulkner Vs Prasovic",
-      "fighters": [
-        "Faulkner",
-        "Prasovic"
-      ],
-      "stakes": "Official BKFC card",
-      "startsAt": "2026-10-17T17:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "BKFC+ / Fubo Sports",
-        "access": "Subscription",
-        "href": "https://watch.bkfc.com/",
-        "note": "Official BKFC stream; regional options may vary"
-      },
-      "detailsUrl": "https://www.bkfc.com/events/bkfc-serbia",
-      "bouts": [
-        "Faulkner vs Prasovic"
       ]
     },
     {
@@ -686,8 +684,8 @@
       "promotion": "PFL",
       "eventName": "PFL Dubai",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Khamzat Abaev",
+        "Leon Hill"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-11-14T14:00:00.000Z",
@@ -702,7 +700,19 @@
       },
       "detailsUrl": "https://pflmma.com/event/pfl-returns-to-dubai",
       "bouts": [
-        "Full matchups on the official PFL card"
+        "Vadim Nemkov vs Sergey Bilostenniy",
+        "Patrick Habirora vs Omar El Dafrawy",
+        "Pouya Rahmani vs Oleg Popov",
+        "Abubakar Nurmagomedov vs David Martinez",
+        "Sergio Pettis vs Joji Goto",
+        "Shem Rock vs Connor Hughes",
+        "Lewis McGrillen vs Nawras Abzakh",
+        "Asaël Adjoudj vs Movlid Khaybulaev",
+        "Khasan Magomedsharipov vs Adam Borics",
+        "Alexei Pergande vs Akhmed Magomedov",
+        "Denis Goltsov vs Maxwell Djantou Nana",
+        "Ernesto Rodriguez vs Rhys McKee",
+        "Khamzat Abaev vs Leon Hill"
       ]
     },
     {
@@ -957,6 +967,32 @@
       ]
     },
     {
+      "id": "auto-matchroom-walker-vs-rocha-2026-12-05",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Walker vs Rocha",
+      "fighters": [
+        "Conah Walker",
+        "Alexis Rocha"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-12-05T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Civic Hall",
+      "location": "Civic Hall, Wolverhampton, UK",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/walker-vs-rocha/",
+      "bouts": [
+        "Conah Walker vs Alexis Rocha"
+      ]
+    },
+    {
       "id": "auto-one-one-friday-fights-182-2026-12-11",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -988,8 +1024,8 @@
       "promotion": "PFL",
       "eventName": "PFL Mena 12",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Elias Boudegzdame",
+        "Mehdi Saadi"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-12-11T12:00:00.000Z",
@@ -1004,7 +1040,9 @@
       },
       "detailsUrl": "https://pflmma.com/event/pflmena-12",
       "bouts": [
-        "Full matchups on the official PFL card"
+        "Abdelkrim Zouad vs Badreddine Diani",
+        "Mohammad Fahmi vs Ylies Djiroun",
+        "Elias Boudegzdame vs Mehdi Saadi"
       ]
     },
     {
@@ -1031,6 +1069,31 @@
       "detailsUrl": "https://www.matchroomboxing.com/events/fury-vs-joshua/",
       "bouts": [
         "Tyson Fury vs Anthony Joshua"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-176-2026-12-11",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC 176: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-12-11T22:00:00.000Z",
+      "venue": "Principality Stadium",
+      "location": "United Kingdom",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-176",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
@@ -1082,31 +1145,6 @@
       "detailsUrl": "https://www.matchroomboxing.com/events/monte-carlo-showdown-vii/",
       "bouts": [
         "Full card pending official announcement"
-      ]
-    },
-    {
-      "id": "auto-ufc-ufc-335-2026-12-13",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC 335: Oliveira vs Lopes",
-      "fighters": [
-        "Oliveira",
-        "Lopes"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-12-13T02:00:00.000Z",
-      "venue": "T-Mobile Arena",
-      "location": "Las Vegas, NV, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-335",
-      "bouts": [
-        "Oliveira vs Lopes"
       ]
     },
     {
@@ -1166,8 +1204,8 @@
       "promotion": "PFL",
       "eventName": "PFL Lyon",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Brandon Brachet",
+        "Adam Meskini"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-12-19T16:00:00.000Z",
@@ -1182,7 +1220,12 @@
       },
       "detailsUrl": "https://pflmma.com/event/pfl-lyon-2026",
       "bouts": [
-        "Full matchups on the official PFL card"
+        "Taylor Lapilus vs Mitch McKee",
+        "Boris Atangana vs Bryan Battle",
+        "Abdoul Abdouraguimov vs Andreeas Binder",
+        "Fabian Edwards vs Ilian Bouafia",
+        "Baris Adiguzel vs Liam Gittins",
+        "Brandon Brachet vs Adam Meskini"
       ]
     },
     {
