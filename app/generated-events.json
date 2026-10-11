@@ -1062,6 +1062,31 @@
       ]
     },
     {
+      "id": "auto-ufc-ufc-335-2026-12-13",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC 335: Oliveira vs Lopes",
+      "fighters": [
+        "Oliveira",
+        "Lopes"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-12-13T02:00:00.000Z",
+      "venue": "T-Mobile Arena",
+      "location": "Las Vegas, NV, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-335",
+      "bouts": [
+        "Oliveira vs Lopes"
+      ]
+    },
+    {
       "id": "auto-one-one-friday-fights-183-2026-12-18",
       "source": "ONE",
       "sport": "Muay Thai",
