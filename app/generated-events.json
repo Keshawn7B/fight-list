@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "October 10, 2026",
+  "verifiedDate": "October 11, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-9-2026-10-06",
@@ -49,67 +49,6 @@
       "detailsUrl": "https://www.ufc.com/news/ufc-bjj-12-moura-vs-fornarino-fight-card",
       "bouts": [
         "Moura vs Fornarino"
-      ]
-    },
-    {
-      "id": "auto-one-one-friday-fights-174-2026-10-09",
-      "source": "ONE",
-      "sport": "Muay Thai",
-      "promotion": "ONE",
-      "eventName": "ONE Friday Fights 174 & The Inner Circle 34",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-10-09T11:30:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "Live.ONE / ONE YouTube",
-        "access": "Free",
-        "href": "https://live.onefc.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-174/",
-      "bouts": [
-        "Full card pending official announcement"
-      ]
-    },
-    {
-      "id": "auto-pfl-pfl-morocco-2026-10-10",
-      "source": "PFL",
-      "sport": "MMA",
-      "promotion": "PFL",
-      "eventName": "PFL Africa Morocco",
-      "fighters": [
-        "Abderrahman Errachidy",
-        "Oussama El Idrissi"
-      ],
-      "stakes": "Official PFL card",
-      "startsAt": "2026-10-10T12:00:00.000Z",
-      "timeTba": true,
-      "venue": "CASABLANCA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "ESPN App / ESPN",
-        "access": "Subscription",
-        "href": "https://www.espn.com/watch/",
-        "note": "U.S. listing; regional availability may vary"
-      },
-      "detailsUrl": "https://pflmma.com/event/pfl-morocco",
-      "bouts": [
-        "Abdoulaye Kane vs Badr Medkouri",
-        "Taha Bendaoud vs Yanis Ghemmouri",
-        "Shido Boris Esperança vs Peace Nguphane",
-        "Patrick Ocheme vs Cornel Thompson",
-        "Rivaldo Pereira vs David Samuel",
-        "Yabna N’tchala vs Mouhamed Tafsir Ba",
-        "Reda Abdellaoui vs Salim Mhamdi",
-        "Dwight Joseph vs Boule Godogo",
-        "Demba Seck vs Hussain Al Kurdi",
-        "Jane Osigwe vs Sanaa Mandar",
-        "Abderrahman Errachidy vs Oussama El Idrissi"
       ]
     },
     {
