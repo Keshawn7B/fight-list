@@ -52,31 +52,6 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-fight-night-october-10-2026-2026-10-11",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Allen vs Duncan",
-      "fighters": [
-        "Allen",
-        "Duncan"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-10-11T00:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, NV, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-10-2026",
-      "bouts": [
-        "Allen vs Duncan"
-      ]
-    },
-    {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
       "source": "DWCS",
       "sport": "MMA",
@@ -588,7 +563,12 @@
         "Jordan Burroughs vs Azamat Nurykau",
         "Kyle Dake vs Alp Arslan Begenjov",
         "Kyle Snyder vs Shamil Erdogan",
-        "Kennedy Blades vs Bella Mir"
+        "Kennedy Blades vs Bella Mir",
+        "Abdulrashid Sadulaev vs Dauren Kurugliev",
+        "Osama Elsaidy vs Murtaza Talha",
+        "Zahid Valencia vs Khidir Saipudinov",
+        "Hamza Kooheji vs Ali AlQaisi",
+        "Julianna Peña vs Diana Avsaragova"
       ]
     },
     {
@@ -986,31 +966,6 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-176-2026-12-11",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC 176: TBD vs TBD",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-12-11T22:00:00.000Z",
-      "venue": "Principality Stadium",
-      "location": "United Kingdom",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-176",
-      "bouts": [
-        "Full card pending official announcement"
-      ]
-    },
-    {
       "id": "auto-bkfc-bkfc-hollywood-3-2026-12-12",
       "source": "BKFC",
       "sport": "Bare Knuckle",
@@ -1033,6 +988,32 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfc-hollywood-3",
       "bouts": [
         "Fights to be announced by BKFC"
+      ]
+    },
+    {
+      "id": "auto-matchroom-bivol-vs-smith-2026-12-12",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Bivol vs Smith",
+      "fighters": [
+        "Dmitry Bivol",
+        "Callum Smith"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-12-12T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "UMMC Arena",
+      "location": "UMMC Arena, Yekaterinburg, Russia",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/bivol-vs-smith/",
+      "bouts": [
+        "Dmitry Bivol vs Callum Smith"
       ]
     },
     {
@@ -1190,6 +1171,31 @@
       "detailsUrl": "https://www.bkfc.com/events/bkfsea-bruise-cruise",
       "bouts": [
         "Fights to be announced by BKFC"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-february-06-2027-2027-02-06",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2027-02-06T22:00:00.000Z",
+      "venue": "Afterpay Arena",
+      "location": "Sydney Olympic Park, NSW, Australia",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-february-06-2027",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
