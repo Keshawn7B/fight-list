@@ -2,31 +2,6 @@
   "verifiedDate": "October 13, 2026",
   "events": [
     {
-      "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-9-2026-10-06",
-      "source": "DWCS",
-      "sport": "MMA",
-      "promotion": "DWCS",
-      "eventName": "Dana White's Contender Series: Season 10, Week 9",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Five UFC contract fights",
-      "startsAt": "2026-10-06T23:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.paramountplus.com/",
-        "note": "Season 10 streams exclusively on Paramount+"
-      },
-      "detailsUrl": "https://www.ufc.com/dwcs",
-      "bouts": [
-        "Five bouts scheduled; official matchups to be announced"
-      ]
-    },
-    {
       "id": "auto-ufc-bjj-ufc-bjj-12-moura-vs-fornarino-fight-card-2026-10-09",
       "source": "UFC BJJ",
       "sport": "Jiu-Jitsu",
@@ -301,8 +276,11 @@
       "bouts": [
         "Dalton Smith vs Alberto Puello",
         "Giorgio Visioli vs Maxi Hughes",
+        "Leo Atang vs Jonathan Vergara",
         "Shannon Ryan vs Emma Dolan",
-        "Joe Hayden vs Will Harrison"
+        "Joe Hayden vs Will Harrison",
+        "Divine Omojor vs Goran Kozul",
+        "Chris Mulunda vs Harley Collison"
       ]
     },
     {
