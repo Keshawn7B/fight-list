@@ -2,31 +2,6 @@
   "verifiedDate": "October 14, 2026",
   "events": [
     {
-      "id": "auto-ufc-bjj-ufc-bjj-12-moura-vs-fornarino-fight-card-2026-10-09",
-      "source": "UFC BJJ",
-      "sport": "Jiu-Jitsu",
-      "promotion": "UFC BJJ",
-      "eventName": "UFC BJJ 12: Moura vs Fornarino",
-      "fighters": [
-        "Moura",
-        "Fornarino"
-      ],
-      "stakes": "Official UFC BJJ card",
-      "startsAt": "2026-10-09T00:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "UFC Fight Pass",
-        "access": "Subscription",
-        "href": "https://ufcfightpass.com/",
-        "note": "Streams live on UFC Fight Pass"
-      },
-      "detailsUrl": "https://www.ufc.com/news/ufc-bjj-12-moura-vs-fornarino-fight-card",
-      "bouts": [
-        "Moura vs Fornarino"
-      ]
-    },
-    {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
       "source": "DWCS",
       "sport": "MMA",
@@ -306,6 +281,31 @@
       "detailsUrl": "https://www.ufc.com/event/ufc-333",
       "bouts": [
         "Volkanovski vs Evloev"
+      ]
+    },
+    {
+      "id": "auto-ufc-bjj-ufc-bjj-13-tackett-vs-rodriguez-2026-10-30",
+      "source": "UFC BJJ",
+      "sport": "Jiu-Jitsu",
+      "promotion": "UFC BJJ",
+      "eventName": "UFC BJJ 13: Tackett vs Rodriguez",
+      "fighters": [
+        "Tackett",
+        "Rodriguez"
+      ],
+      "stakes": "Official UFC BJJ card",
+      "startsAt": "2026-10-30T00:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "UFC Fight Pass",
+        "access": "Subscription",
+        "href": "https://ufcfightpass.com/",
+        "note": "Streams live on UFC Fight Pass"
+      },
+      "detailsUrl": "https://www.ufc.com/ufcbjj",
+      "bouts": [
+        "Tackett vs Rodriguez"
       ]
     },
     {
@@ -1102,8 +1102,8 @@
       "promotion": "PFL",
       "eventName": "PFL Lyon",
       "fighters": [
-        "Brandon Brachet",
-        "Adam Meskini"
+        "Mathilde Aschenbrenner",
+        "Miracle Chipito"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-12-19T16:00:00.000Z",
@@ -1123,7 +1123,8 @@
         "Abdoul Abdouraguimov vs Andreeas Binder",
         "Fabian Edwards vs Ilian Bouafia",
         "Baris Adiguzel vs Liam Gittins",
-        "Brandon Brachet vs Adam Meskini"
+        "Brandon Brachet vs Adam Meskini",
+        "Mathilde Aschenbrenner vs Miracle Chipito"
       ]
     },
     {
