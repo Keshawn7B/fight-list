@@ -507,6 +507,7 @@
       "detailsUrl": "https://www.matchroomboxing.com/events/pacheco-vs-fulghum/",
       "bouts": [
         "Diego Pacheco vs Darius Fulghum",
+        "Anthony Olascuaga vs Yuberjen Martinez",
         "Charlie Sheehy vs Gabe Flores",
         "David Adeleye vs Alexander Flores"
       ]
@@ -536,17 +537,17 @@
       "bouts": [
         "Khamzat Chimaev vs Colby Covington",
         "Arman Tsarukyan vs Neiman Gracie",
-        "Umar Nurmagomedov vs Urijah Faber",
         "Zabit Magomedsharipov vs Giga Chikadze",
-        "Jordan Burroughs vs Azamat Nurykau",
-        "Kyle Dake vs Alp Arslan Begenjov",
-        "Kyle Snyder vs Shamil Erdogan",
         "Kennedy Blades vs Bella Mir",
         "Abdulrashid Sadulaev vs Dauren Kurugliev",
-        "Osama Elsaidy vs Murtaza Talha",
+        "Kyle Dake vs Alp Arslan Begenjov",
+        "Umar Nurmagomedov vs Urijah Faber",
+        "Jordan Burroughs vs Azamat Nurykau",
+        "Kyle Snyder vs Shamil Erdogan",
+        "Murtaza Talha vs Osama Elsaidy",
         "Zahid Valencia vs Khidir Saipudinov",
-        "Hamza Kooheji vs Ali AlQaisi",
-        "Julianna Peña vs Diana Avsaragova"
+        "Ali AlQaisi vs Hamza Kooheji",
+        "Diana Avsaragova vs Julianna Peña"
       ]
     },
     {
@@ -635,6 +636,32 @@
       "detailsUrl": "https://www.onefc.com/events/one-samurai-5/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-matchroom-teremoana-vs-ahio-2026-11-18",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Teremoana vs Ahio",
+      "fighters": [
+        "Teremoana Teremoana",
+        "Hemi Ahio"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-11-18T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Pullman Melbourne Albert Park",
+      "location": "Pullman Melbourne Albert Park, Melbourne, Australia",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/teremoana-vs-ahio/",
+      "bouts": [
+        "Teremoana Teremoana vs Hemi Ahio"
       ]
     },
     {
