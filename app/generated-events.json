@@ -38,8 +38,8 @@
       ],
       "stakes": "Official ONE Championship card",
       "startsAt": "2026-10-16T11:30:00.000Z",
-      "venue": "Lumpinee Stadium",
-      "location": "Bangkok",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
       "watch": {
         "provider": "Live.ONE / ONE YouTube",
         "access": "Free",
@@ -788,7 +788,11 @@
       "bouts": [
         "Donald Cerrone vs Anthony Pettis",
         "Cayden Henschel vs Conor Beebe",
-        "Raúl Rosas Jr. vs Clay Guida"
+        "Raúl Rosas Jr. vs Clay Guida",
+        "Matt Ramos vs Roman Bravo-Young",
+        "Haley Augello vs Miranda Maverick",
+        "Danny Sabatello vs Jacob Schultz",
+        "Sergio Pettis vs Cody Garbrandt"
       ]
     },
     {
