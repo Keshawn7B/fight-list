@@ -27,31 +27,6 @@
       ]
     },
     {
-      "id": "auto-one-one-samurai-4-2026-10-17",
-      "source": "ONE",
-      "sport": "Kickboxing",
-      "promotion": "ONE",
-      "eventName": "ONE SAMURAI 4",
-      "fighters": [
-        "Card",
-        "To be announced"
-      ],
-      "stakes": "Official ONE Championship card",
-      "startsAt": "2026-10-17T06:30:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "Live.ONE / U-NEXT",
-        "access": "Subscription",
-        "href": "https://live.onefc.com/",
-        "note": "Official stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.onefc.com/events/one-samurai-4/",
-      "bouts": [
-        "Full card pending official announcement"
-      ]
-    },
-    {
       "id": "auto-ufc-ufc-fight-night-october-17-2026-2026-10-18",
       "source": "UFC",
       "sport": "MMA",
@@ -129,7 +104,7 @@
         "Sebastian Rivera vs Vito Arujau",
         "Jordan Burroughs vs Michael Caliendo",
         "Jordan Oliver vs Ridge Lovett",
-        "Yonger Bastida vs Greg Kerkvliet",
+        "Yonger Bastida vs Zach Elam",
         "Mekhi Lewis vs Akhmed Gadzhimagomedov",
         "Bella Mir vs Hope Chase",
         "Pat Downey vs Magomed Magomedkerimov",
