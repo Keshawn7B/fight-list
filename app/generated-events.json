@@ -1127,6 +1127,31 @@
       ]
     },
     {
+      "id": "auto-ufc-ufc-336-2027-01-30",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC 336: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2027-01-30T22:00:00.000Z",
+      "venue": "Scotiabank Arena",
+      "location": "Toronto, ON, Canada",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-336",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-ufc-ufc-fight-night-february-06-2027-2027-02-06",
       "source": "UFC",
       "sport": "MMA",
