@@ -1077,7 +1077,7 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-336-2027-01-30",
+      "id": "auto-ufc-ufc-336-2027-01-31",
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
@@ -1087,7 +1087,7 @@
         "To be announced"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2027-01-30T22:00:00.000Z",
+      "startsAt": "2027-01-31T02:00:00.000Z",
       "venue": "Scotiabank Arena",
       "location": "Toronto, ON, Canada",
       "watch": {
