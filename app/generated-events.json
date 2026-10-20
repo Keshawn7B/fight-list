@@ -78,7 +78,7 @@
         "Lucia Yepez vs Sarah Hildebrandt",
         "Sebastian Rivera vs Vito Arujau",
         "Jordan Burroughs vs Michael Caliendo",
-        "Jordan Oliver vs Ridge Lovett",
+        "Ridge Lovett vs Jordan Oliver",
         "Yonger Bastida vs Zach Elam",
         "Mekhi Lewis vs Akhmed Gadzhimagomedov",
         "Bella Mir vs Hope Chase",
@@ -788,7 +788,7 @@
       "source": "PFL",
       "sport": "MMA",
       "promotion": "PFL",
-      "eventName": "PFL Mena 12",
+      "eventName": "PFL Khobar",
       "fighters": [
         "Elias Boudegzdame",
         "Mehdi Saadi"
@@ -796,7 +796,7 @@
       "stakes": "Official PFL card",
       "startsAt": "2026-12-11T12:00:00.000Z",
       "timeTba": true,
-      "venue": "tbd",
+      "venue": "Dhahran Expo",
       "location": "Khobar, Saudi Arabia",
       "watch": {
         "provider": "ESPN App / ESPN",
