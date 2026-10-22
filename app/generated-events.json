@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "October 21, 2026",
+  "verifiedDate": "October 22, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -633,10 +633,10 @@
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
-      "eventName": "RAF15",
+      "eventName": "RAF15: Cejudo vs Song",
       "fighters": [
-        "Donald Cerrone",
-        "Anthony Pettis"
+        "Henry Cejudo",
+        "Song Yadong"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-11-28T12:00:00.000Z",
@@ -651,6 +651,7 @@
       },
       "detailsUrl": "https://www.realamericanfreestyle.com/events/raf15",
       "bouts": [
+        "Henry Cejudo vs Song Yadong",
         "Donald Cerrone vs Anthony Pettis",
         "Cayden Henschel vs Conor Beebe",
         "Raúl Rosas Jr. vs Clay Guida",
