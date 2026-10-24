@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "October 23, 2026",
+  "verifiedDate": "October 24, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -24,67 +24,6 @@
       "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
-      ]
-    },
-    {
-      "id": "auto-bkfc-bkfc-fight-night-clearwater-4-2026-10-24",
-      "source": "BKFC",
-      "sport": "Bare Knuckle",
-      "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Clearwater Reber Vs Street",
-      "fighters": [
-        "Reber",
-        "Street"
-      ],
-      "stakes": "Official BKFC card",
-      "startsAt": "2026-10-24T00:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "BKFC+ / Fubo Sports",
-        "access": "Subscription",
-        "href": "https://watch.bkfc.com/",
-        "note": "Official BKFC stream; regional options may vary"
-      },
-      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-clearwater-4",
-      "bouts": [
-        "Reber vs Street"
-      ]
-    },
-    {
-      "id": "auto-raf-raf14-2026-10-24",
-      "source": "RAF",
-      "sport": "Wrestling",
-      "promotion": "RAF",
-      "eventName": "RAF14: Tsarukyan vs Danis",
-      "fighters": [
-        "Arman Tsarukyan",
-        "Dillon Danis"
-      ],
-      "stakes": "Official Real American Freestyle card",
-      "startsAt": "2026-10-24T01:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Las Vegas, NV",
-      "watch": {
-        "provider": "FOX Nation",
-        "access": "Subscription",
-        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
-        "note": "Official RAF stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf14",
-      "bouts": [
-        "Arman Tsarukyan vs Dillon Danis",
-        "Khamzat Chimaev vs Robbie Lawler",
-        "Lucia Yepez vs Sarah Hildebrandt",
-        "Sebastian Rivera vs Vito Arujau",
-        "Jordan Burroughs vs Michael Caliendo",
-        "Ridge Lovett vs Jordan Oliver",
-        "Yonger Bastida vs Zach Elam",
-        "Mekhi Lewis vs Akhmed Gadzhimagomedov",
-        "Bella Mir vs Hope Chase",
-        "Pat Downey vs Magomed Magomedkerimov",
-        "Brendan Allen vs Alexander Shlemenko",
-        "Juan Archuleta vs Dylan Ragusin"
       ]
     },
     {
@@ -375,44 +314,6 @@
       ]
     },
     {
-      "id": "auto-raf-raf-abu-dhabi-2026-11-14",
-      "source": "RAF",
-      "sport": "Wrestling",
-      "promotion": "RAF",
-      "eventName": "RAF ABU DHABI: Chimaev vs Covington",
-      "fighters": [
-        "Khamzat Chimaev",
-        "Colby Covington"
-      ],
-      "stakes": "Official Real American Freestyle card",
-      "startsAt": "2026-11-14T12:00:00.000Z",
-      "timeTba": true,
-      "venue": "Venue TBA",
-      "location": "Abu Dhabi, UAE",
-      "watch": {
-        "provider": "FOX Nation",
-        "access": "Subscription",
-        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
-        "note": "Official RAF stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf-abu-dhabi",
-      "bouts": [
-        "Khamzat Chimaev vs Colby Covington",
-        "Arman Tsarukyan vs Neiman Gracie",
-        "Zabit Magomedsharipov vs Giga Chikadze",
-        "Kennedy Blades vs Bella Mir",
-        "Abdulrashid Sadulaev vs Dauren Kurugliev",
-        "Kyle Dake vs Alp Arslan Begenjov",
-        "Umar Nurmagomedov vs Urijah Faber",
-        "Jordan Burroughs vs Azamat Nurykau",
-        "Kyle Snyder vs Shamil Erdogan",
-        "Murtaza Talha vs Osama Elsaidy",
-        "Zahid Valencia vs Khidir Saipudinov",
-        "Ali AlQaisi vs Hamza Kooheji",
-        "Diana Avsaragova vs Julianna Peña"
-      ]
-    },
-    {
       "id": "auto-pfl-pfl-returns-to-dubai-2026-11-14",
       "source": "PFL",
       "sport": "MMA",
@@ -449,6 +350,43 @@
         "Ernesto Rodriguez vs Rhys McKee",
         "Khabib Nabiev vs Styve Ngono",
         "Khamzat Abaev vs Leon Hill"
+      ]
+    },
+    {
+      "id": "auto-raf-raf-abu-dhabi-2026-11-15",
+      "source": "RAF",
+      "sport": "Wrestling",
+      "promotion": "RAF",
+      "eventName": "RAF ABU DHABI: Chimaev vs Covington",
+      "fighters": [
+        "Khamzat Chimaev",
+        "Colby Covington"
+      ],
+      "stakes": "Official Real American Freestyle card",
+      "startsAt": "2026-11-15T01:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Abu Dhabi, UAE",
+      "watch": {
+        "provider": "FOX Nation",
+        "access": "Subscription",
+        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
+        "note": "Official RAF stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf-abu-dhabi",
+      "bouts": [
+        "Khamzat Chimaev vs Colby Covington",
+        "Arman Tsarukyan vs Neiman Gracie",
+        "Zabit Magomedsharipov vs Giga Chikadze",
+        "Kennedy Blades vs Bella Mir",
+        "Abdulrashid Sadulaev vs Dauren Kurugliev",
+        "Kyle Dake vs Alp Arslan Begenjov",
+        "Umar Nurmagomedov vs Urijah Faber",
+        "Jordan Burroughs vs Azamat Nurykau",
+        "Kyle Snyder vs Shamil Erdogan",
+        "Murtaza Talha vs Osama Elsaidy",
+        "Zahid Valencia vs Khidir Saipudinov",
+        "Ali AlQaisi vs Hamza Kooheji",
+        "Diana Avsaragova vs Julianna Peña"
       ]
     },
     {
@@ -660,7 +598,8 @@
         "Matt Ramos vs Roman Bravo-Young",
         "Haley Augello vs Miranda Maverick",
         "Danny Sabatello vs Jacob Schultz",
-        "Sergio Pettis vs Cody Garbrandt"
+        "Sergio Pettis vs Cody Garbrandt",
+        "Real Woods vs Sebastian Rivera"
       ]
     },
     {
@@ -1023,6 +962,32 @@
       "detailsUrl": "https://www.onefc.com/events/onefightnight50/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-raf-raf16-2026-12-19",
+      "source": "RAF",
+      "sport": "Wrestling",
+      "promotion": "RAF",
+      "eventName": "RAF16",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official Real American Freestyle card",
+      "startsAt": "2026-12-19T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Venue TBA",
+      "location": "Long Island, NY",
+      "watch": {
+        "provider": "FOX Nation",
+        "access": "Subscription",
+        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
+        "note": "Official RAF stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf16",
+      "bouts": [
+        "Matchups pending official announcement"
       ]
     },
     {
