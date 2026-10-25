@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "October 24, 2026",
+  "verifiedDate": "October 25, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -24,39 +24,6 @@
       "detailsUrl": "https://www.ufc.com/dwcs",
       "bouts": [
         "Five bouts scheduled; official matchups to be announced"
-      ]
-    },
-    {
-      "id": "auto-matchroom-smith-vs-puello-2026-10-24",
-      "source": "Matchroom",
-      "sport": "Boxing",
-      "promotion": "Matchroom",
-      "eventName": "Smith vs Puello",
-      "fighters": [
-        "Dalton Smith",
-        "Alberto Puello"
-      ],
-      "stakes": "Official Matchroom Boxing card",
-      "startsAt": "2026-10-24T12:00:00.000Z",
-      "timeTba": true,
-      "venue": "Utilita Arena",
-      "location": "Utilita Arena, Sheffield, UK",
-      "watch": {
-        "provider": "DAZN",
-        "access": "Subscription",
-        "href": "https://www.dazn.com/",
-        "note": "Official Matchroom broadcaster; regional availability may vary"
-      },
-      "detailsUrl": "https://www.matchroomboxing.com/events/smith-vs-puello/",
-      "bouts": [
-        "Dalton Smith vs Alberto Puello",
-        "Giorgio Visioli vs Maxi Hughes",
-        "Leo Atang vs Jonathan Vergara",
-        "Shannon Ryan vs Emma Dolan",
-        "Ed Hardy vs Diego Alberto Ruiz",
-        "Joe Hayden vs Will Harrison",
-        "Divine Omojor vs Goran Kozul",
-        "Chris Mulunda vs Harley Collison"
       ]
     },
     {
@@ -1021,6 +988,31 @@
         "Bafode Gassama vs Coby Bradford",
         "Brandon Brachet vs Adam Meskini",
         "Mathilde Aschenbrenner vs Miracle Chipito"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-january-16-2027-2027-01-17",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2027-01-17T01:00:00.000Z",
+      "venue": "American Airlines Center",
+      "location": "Dallas, TX, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-january-16-2027",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
