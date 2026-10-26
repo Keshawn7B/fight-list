@@ -27,31 +27,6 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-333-2026-10-24",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC 333: Volkanovski vs Evloev",
-      "fighters": [
-        "Volkanovski",
-        "Evloev"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-10-24T18:00:00.000Z",
-      "venue": "Etihad Arena",
-      "location": "Abu Dhabi, United Arab Emirates",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-333",
-      "bouts": [
-        "Volkanovski vs Evloev"
-      ]
-    },
-    {
       "id": "auto-ufc-bjj-ufc-bjj-13-tackett-vs-rodriguez-2026-10-30",
       "source": "UFC BJJ",
       "sport": "Jiu-Jitsu",
