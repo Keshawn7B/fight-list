@@ -515,10 +515,10 @@
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
-      "eventName": "RAF15: Cejudo vs Song",
+      "eventName": "RAF15: Tsarukyan vs Pettis",
       "fighters": [
-        "Henry Cejudo",
-        "Song Yadong"
+        "Arman Tsarukyan",
+        "Anthony Pettis"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-11-28T12:00:00.000Z",
@@ -533,8 +533,8 @@
       },
       "detailsUrl": "https://www.realamericanfreestyle.com/events/raf15",
       "bouts": [
+        "Arman Tsarukyan vs Anthony Pettis",
         "Henry Cejudo vs Song Yadong",
-        "Donald Cerrone vs Anthony Pettis",
         "Cayden Henschel vs Conor Beebe",
         "Raúl Rosas Jr. vs Clay Guida",
         "Matt Ramos vs Roman Bravo-Young",
