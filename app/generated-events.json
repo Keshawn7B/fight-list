@@ -734,8 +734,8 @@
       "promotion": "PFL",
       "eventName": "PFL Africa: Kigali",
       "fighters": [
-        "Dwight Joseph",
-        "Raphael Uchegbu"
+        "Boule Godogo",
+        "Ridouan Errami"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-12-12T12:00:00.000Z",
@@ -752,7 +752,10 @@
       "bouts": [
         "Shido Boris Esperança vs David Samuel",
         "Patrick Ocheme vs Demba Seck",
-        "Dwight Joseph vs Raphael Uchegbu"
+        "Juliet Ukah vs Benita Van Rooij",
+        "Dwight Joseph vs Raphael Uchegbu",
+        "Felista Mugo vs Sephora Kiala",
+        "Boule Godogo vs Ridouan Errami"
       ]
     },
     {
@@ -937,7 +940,6 @@
         "Boris Atangana vs Bryan Battle",
         "Abdoul Abdouraguimov vs Andreeas Binder",
         "Fabian Edwards vs Ilian Bouafia",
-        "Baris Adiguzel vs Liam Gittins",
         "Bafode Gassama vs Coby Bradford",
         "Brandon Brachet vs Adam Meskini",
         "Mathilde Aschenbrenner vs Miracle Chipito"
