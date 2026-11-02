@@ -52,31 +52,6 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-fight-night-october-31-2026-2026-11-01",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Moicano vs Nolan",
-      "fighters": [
-        "Moicano",
-        "Nolan"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-11-01T00:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, NV, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-october-31-2026",
-      "bouts": [
-        "Moicano vs Nolan"
-      ]
-    },
-    {
       "id": "auto-one-one-friday-fights-177-2026-11-06",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -131,10 +106,10 @@
       "source": "BKFC",
       "sport": "Bare Knuckle",
       "promotion": "BKFC",
-      "eventName": "BKFC 96 Glasgow Cooke Vs Weir",
+      "eventName": "BKFC 96 Glasgow Weir Vs Cohoon",
       "fighters": [
-        "Cooke",
-        "Weir"
+        "Weir",
+        "Cohoon"
       ],
       "stakes": "Official BKFC card",
       "startsAt": "2026-11-07T19:00:00.000Z",
@@ -148,7 +123,7 @@
       },
       "detailsUrl": "https://www.bkfc.com/events/bkfc-glasgow",
       "bouts": [
-        "Cooke vs Weir"
+        "Weir vs Cohoon"
       ]
     },
     {
@@ -707,10 +682,10 @@
       "source": "BKFC",
       "sport": "Bare Knuckle",
       "promotion": "BKFC",
-      "eventName": "BKFC 97 Hollywood",
+      "eventName": "BKFC 97 Hollywood Henry Vs Collard",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Henry",
+        "Collard"
       ],
       "stakes": "Official BKFC card",
       "startsAt": "2026-12-12T00:00:00.000Z",
@@ -724,7 +699,7 @@
       },
       "detailsUrl": "https://www.bkfc.com/events/bkfc-hollywood-3",
       "bouts": [
-        "Fights to be announced by BKFC"
+        "Henry vs Collard"
       ]
     },
     {
@@ -809,7 +784,8 @@
       "bouts": [
         "Michel Soro vs George Liddard",
         "Josh Padley vs Moussa Gholam",
-        "Ishmael Davis vs Junaid Bostan"
+        "Ishmael Davis vs Junaid Bostan",
+        "Leo Atang vs Mateus Munhoz De Penha"
       ]
     },
     {
