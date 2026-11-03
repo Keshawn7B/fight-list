@@ -27,31 +27,6 @@
       ]
     },
     {
-      "id": "auto-ufc-bjj-ufc-bjj-13-tackett-vs-rodriguez-2026-10-30",
-      "source": "UFC BJJ",
-      "sport": "Jiu-Jitsu",
-      "promotion": "UFC BJJ",
-      "eventName": "UFC BJJ 13: Tackett vs Rodriguez",
-      "fighters": [
-        "Tackett",
-        "Rodriguez"
-      ],
-      "stakes": "Official UFC BJJ card",
-      "startsAt": "2026-10-30T00:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, Nevada",
-      "watch": {
-        "provider": "UFC Fight Pass",
-        "access": "Subscription",
-        "href": "https://ufcfightpass.com/",
-        "note": "Streams live on UFC Fight Pass"
-      },
-      "detailsUrl": "https://www.ufc.com/ufcbjj",
-      "bouts": [
-        "Tackett vs Rodriguez"
-      ]
-    },
-    {
       "id": "auto-one-one-friday-fights-177-2026-11-06",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -518,6 +493,31 @@
       "detailsUrl": "https://www.onefc.com/events/one-samurai-6/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-ufc-bjj-ufc-bjj-14-tackett-vs-wojcik-fight-card-2026-12-04",
+      "source": "UFC BJJ",
+      "sport": "Jiu-Jitsu",
+      "promotion": "UFC BJJ",
+      "eventName": "UFC BJJ 14: Tackett vs Wojcik",
+      "fighters": [
+        "Tackett",
+        "Wojcik"
+      ],
+      "stakes": "Official UFC BJJ card",
+      "startsAt": "2026-12-04T01:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, Nevada",
+      "watch": {
+        "provider": "UFC Fight Pass",
+        "access": "Subscription",
+        "href": "https://ufcfightpass.com/",
+        "note": "Streams live on UFC Fight Pass"
+      },
+      "detailsUrl": "https://www.ufc.com/news/ufc-bjj-14-tackett-vs-wojcik-fight-card",
+      "bouts": [
+        "Tackett vs Wojcik"
       ]
     },
     {
