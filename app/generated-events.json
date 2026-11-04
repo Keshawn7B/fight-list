@@ -210,7 +210,6 @@
         "Sergio Pettis vs Joji Goto",
         "Shem Rock vs Connor Hughes",
         "Lewis McGrillen vs Nawras Abzakh",
-        "TBD TBD vs Movlid Khaybulaev",
         "Alexei Pergande vs Akhmed Magomedov",
         "Khasan Magomedsharipov vs Adam Borics",
         "Denis Goltsov vs Maxwell Djantou Nana",
@@ -220,7 +219,7 @@
       ]
     },
     {
-      "id": "auto-raf-raf-abu-dhabi-2026-11-15",
+      "id": "auto-raf-raf-abu-dhabi-2026-11-14",
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
@@ -230,7 +229,7 @@
         "Colby Covington"
       ],
       "stakes": "Official Real American Freestyle card",
-      "startsAt": "2026-11-15T01:00:00.000Z",
+      "startsAt": "2026-11-14T16:00:00.000Z",
       "venue": "Venue TBA",
       "location": "Abu Dhabi, UAE",
       "watch": {
@@ -244,17 +243,16 @@
         "Khamzat Chimaev vs Colby Covington",
         "Arman Tsarukyan vs Neiman Gracie",
         "Zabit Magomedsharipov vs Giga Chikadze",
-        "Kennedy Blades vs Bella Mir",
         "Abdulrashid Sadulaev vs Dauren Kurugliev",
         "Kyle Dake vs Alp Arslan Begenjov",
         "Umar Nurmagomedov vs Urijah Faber",
         "Jordan Burroughs vs Azamat Nurykau",
         "Kyle Snyder vs Shamil Erdogan",
         "Murtaza Talha vs Osama Elsaidy",
-        "Zahid Valencia vs Khidir Saipudinov",
-        "Ali AlQaisi vs Hamza Kooheji",
         "Diana Avsaragova vs Julianna Peña",
-        "Merab Dvalishvili vs Marlon Moraes"
+        "Merab Dvalishvili vs Marlon Moraes",
+        "Zahid Valencia vs Khidir Saipudinov",
+        "Kennedy Blades vs Bella Mir"
       ]
     },
     {
@@ -675,7 +673,8 @@
       },
       "detailsUrl": "https://www.matchroomboxing.com/events/fury-vs-joshua/",
       "bouts": [
-        "Tyson Fury vs Anthony Joshua"
+        "Tyson Fury vs Anthony Joshua",
+        "Deontay Wilder vs Jai Opetaia"
       ]
     },
     {
