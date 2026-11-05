@@ -999,6 +999,31 @@
       ]
     },
     {
+      "id": "auto-one-one-samurai-7-2027-01-16",
+      "source": "ONE",
+      "sport": "Kickboxing",
+      "promotion": "ONE",
+      "eventName": "ONE SAMURAI 7",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-01-16T08:30:00.000Z",
+      "venue": "EBARA WAVE Arena Ota",
+      "location": "Tokyo",
+      "watch": {
+        "provider": "Live.ONE / U-NEXT",
+        "access": "Subscription",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-samurai-7/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-ufc-ufc-fight-night-january-16-2027-2027-01-17",
       "source": "UFC",
       "sport": "MMA",
@@ -1146,6 +1171,31 @@
       "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-february-06-2027",
       "bouts": [
         "Salkilld vs Saint Denis"
+      ]
+    },
+    {
+      "id": "auto-one-one-samurai-8-2027-02-11",
+      "source": "ONE",
+      "sport": "Kickboxing",
+      "promotion": "ONE",
+      "eventName": "ONE SAMURAI 8",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-02-11T08:30:00.000Z",
+      "venue": "Yokohama Buntai",
+      "location": "Yokohama",
+      "watch": {
+        "provider": "Live.ONE / U-NEXT",
+        "access": "Subscription",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-samurai-8/",
+      "bouts": [
+        "Full card pending official announcement"
       ]
     },
     {
@@ -1349,6 +1399,31 @@
       ]
     },
     {
+      "id": "auto-one-one-samurai-9-2027-03-20",
+      "source": "ONE",
+      "sport": "Kickboxing",
+      "promotion": "ONE",
+      "eventName": "ONE SAMURAI 9",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-03-20T08:30:00.000Z",
+      "venue": "EBARA WAVE Arena Ota",
+      "location": "Tokyo",
+      "watch": {
+        "provider": "Live.ONE / U-NEXT",
+        "access": "Subscription",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-samurai-9/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
       "id": "auto-one-one-qatar-2027-03-25",
       "source": "ONE",
       "sport": "MMA",
@@ -1369,6 +1444,306 @@
         "note": "Official stream; regional availability may vary"
       },
       "detailsUrl": "https://www.onefc.com/events/one-qatar/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-194-2027-04-02",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 194 & The Inner Circle 54",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-04-02T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-194/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-195-2027-04-09",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 195 & The Inner Circle 55",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-04-09T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-195/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-onefightnight54-2027-04-10",
+      "source": "ONE",
+      "sport": "MMA",
+      "promotion": "ONE",
+      "eventName": "ONE Fight Night 54",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-04-10T02:00:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Prime Video",
+        "access": "Included",
+        "href": "https://www.primevideo.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/onefightnight54/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-196-2027-04-23",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 196 & The Inner Circle 56",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-04-23T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-196/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-samurai-10-2027-04-29",
+      "source": "ONE",
+      "sport": "Kickboxing",
+      "promotion": "ONE",
+      "eventName": "ONE SAMURAI 10",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-04-29T17:30:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "Live.ONE / U-NEXT",
+        "access": "Subscription",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-samurai-10/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-197-2027-04-30",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 197 & The Inner Circle 57",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-04-30T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-197/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-samurai-11-2027-05-05",
+      "source": "ONE",
+      "sport": "Kickboxing",
+      "promotion": "ONE",
+      "eventName": "ONE SAMURAI 11",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-05-05T08:30:00.000Z",
+      "venue": "Yokohama Buntai",
+      "location": "Yokohama",
+      "watch": {
+        "provider": "Live.ONE / U-NEXT",
+        "access": "Subscription",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-samurai-11/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-198-2027-05-07",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 198 & The Inner Circle 58",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-05-07T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-198/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-199-2027-05-14",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 199 & The Inner Circle 59",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-05-14T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-199/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-onefightnight55-2027-05-15",
+      "source": "ONE",
+      "sport": "MMA",
+      "promotion": "ONE",
+      "eventName": "ONE Fight Night 55",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-05-15T02:00:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Prime Video",
+        "access": "Included",
+        "href": "https://www.primevideo.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/onefightnight55/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-200-2027-05-21",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 200 & The Inner Circle 60",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-05-21T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-200/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-one-one-friday-fights-201-2027-05-28",
+      "source": "ONE",
+      "sport": "Muay Thai",
+      "promotion": "ONE",
+      "eventName": "ONE Friday Fights 201 & The Inner Circle 61",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official ONE Championship card",
+      "startsAt": "2027-05-28T11:30:00.000Z",
+      "venue": "Lumpinee Stadium",
+      "location": "Bangkok",
+      "watch": {
+        "provider": "Live.ONE / ONE YouTube",
+        "access": "Free",
+        "href": "https://live.onefc.com/",
+        "note": "Official stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.onefc.com/events/one-friday-fights-201/",
       "bouts": [
         "Full card pending official announcement"
       ]
