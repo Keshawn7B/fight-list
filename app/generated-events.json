@@ -459,6 +459,7 @@
         "Henry Cejudo vs Song Yadong",
         "Arman Tsarukyan vs Anthony Pettis",
         "Kennedy Blades vs Alexis Gomez",
+        "Real Woods vs Sebastian Rivera",
         "Sergio Pettis vs Cody Garbrandt",
         "Roman Bravo-Young vs Matt Ramos",
         "Chance Marsteller vs Akhmed Usmanov",
@@ -1222,6 +1223,31 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-188/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-99-sheffield-bonner-vs-franco-2027-02-13",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC 99 Sheffield Bonner Vs Franco",
+      "fighters": [
+        "Bonner",
+        "Franco"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2027-02-13T19:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-99-sheffield-bonner-vs-franco",
+      "bouts": [
+        "Bonner vs Franco"
       ]
     },
     {
