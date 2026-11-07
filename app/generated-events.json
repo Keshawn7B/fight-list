@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "November 6, 2026",
+  "verifiedDate": "November 7, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -438,10 +438,10 @@
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
-      "eventName": "RAF15: Tsarukyan vs Pettis",
+      "eventName": "RAF15: Cejudo vs Song",
       "fighters": [
-        "Arman Tsarukyan",
-        "Anthony Pettis"
+        "Henry Cejudo",
+        "Song Yadong"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-11-28T12:00:00.000Z",
@@ -456,18 +456,18 @@
       },
       "detailsUrl": "https://www.realamericanfreestyle.com/events/raf15",
       "bouts": [
-        "Arman Tsarukyan vs Anthony Pettis",
         "Henry Cejudo vs Song Yadong",
-        "Cayden Henschel vs Conor Beebe",
-        "Raúl Rosas Jr. vs Clay Guida",
-        "Matt Ramos vs Roman Bravo-Young",
-        "Haley Augello vs Miranda Maverick",
-        "Danny Sabatello vs Jacob Schultz",
+        "Arman Tsarukyan vs Anthony Pettis",
+        "Kennedy Blades vs Alexis Gomez",
         "Sergio Pettis vs Cody Garbrandt",
-        "Real Woods vs Sebastian Rivera",
-        "Geno Petriashvili vs Yonger Bastida",
+        "Roman Bravo-Young vs Matt Ramos",
         "Chance Marsteller vs Akhmed Usmanov",
-        "Michael Caliendo vs Cesar Alvan"
+        "Raúl Rosas Jr. vs Clay Guida",
+        "Michael Caliendo vs Cesar Alvan",
+        "Geno Petriashvili vs Yonger Bastida",
+        "Haley Augello vs Miranda Maverick",
+        "Cayden Henschel vs Conor Beebe",
+        "Danny Sabatello vs Jacob Schultz"
       ]
     },
     {
