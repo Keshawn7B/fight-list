@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "November 7, 2026",
+  "verifiedDate": "November 8, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -74,31 +74,6 @@
       "detailsUrl": "https://www.onefc.com/events/onefightnight49/",
       "bouts": [
         "Gabriel vs Magomedov"
-      ]
-    },
-    {
-      "id": "auto-bkfc-bkfc-glasgow-2026-11-07",
-      "source": "BKFC",
-      "sport": "Bare Knuckle",
-      "promotion": "BKFC",
-      "eventName": "BKFC 96 Glasgow Weir Vs Cohoon",
-      "fighters": [
-        "Weir",
-        "Cohoon"
-      ],
-      "stakes": "Official BKFC card",
-      "startsAt": "2026-11-07T19:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "BKFC+ / Fubo Sports",
-        "access": "Subscription",
-        "href": "https://watch.bkfc.com/",
-        "note": "Official BKFC stream; regional options may vary"
-      },
-      "detailsUrl": "https://www.bkfc.com/events/bkfc-glasgow",
-      "bouts": [
-        "Weir vs Cohoon"
       ]
     },
     {
