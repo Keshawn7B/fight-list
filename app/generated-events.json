@@ -77,31 +77,6 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-fight-night-november-07-2026-2026-11-08",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Cortes Acosta vs Walker",
-      "fighters": [
-        "Cortes Acosta",
-        "Walker"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-11-08T01:00:00.000Z",
-      "venue": "Meta APEX",
-      "location": "Las Vegas, NV, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-november-07-2026",
-      "bouts": [
-        "Cortes Acosta vs Walker"
-      ]
-    },
-    {
       "id": "auto-one-one-friday-fights-178-2026-11-13",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -197,10 +172,10 @@
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
-      "eventName": "RAF ABU DHABI: Chimaev vs Covington",
+      "eventName": "RAF ABU DHABI: Chimaev vs Weidman",
       "fighters": [
         "Khamzat Chimaev",
-        "Colby Covington"
+        "Chris Weidman"
       ],
       "stakes": "Official Real American Freestyle card",
       "startsAt": "2026-11-14T16:00:00.000Z",
@@ -214,7 +189,7 @@
       },
       "detailsUrl": "https://www.realamericanfreestyle.com/events/raf-abu-dhabi",
       "bouts": [
-        "Khamzat Chimaev vs Colby Covington",
+        "Khamzat Chimaev vs Chris Weidman",
         "Arman Tsarukyan vs Neiman Gracie",
         "Zabit Magomedsharipov vs Giga Chikadze",
         "Abdulrashid Sadulaev vs Dauren Kurugliev",
