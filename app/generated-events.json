@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "November 9, 2026",
+  "verifiedDate": "November 10, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -547,6 +547,58 @@
         "Conah Walker vs Alexis Rocha",
         "Tiah Mai Ayton vs Tori-Ellis Willetts",
         "William Crolla vs Billy Stanbury"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-december-05-2026-2026-12-05",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Adesanya vs Magomedov",
+      "fighters": [
+        "Adesanya",
+        "Magomedov"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2026-12-05T18:00:00.000Z",
+      "venue": "The Venue",
+      "location": "Riyadh, Saudi Arabia",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-december-05-2026",
+      "bouts": [
+        "Adesanya vs Magomedov"
+      ]
+    },
+    {
+      "id": "auto-matchroom-diaz-vs-chaves-2026-12-10",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Diaz vs Chaves",
+      "fighters": [
+        "Christopher Diaz",
+        "Alan Chaves"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-12-10T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Caribe Royale",
+      "location": "Caribe Royale, Orlando, Florida, USA",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/diaz-vs-chaves/",
+      "bouts": [
+        "Christopher Diaz vs Alan Chaves",
+        "Angel Barrientes vs Alex Vallecillo"
       ]
     },
     {
