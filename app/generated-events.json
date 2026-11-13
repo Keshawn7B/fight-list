@@ -195,7 +195,7 @@
         "Zabit Magomedsharipov vs Giga Chikadze",
         "Abdulrashid Sadulaev vs Dauren Kurugliev",
         "Kyle Dake vs Alp Arslan Begenjov",
-        "Umar Nurmagomedov vs Urijah Faber",
+        "Urijah Faber vs Saba Lazishvili",
         "Jordan Burroughs vs Azamat Nurykau",
         "Kyle Snyder vs Shamil Erdogan",
         "Murtaza Talha vs Osama Elsaidy",
@@ -1152,6 +1152,31 @@
       "detailsUrl": "https://www.ufc.com/event/ufc-336",
       "bouts": [
         "Van vs Kape"
+      ]
+    },
+    {
+      "id": "auto-bkfc-bkfc-fight-night-palm-desert-2027-02-06",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "BKFC Fight Night Palm Desert",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2027-02-06T02:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-palm-desert",
+      "bouts": [
+        "Fights to be announced by BKFC"
       ]
     },
     {
