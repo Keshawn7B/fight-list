@@ -131,81 +131,6 @@
       ]
     },
     {
-      "id": "auto-pfl-pfl-returns-to-dubai-2026-11-14",
-      "source": "PFL",
-      "sport": "MMA",
-      "promotion": "PFL",
-      "eventName": "PFL Dubai",
-      "fighters": [
-        "Aleksandra Savicheva",
-        "Jacinta Austin"
-      ],
-      "stakes": "Official PFL card",
-      "startsAt": "2026-11-14T14:00:00.000Z",
-      "mainCardAt": "2026-11-14T18:00:00.000Z",
-      "venue": "Coca-Cola Arena",
-      "location": "Dubai",
-      "watch": {
-        "provider": "ESPN App / ESPN",
-        "access": "Subscription",
-        "href": "https://www.espn.com/watch/",
-        "note": "U.S. listing; regional availability may vary"
-      },
-      "detailsUrl": "https://pflmma.com/event/pfl-returns-to-dubai",
-      "bouts": [
-        "Vadim Nemkov vs Sergei Bilostenniy",
-        "Patrick Habirora vs Omar El Dafrawy",
-        "Pouya Rahmani vs Oleg Popov",
-        "Sergio Pettis vs Joji Goto",
-        "Lewis McGrillen vs Nawras Abzakh",
-        "Shem Rock vs Connor Hughes",
-        "Saygid Izagakhmaev vs David Martinez",
-        "Alexei Pergande vs Akhmed Magomedov",
-        "Khasan Magomedsharipov vs Adam Borics",
-        "Denis Goltsov vs Maxwell Djantou Nana",
-        "Ernesto Rodriguez vs Rhys McKee",
-        "Khabib Nabiev vs Styve Ngono",
-        "Aleksandra Savicheva vs Jacinta Austin"
-      ]
-    },
-    {
-      "id": "auto-raf-raf-abu-dhabi-2026-11-14",
-      "source": "RAF",
-      "sport": "Wrestling",
-      "promotion": "RAF",
-      "eventName": "RAF ABU DHABI: Chimaev vs Weidman",
-      "fighters": [
-        "Khamzat Chimaev",
-        "Chris Weidman"
-      ],
-      "stakes": "Official Real American Freestyle card",
-      "startsAt": "2026-11-14T16:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Abu Dhabi, UAE",
-      "watch": {
-        "provider": "FOX Nation",
-        "access": "Subscription",
-        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
-        "note": "Official RAF stream; regional availability may vary"
-      },
-      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf-abu-dhabi",
-      "bouts": [
-        "Khamzat Chimaev vs Chris Weidman",
-        "Arman Tsarukyan vs Neiman Gracie",
-        "Zabit Magomedsharipov vs Giga Chikadze",
-        "Abdulrashid Sadulaev vs Dauren Kurugliev",
-        "Kyle Dake vs Alp Arslan Begenjov",
-        "Urijah Faber vs Saba Lazishvili",
-        "Jordan Burroughs vs Azamat Nurykau",
-        "Kyle Snyder vs Shamil Erdogan",
-        "Murtaza Talha vs Osama Elsaidy",
-        "Diana Avsaragova vs Julianna Peña",
-        "Merab Dvalishvili vs Marlon Moraes",
-        "Zahid Valencia vs Khidir Saipudinov",
-        "Kennedy Blades vs Bella Mir"
-      ]
-    },
-    {
       "id": "auto-ufc-ufc-334-2026-11-15",
       "source": "UFC",
       "sport": "MMA",
@@ -385,7 +310,7 @@
       ]
     },
     {
-      "id": "auto-raf-raf15-2026-11-28",
+      "id": "auto-raf-raf15-2026-11-29",
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
@@ -395,8 +320,7 @@
         "Song Yadong"
       ],
       "stakes": "Official Real American Freestyle card",
-      "startsAt": "2026-11-28T12:00:00.000Z",
-      "timeTba": true,
+      "startsAt": "2026-11-29T00:00:00.000Z",
       "venue": "Venue TBA",
       "location": "Chicago, IL",
       "watch": {
@@ -1077,6 +1001,32 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-186/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-raf-raf17-2027-01-23",
+      "source": "RAF",
+      "sport": "Wrestling",
+      "promotion": "RAF",
+      "eventName": "RAF17",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official Real American Freestyle card",
+      "startsAt": "2027-01-23T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Venue TBA",
+      "location": "Charlotte, NC",
+      "watch": {
+        "provider": "FOX Nation",
+        "access": "Subscription",
+        "href": "https://nation.foxnews.com/real-american-freestyle-nation/",
+        "note": "Official RAF stream; regional availability may vary"
+      },
+      "detailsUrl": "https://www.realamericanfreestyle.com/events/raf17",
+      "bouts": [
+        "Matchups pending official announcement"
       ]
     },
     {
