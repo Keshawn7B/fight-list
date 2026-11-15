@@ -1226,6 +1226,31 @@
       ]
     },
     {
+      "id": "auto-ufc-ufc-fight-night-february-13-2027-2027-02-13",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Pyfer vs Nickal",
+      "fighters": [
+        "Pyfer",
+        "Nickal"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2027-02-13T22:00:00.000Z",
+      "venue": "Rocket Arena",
+      "location": "Cleveland, OH, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-february-13-2027",
+      "bouts": [
+        "Pyfer vs Nickal"
+      ]
+    },
+    {
       "id": "auto-one-one-friday-fights-189-2027-02-19",
       "source": "ONE",
       "sport": "Muay Thai",
