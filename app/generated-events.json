@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "November 14, 2026",
+  "verifiedDate": "November 15, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -99,35 +99,6 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-178/",
       "bouts": [
         "Full card pending official announcement"
-      ]
-    },
-    {
-      "id": "auto-matchroom-pacheco-vs-fulghum-2026-11-14",
-      "source": "Matchroom",
-      "sport": "Boxing",
-      "promotion": "Matchroom",
-      "eventName": "Pacheco vs Fulghum",
-      "fighters": [
-        "Diego Pacheco",
-        "Darius Fulghum"
-      ],
-      "stakes": "Official Matchroom Boxing card",
-      "startsAt": "2026-11-14T12:00:00.000Z",
-      "timeTba": true,
-      "venue": "Dignity Health Sports Park",
-      "location": "Dignity Health Sports Park, Carson, CA, USA",
-      "watch": {
-        "provider": "DAZN",
-        "access": "Subscription",
-        "href": "https://www.dazn.com/",
-        "note": "Official Matchroom broadcaster; regional availability may vary"
-      },
-      "detailsUrl": "https://www.matchroomboxing.com/events/pacheco-vs-fulghum/",
-      "bouts": [
-        "Diego Pacheco vs Darius Fulghum",
-        "Anthony Olascuaga vs Yuberjen Martinez",
-        "Charlie Sheehy vs Gabe Flores",
-        "David Adeleye vs Alexander Flores"
       ]
     },
     {
@@ -958,10 +929,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC Fight Night: TBD vs TBD",
+      "eventName": "UFC Fight Night: Rodriguez vs Garcia",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Rodriguez",
+        "Garcia"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2027-01-17T01:00:00.000Z",
@@ -975,7 +946,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-january-16-2027",
       "bouts": [
-        "Full card pending official announcement"
+        "Rodriguez vs Garcia"
       ]
     },
     {
@@ -1027,6 +998,31 @@
       "detailsUrl": "https://www.realamericanfreestyle.com/events/raf17",
       "bouts": [
         "Matchups pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-fight-night-january-23-2027-2027-01-23",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC Fight Night: Bonfim vs Brady",
+      "fighters": [
+        "Bonfim",
+        "Brady"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2027-01-23T22:00:00.000Z",
+      "venue": "Meta APEX",
+      "location": "Las Vegas, NV, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-january-23-2027",
+      "bouts": [
+        "Bonfim vs Brady"
       ]
     },
     {
