@@ -102,31 +102,6 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-334-2026-11-15",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC 334: Gane vs Hokit",
-      "fighters": [
-        "Gane",
-        "Hokit"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-11-15T02:00:00.000Z",
-      "venue": "Madison Square Garden",
-      "location": "New York, NY, United States",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-334",
-      "bouts": [
-        "Gane vs Hokit"
-      ]
-    },
-    {
       "id": "auto-one-one-samurai-5-2026-11-18",
       "source": "ONE",
       "sport": "Kickboxing",
@@ -527,10 +502,10 @@
       "source": "PFL",
       "sport": "MMA",
       "promotion": "PFL",
-      "eventName": "PFL Khobar",
+      "eventName": "PFL Mena 12",
       "fighters": [
-        "Elias Boudegzdame",
-        "Mehdi Saadi"
+        "Zamzam Al-Hammadi",
+        "Lilia Osmani"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-12-11T12:00:00.000Z",
@@ -547,7 +522,12 @@
       "bouts": [
         "Abdelkrim Zouad vs Badreddine Diani",
         "Mohammad Fahmi vs Ylies Djiroun",
-        "Elias Boudegzdame vs Mehdi Saadi"
+        "Elias Boudegzdame vs Mehdi Saadi",
+        "Ahmed Albrahim vs Hassan Ahmed Moustafa",
+        "Malik Basahel vs Ahmed Taha",
+        "Fatima Al Ammari vs Anna Wakim",
+        "Hamad Marhoon vs Ayoub Grimes",
+        "Zamzam Al-Hammadi vs Lilia Osmani"
       ]
     },
     {
@@ -785,7 +765,8 @@
       },
       "detailsUrl": "https://www.realamericanfreestyle.com/events/raf16",
       "bouts": [
-        "Bo Nickal vs Yoel Romero"
+        "Bo Nickal vs Yoel Romero",
+        "Merab Dvalishvili vs Kenzo Biyong"
       ]
     },
     {
@@ -795,8 +776,8 @@
       "promotion": "PFL",
       "eventName": "PFL Lyon",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Mathilde Aschenbrenner",
+        "Miracle Chipito"
       ],
       "stakes": "Official PFL card",
       "startsAt": "2026-12-19T16:00:00.000Z",
@@ -811,7 +792,17 @@
       },
       "detailsUrl": "https://pflmma.com/event/pfl-lyon-2026",
       "bouts": [
-        "Full matchups on the official PFL card"
+        "Taylor Lapilus vs Mitch McKee",
+        "Boris Atangana vs Bryan Battle",
+        "Abdoul Abdouraguimov vs Andreeas Binder",
+        "Oualy Tandia vs Alex Lohoré",
+        "Fabian Edwards vs Ilian Bouafia",
+        "Bafode Gassama vs Coby Bradford",
+        "Dean Garnett vs Bryce Meredith",
+        "Mauricio Partida vs Jan Cieplowski",
+        "Brandon Brachet vs Adam Meskini",
+        "Zakaria Hamou vs Amin Bouazza",
+        "Mathilde Aschenbrenner vs Miracle Chipito"
       ]
     },
     {
