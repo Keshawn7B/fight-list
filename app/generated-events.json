@@ -127,35 +127,6 @@
       ]
     },
     {
-      "id": "auto-matchroom-teremoana-vs-ahio-2026-11-18",
-      "source": "Matchroom",
-      "sport": "Boxing",
-      "promotion": "Matchroom",
-      "eventName": "Teremoana vs Ahio",
-      "fighters": [
-        "Teremoana Teremoana",
-        "Hemi Ahio"
-      ],
-      "stakes": "Official Matchroom Boxing card",
-      "startsAt": "2026-11-18T12:00:00.000Z",
-      "timeTba": true,
-      "venue": "Pullman Melbourne Albert Park",
-      "location": "Pullman Melbourne Albert Park, Melbourne, Australia",
-      "watch": {
-        "provider": "DAZN",
-        "access": "Subscription",
-        "href": "https://www.dazn.com/",
-        "note": "Official Matchroom broadcaster; regional availability may vary"
-      },
-      "detailsUrl": "https://www.matchroomboxing.com/events/teremoana-vs-ahio/",
-      "bouts": [
-        "Teremoana Teremoana vs Hemi Ahio",
-        "Joel Camilleri vs Mitch Leek",
-        "Omar El-Abdallah vs Lilo Telepe",
-        "Ky Hodgson vs Matt Faron"
-      ]
-    },
-    {
       "id": "auto-one-one-friday-fights-179-2026-11-20",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -800,11 +771,13 @@
         "Abdoul Abdouraguimov vs Andreeas Binder",
         "Oualy Tandia vs Alex Lohoré",
         "Fabian Edwards vs Ilian Bouafia",
+        "Baris Adiguzel vs Jack Cartwright",
         "Bafode Gassama vs Coby Bradford",
         "Dean Garnett vs Bryce Meredith",
         "Mauricio Partida vs Jan Cieplowski",
         "Brandon Brachet vs Adam Meskini",
         "Zakaria Hamou vs Amin Bouazza",
+        "Lorenzo Parente vs Stiven Shehu",
         "Mathilde Aschenbrenner vs Miracle Chipito"
       ]
     },
@@ -985,7 +958,7 @@
       ]
     },
     {
-      "id": "auto-ufc-ufc-fight-night-january-23-2027-2027-01-23",
+      "id": "auto-ufc-ufc-fight-night-january-23-2027-2027-01-24",
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
@@ -995,7 +968,7 @@
         "Brady"
       ],
       "stakes": "Official UFC event",
-      "startsAt": "2027-01-23T22:00:00.000Z",
+      "startsAt": "2027-01-24T01:00:00.000Z",
       "venue": "Meta APEX",
       "location": "Las Vegas, NV, United States",
       "watch": {
