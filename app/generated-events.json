@@ -255,7 +255,6 @@
         "Sergio Pettis vs Cody Garbrandt",
         "Roman Bravo-Young vs Matt Ramos",
         "Chance Marsteller vs Akhmed Usmanov",
-        "Raúl Rosas Jr. vs Clay Guida",
         "Michael Caliendo vs Cesar Alvan",
         "Geno Petriashvili vs Yonger Bastida",
         "Haley Augello vs Miranda Maverick",
@@ -794,6 +793,32 @@
       ]
     },
     {
+      "id": "auto-matchroom-miller-vs-yoka-2026-12-20",
+      "source": "Matchroom",
+      "sport": "Boxing",
+      "promotion": "Matchroom",
+      "eventName": "Miller vs Yoka",
+      "fighters": [
+        "Jarrell Miller",
+        "Tony Yoka"
+      ],
+      "stakes": "Official Matchroom Boxing card",
+      "startsAt": "2026-12-20T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "The Grand Arena",
+      "location": "The Grand Arena, Accra, Ghana",
+      "watch": {
+        "provider": "DAZN",
+        "access": "Subscription",
+        "href": "https://www.dazn.com/",
+        "note": "Official Matchroom broadcaster; regional availability may vary"
+      },
+      "detailsUrl": "https://www.matchroomboxing.com/events/miller-vs-yoka/",
+      "bouts": [
+        "Jarrell Miller vs Tony Yoka"
+      ]
+    },
+    {
       "id": "auto-one-one-friday-fights-184-2027-01-08",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -1318,6 +1343,31 @@
       "detailsUrl": "https://www.matchroomboxing.com/events/boots-ennis-vs-kelly/",
       "bouts": [
         "Jaron Ennis vs Josh Kelly"
+      ]
+    },
+    {
+      "id": "auto-bkfc-knucklemania-vii-2027-02-28",
+      "source": "BKFC",
+      "sport": "Bare Knuckle",
+      "promotion": "BKFC",
+      "eventName": "Knucklemania Vii",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official BKFC card",
+      "startsAt": "2027-02-28T01:00:00.000Z",
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "BKFC+ / Fubo Sports",
+        "access": "Subscription",
+        "href": "https://watch.bkfc.com/",
+        "note": "Official BKFC stream; regional options may vary"
+      },
+      "detailsUrl": "https://www.bkfc.com/events/knucklemania-vii",
+      "bouts": [
+        "Fights to be announced by BKFC"
       ]
     },
     {
