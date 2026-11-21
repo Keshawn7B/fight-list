@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "November 20, 2026",
+  "verifiedDate": "November 21, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -149,31 +149,6 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-179/",
       "bouts": [
         "Full card pending official announcement"
-      ]
-    },
-    {
-      "id": "auto-bkfc-bkfc-fight-night-myrtle-beach-2026-11-21",
-      "source": "BKFC",
-      "sport": "Bare Knuckle",
-      "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Myrtle Beach Richardson Vs Oxendine",
-      "fighters": [
-        "Richardson",
-        "Oxendine"
-      ],
-      "stakes": "Official BKFC card",
-      "startsAt": "2026-11-21T02:00:00.000Z",
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "BKFC+ / Fubo Sports",
-        "access": "Subscription",
-        "href": "https://watch.bkfc.com/",
-        "note": "Official BKFC stream; regional options may vary"
-      },
-      "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-myrtle-beach",
-      "bouts": [
-        "Richardson vs Oxendine"
       ]
     },
     {
@@ -746,6 +721,7 @@
         "Bo Nickal vs Yoel Romero",
         "Merab Dvalishvili vs Kenzo Biyong",
         "Abdulrashid Sadulaev vs Trent Hidlay",
+        "Sean O'Malley vs Marlon Moraes",
         "Zain Retherford vs Shamil Mamedov",
         "Jimmie Rivera vs Raúl Rosas Jr.",
         "Chris Foca vs Magomed Ramazanov",
@@ -1099,10 +1075,10 @@
       "source": "BKFC",
       "sport": "Bare Knuckle",
       "promotion": "BKFC",
-      "eventName": "BKFC Fight Night Palm Desert",
+      "eventName": "BKFC Fight Night Palm Desert Kurdanov Vs Peralta",
       "fighters": [
-        "Card",
-        "To be announced"
+        "Kurdanov",
+        "Peralta"
       ],
       "stakes": "Official BKFC card",
       "startsAt": "2027-02-06T02:00:00.000Z",
@@ -1116,7 +1092,7 @@
       },
       "detailsUrl": "https://www.bkfc.com/events/bkfc-fight-night-palm-desert",
       "bouts": [
-        "Fights to be announced by BKFC"
+        "Kurdanov vs Peralta"
       ]
     },
     {
@@ -1356,7 +1332,7 @@
         "To be announced"
       ],
       "stakes": "Official BKFC card",
-      "startsAt": "2027-02-28T01:00:00.000Z",
+      "startsAt": "2027-02-28T00:00:00.000Z",
       "venue": "Venue TBA",
       "location": "Location TBA",
       "watch": {
