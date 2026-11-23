@@ -299,7 +299,7 @@
         "Richman"
       ],
       "stakes": "Official BKFC card",
-      "startsAt": "2026-12-05T01:00:00.000Z",
+      "startsAt": "2026-12-05T00:00:00.000Z",
       "venue": "Venue TBA",
       "location": "Location TBA",
       "watch": {
@@ -481,7 +481,8 @@
       },
       "detailsUrl": "https://www.matchroomboxing.com/events/fury-vs-joshua/",
       "bouts": [
-        "Tyson Fury vs Anthony Joshua"
+        "Tyson Fury vs Anthony Joshua",
+        "Deontay Wilder vs Martin Bakole"
       ]
     },
     {
@@ -766,7 +767,10 @@
       },
       "detailsUrl": "https://www.matchroomboxing.com/events/miller-vs-yoka/",
       "bouts": [
-        "Jarrell Miller vs Tony Yoka"
+        "Jarrell Miller vs Tony Yoka",
+        "Theo Allotey vs Charlie Edwards",
+        "Samuel Takyi vs Reece Bellotti",
+        "Jonathan Tetteh vs Elvis Ahorgah"
       ]
     },
     {
@@ -950,10 +954,10 @@
       "source": "UFC",
       "sport": "MMA",
       "promotion": "UFC",
-      "eventName": "UFC Fight Night: Bonfim vs Brady",
+      "eventName": "UFC Fight Night: Brady vs Bonfim",
       "fighters": [
-        "Bonfim",
-        "Brady"
+        "Brady",
+        "Bonfim"
       ],
       "stakes": "Official UFC event",
       "startsAt": "2027-01-24T01:00:00.000Z",
@@ -967,7 +971,7 @@
       },
       "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-january-23-2027",
       "bouts": [
-        "Bonfim vs Brady"
+        "Brady vs Bonfim"
       ]
     },
     {
@@ -1241,6 +1245,31 @@
         "note": "Official stream; regional availability may vary"
       },
       "detailsUrl": "https://www.onefc.com/events/onefightnight52/",
+      "bouts": [
+        "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-ufc-ufc-337-2027-02-20",
+      "source": "UFC",
+      "sport": "MMA",
+      "promotion": "UFC",
+      "eventName": "UFC 337: TBD vs TBD",
+      "fighters": [
+        "Card",
+        "To be announced"
+      ],
+      "stakes": "Official UFC event",
+      "startsAt": "2027-02-20T22:00:00.000Z",
+      "venue": "Kia Center",
+      "location": "Orlando, FL, United States",
+      "watch": {
+        "provider": "Paramount+",
+        "access": "Subscription",
+        "href": "https://www.ufc.com/watch/schedule",
+        "note": "U.S. listing; availability varies by country"
+      },
+      "detailsUrl": "https://www.ufc.com/event/ufc-337",
       "bouts": [
         "Full card pending official announcement"
       ]
