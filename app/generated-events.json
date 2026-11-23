@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "November 22, 2026",
+  "verifiedDate": "November 23, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -149,31 +149,6 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-179/",
       "bouts": [
         "Full card pending official announcement"
-      ]
-    },
-    {
-      "id": "auto-ufc-ufc-fight-night-november-21-2026-2026-11-21",
-      "source": "UFC",
-      "sport": "MMA",
-      "promotion": "UFC",
-      "eventName": "UFC Fight Night: Prochazka vs Stirling",
-      "fighters": [
-        "Prochazka",
-        "Stirling"
-      ],
-      "stakes": "Official UFC event",
-      "startsAt": "2026-11-21T18:00:00.000Z",
-      "venue": "ABHA Arena",
-      "location": "Doha, Qatar",
-      "watch": {
-        "provider": "Paramount+",
-        "access": "Subscription",
-        "href": "https://www.ufc.com/watch/schedule",
-        "note": "U.S. listing; availability varies by country"
-      },
-      "detailsUrl": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
-      "bouts": [
-        "Prochazka vs Stirling"
       ]
     },
     {
