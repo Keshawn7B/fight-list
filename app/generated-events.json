@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "November 23, 2026",
+  "verifiedDate": "November 24, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -149,6 +149,33 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-179/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-pfl-pfl-dubai-2026-2026-11-24",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL Dubai",
+      "fighters": [
+        "Jahmal Harvey",
+        "Craig Morgan"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-11-24T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pfl-dubai-2026",
+      "bouts": [
+        "Alistair Overeem vs Babajami Manuwa",
+        "Jahmal Harvey vs Craig Morgan"
       ]
     },
     {
