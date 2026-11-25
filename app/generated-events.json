@@ -179,6 +179,32 @@
       ]
     },
     {
+      "id": "auto-pfl-pfl-san-juan-2027-2026-11-25",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL San Juan",
+      "fighters": [
+        "Amanda Serrano",
+        "Skye Falzon"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-11-25T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pfl-san-juan-2027",
+      "bouts": [
+        "Amanda Serrano vs Skye Falzon"
+      ]
+    },
+    {
       "id": "auto-one-one-friday-fights-180-2026-11-27",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -364,8 +390,13 @@
       "detailsUrl": "https://www.matchroomboxing.com/events/walker-vs-rocha/",
       "bouts": [
         "Conah Walker vs Alexis Rocha",
+        "Galal Yafai vs Eduardo Ajito",
         "Tiah Mai Ayton vs Tori-Ellis Willetts",
-        "William Crolla vs Billy Stanbury"
+        "William Crolla vs Billy Stanbury",
+        "Connor Mitchell vs Fernando Morillo",
+        "Harley Burrows vs Giulio Fiorillo",
+        "Adam Maca vs Alejandro morales Chazaro",
+        "Louie Ward vs James Francis"
       ]
     },
     {
