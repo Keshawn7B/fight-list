@@ -152,33 +152,6 @@
       ]
     },
     {
-      "id": "auto-pfl-pfl-dubai-2026-2026-11-26",
-      "source": "PFL",
-      "sport": "MMA",
-      "promotion": "PFL",
-      "eventName": "PFL Dubai",
-      "fighters": [
-        "Alistair Overeem",
-        "Babajami Manuwa"
-      ],
-      "stakes": "Official PFL card",
-      "startsAt": "2026-11-26T12:00:00.000Z",
-      "timeTba": true,
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "ESPN App / ESPN",
-        "access": "Subscription",
-        "href": "https://www.espn.com/watch/",
-        "note": "U.S. listing; regional availability may vary"
-      },
-      "detailsUrl": "https://pflmma.com/event/pfl-dubai-2026",
-      "bouts": [
-        "Jahmal Harvey vs Craig Morgan",
-        "Alistair Overeem vs Babajami Manuwa"
-      ]
-    },
-    {
       "id": "auto-pfl-pfl-san-juan-2027-2026-11-26",
       "source": "PFL",
       "sport": "MMA",
@@ -540,7 +513,17 @@
       "detailsUrl": "https://www.matchroomboxing.com/events/fury-vs-joshua/",
       "bouts": [
         "Tyson Fury vs Anthony Joshua",
-        "Deontay Wilder vs Martin Bakole"
+        "Deontay Wilder vs Martin Bakole",
+        "Moses Jolly vs Igor Adiel Macedo",
+        "Da'Mazion Vanhouter vs Michael Essomba",
+        "Joe Cordina vs Mauricio Lara",
+        "Hayato Tsutsumi vs Victor Pasillas",
+        "Reito Tsutsumi vs Muheeb Fazeldin",
+        "Constantino Nanga vs Lerrone Richards",
+        "Mikie Tallon vs Sean Bruce",
+        "Mohammed Alakel vs Rogger Rivera",
+        "Odel Kamara vs Patrik Matejcek",
+        "Roman Fury vs Adam Kolarik"
       ]
     },
     {
