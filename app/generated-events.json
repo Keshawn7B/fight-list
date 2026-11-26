@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "November 25, 2026",
+  "verifiedDate": "November 26, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "id": "auto-pfl-pfl-dubai-2026-2026-11-25",
+      "id": "auto-pfl-pfl-dubai-2026-2026-11-26",
       "source": "PFL",
       "sport": "MMA",
       "promotion": "PFL",
@@ -162,7 +162,7 @@
         "Babajami Manuwa"
       ],
       "stakes": "Official PFL card",
-      "startsAt": "2026-11-25T12:00:00.000Z",
+      "startsAt": "2026-11-26T12:00:00.000Z",
       "timeTba": true,
       "venue": "Venue TBA",
       "location": "Location TBA",
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "id": "auto-pfl-pfl-san-juan-2027-2026-11-25",
+      "id": "auto-pfl-pfl-san-juan-2027-2026-11-26",
       "source": "PFL",
       "sport": "MMA",
       "promotion": "PFL",
@@ -189,7 +189,7 @@
         "Skye Falzon"
       ],
       "stakes": "Official PFL card",
-      "startsAt": "2026-11-25T12:00:00.000Z",
+      "startsAt": "2026-11-26T12:00:00.000Z",
       "timeTba": true,
       "venue": "Venue TBA",
       "location": "Location TBA",
