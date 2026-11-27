@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "November 26, 2026",
+  "verifiedDate": "November 27, 2026",
   "events": [
     {
       "id": "auto-dwcs-dana-white-s-contender-series-season-10-week-10-2026-10-13",
@@ -152,32 +152,6 @@
       ]
     },
     {
-      "id": "auto-pfl-pfl-san-juan-2027-2026-11-26",
-      "source": "PFL",
-      "sport": "MMA",
-      "promotion": "PFL",
-      "eventName": "PFL San Juan",
-      "fighters": [
-        "Amanda Serrano",
-        "Skye Falzon"
-      ],
-      "stakes": "Official PFL card",
-      "startsAt": "2026-11-26T12:00:00.000Z",
-      "timeTba": true,
-      "venue": "Venue TBA",
-      "location": "Location TBA",
-      "watch": {
-        "provider": "ESPN App / ESPN",
-        "access": "Subscription",
-        "href": "https://www.espn.com/watch/",
-        "note": "U.S. listing; regional availability may vary"
-      },
-      "detailsUrl": "https://pflmma.com/event/pfl-san-juan-2027",
-      "bouts": [
-        "Amanda Serrano vs Skye Falzon"
-      ]
-    },
-    {
       "id": "auto-one-one-friday-fights-180-2026-11-27",
       "source": "ONE",
       "sport": "Muay Thai",
@@ -200,6 +174,59 @@
       "detailsUrl": "https://www.onefc.com/events/one-friday-fights-180/",
       "bouts": [
         "Full card pending official announcement"
+      ]
+    },
+    {
+      "id": "auto-pfl-pfl-dubai-2026-2026-11-27",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL Dubai",
+      "fighters": [
+        "Alistair Overeem",
+        "Babajami Manuwa"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-11-27T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pfl-dubai-2026",
+      "bouts": [
+        "Jahmal Harvey vs Craig Morgan",
+        "Alistair Overeem vs Babajami Manuwa"
+      ]
+    },
+    {
+      "id": "auto-pfl-pfl-san-juan-2027-2026-11-27",
+      "source": "PFL",
+      "sport": "MMA",
+      "promotion": "PFL",
+      "eventName": "PFL San Juan",
+      "fighters": [
+        "Amanda Serrano",
+        "Skye Falzon"
+      ],
+      "stakes": "Official PFL card",
+      "startsAt": "2026-11-27T12:00:00.000Z",
+      "timeTba": true,
+      "venue": "Venue TBA",
+      "location": "Location TBA",
+      "watch": {
+        "provider": "ESPN App / ESPN",
+        "access": "Subscription",
+        "href": "https://www.espn.com/watch/",
+        "note": "U.S. listing; regional availability may vary"
+      },
+      "detailsUrl": "https://pflmma.com/event/pfl-san-juan-2027",
+      "bouts": [
+        "Amanda Serrano vs Skye Falzon"
       ]
     },
     {
