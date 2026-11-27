@@ -230,7 +230,7 @@
       ]
     },
     {
-      "id": "auto-raf-raf15-2026-11-29",
+      "id": "auto-raf-raf15-2026-11-28",
       "source": "RAF",
       "sport": "Wrestling",
       "promotion": "RAF",
@@ -240,7 +240,8 @@
         "Song Yadong"
       ],
       "stakes": "Official Real American Freestyle card",
-      "startsAt": "2026-11-29T00:00:00.000Z",
+      "startsAt": "2026-11-28T12:00:00.000Z",
+      "timeTba": true,
       "venue": "Venue TBA",
       "location": "Chicago, IL",
       "watch": {
